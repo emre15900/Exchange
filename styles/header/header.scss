@@ -113,4 +113,17 @@
   .description{
     color: var(--gray);
   }
+  .homeSlider-btn{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 18px 32px 18px 32px;
+    border-radius: 100px;
+    font-size: 18px;
+    background: var(--royalBlue);
+    transition:2s;
+    .homeSlider-btna{
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
