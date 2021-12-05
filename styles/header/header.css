@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
   width: 100%;
-  background-color: #383A45;
+  background: var(--grey100);
   position: relative;
 }
 
@@ -41,6 +41,10 @@
 
 .header .nav .navHead .logo img {
   width: 50px;
+}
+
+.header .nav .navHead .logo .text {
+  color: var(--grey0);
 }
 
 .header .nav .navHead .nav-links {
@@ -95,13 +99,13 @@
 
 .header .nav .navHead .login .singIn:hover {
   text-decoration: none;
-  background-color: #246CF9;
+  background: var(--royalBlue);
   padding: 12px 24px 12px 24px;
   border-radius: 30px;
 }
 
 .header .nav .navHead .login .singUp {
-  background-color: #246CF9;
+  background: var(--royalBlue);
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
   -webkit-transition: 0.5s;
@@ -111,10 +115,39 @@
 
 .header .nav .navHead .login .singUp:hover {
   text-decoration: none;
-  background-color: #383A45;
+  background-color: #383a45;
   padding: 12px 24px 12px 24px;
   border-radius: 30px;
   color: white;
   border: 1px solid white;
+}
+
+.homeSlider {
+  background: var(--grey100);
+  color: var(--grey0);
+}
+
+.homeSlider .row {
+  padding: 40px 0;
+}
+
+.homeSlider .row .col-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeSlider .row .col-6 img {
+  width: 100%;
+}
+
+.homeSlider .description {
+  color: var(--gray);
 }
 /*# sourceMappingURL=header.css.map */

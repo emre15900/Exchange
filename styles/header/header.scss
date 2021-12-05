@@ -1,24 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 
 //------Header
 .header {
   width: 100%;
-  background-color: #383A45;
+  background: var(--grey100);
   position: relative;
-  
 
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding:15px 0;
-    .navHead{
+    padding: 15px 0;
+    .navHead {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,12 +25,15 @@
         img {
           width: 50px;
         }
+        .text{
+          color: var(--grey0);
+        }
       }
-      
+
       .nav-links {
         flex: 1;
         text-align: right;
-  
+
         ul {
           margin: 0;
           padding: 0;
@@ -41,7 +42,7 @@
             display: inline-block;
             padding: 8px 12px;
             position: relative;
-  
+
             a {
               color: white;
               text-decoration: none;
@@ -50,61 +51,66 @@
           }
         }
       }
-      .login{
+      .login {
         text-decoration: none;
         display: flex;
         justify-content: flex-end;
         padding: 0;
         margin: 0;
-        a{
+        a {
           color: white;
         }
-        .singIn{
+        .singIn {
           border: 1px solid white;
           padding: 12px 24px 12px 24px;
           border-radius: 100px;
           transition: 0.5s;
-          &:hover{
+          &:hover {
             text-decoration: none;
-            background-color: #246CF9;
+            background: var(--royalBlue);
             padding: 12px 24px 12px 24px;
             border-radius: 30px;
           }
           margin-right: 11px;
         }
-        .singUp{
-          background-color: #246CF9;
+        .singUp {
+          background: var(--royalBlue);
           padding: 12px 24px 12px 24px;
           border-radius: 100px;
-          transition:0.5s;
+          transition: 0.5s;
           border: 1px solid transparent;
-          &:hover{
+          &:hover {
             text-decoration: none;
-            background-color: #383A45;
+            background-color: #383a45;
             padding: 12px 24px 12px 24px;
             border-radius: 30px;
-            color:white;
+            color: white;
             border: 1px solid white;
           }
         }
       }
     }
-
   }
 }
 
 //-----Section
 
-.section{
-  
+.homeSlider {
+  background: var(--grey100);
+  color: var(--grey0);
+  .row {
+    padding: 40px 0;
+    .col-6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+
+    }
+  }
+  .description{
+    color: var(--gray);
+  }
 }
-
-
-
-
-
-
-
-
-
-

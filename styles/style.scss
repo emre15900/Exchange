@@ -1,5 +1,21 @@
 :root{
     --royalBlue: linear-gradient(90deg, rgba(5,59,164,1) 0%, rgba(30,102,240,1) 100%);
-    
-
-}
+    --gradientPattern: linear-gradient(90deg, rgba(5,34,172,1) 0%, rgba(52,56,76,0) 100%);
+    --gradientBg: radial-gradient(circle, rgba(1,9,80,1) 0%, rgba(14,17,32,0) 100%);
+    --greenLinear: linear-gradient(90deg, rgba(188,251,255,0.4) 0%, rgba(0,0,0,1) 100%);
+    --gradientPattern: linear-gradient(90deg, rgba(5,34,172,1) 0%, rgba(52,56,76,0) 100%);
+    --baseDarkTransparent: #2F3241;
+    --lightGreen: #30E0A1;
+    --purplePrimary: #BD47FB;
+    --orangePrimary: #F27F16;
+    --redPrimary: #FA2256;
+    --greenPrimary: #30E0A1;
+    --darkerGrey: #141518;
+    --grey100: #1E1F25;
+    --grey80: #34384C;
+    --grey60: #292b36;
+    --grey40: #A5ADCF;
+    --grey20: #E5E6ED;
+    --grey0: #FFFFFF;
+    --gray: #d8d8d8;
+}   
