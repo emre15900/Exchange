@@ -1,5 +1,4 @@
 :root {
-  --primaryColor: green;
-  --baseDarkTransparent: blue;
+  --royalBlue: linear-gradient(90deg, rgba(5,59,164,1) 0%, rgba(30,102,240,1) 100%);
 }
 /*# sourceMappingURL=style.css.map */
