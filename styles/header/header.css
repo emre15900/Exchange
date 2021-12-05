@@ -85,25 +85,36 @@
 }
 
 .header .nav .navHead .login .singIn {
+  border: 1px solid white;
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin-right: 11px;
 }
 
 .header .nav .navHead .login .singIn:hover {
   text-decoration: none;
+  background-color: #246CF9;
+  padding: 12px 24px 12px 24px;
+  border-radius: 30px;
 }
 
 .header .nav .navHead .login .singUp {
-  border: 1px solid white;
-  padding: 20px 20px;
-  border-radius: 30px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-color: #246CF9;
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid transparent;
 }
 
 .header .nav .navHead .login .singUp:hover {
   text-decoration: none;
-  background-color: #246CF9;
-  padding: 20px 20px;
+  background-color: #383A45;
+  padding: 12px 24px 12px 24px;
   border-radius: 30px;
+  color: white;
+  border: 1px solid white;
 }
 /*# sourceMappingURL=header.css.map */

@@ -60,21 +60,31 @@
           color: white;
         }
         .singIn{
+          border: 1px solid white;
+          padding: 12px 24px 12px 24px;
+          border-radius: 100px;
+          transition: 0.5s;
           &:hover{
             text-decoration: none;
+            background-color: #246CF9;
+            padding: 12px 24px 12px 24px;
+            border-radius: 30px;
           }
           margin-right: 11px;
         }
         .singUp{
-          border: 1px solid white;
-          padding: 20px 20px;
-          border-radius: 30px;
-          transition: 1s;
+          background-color: #246CF9;
+          padding: 12px 24px 12px 24px;
+          border-radius: 100px;
+          transition:0.5s;
+          border: 1px solid transparent;
           &:hover{
             text-decoration: none;
-            background-color: #246CF9;
-            padding: 20px 20px;
+            background-color: #383A45;
+            padding: 12px 24px 12px 24px;
             border-radius: 30px;
+            color:white;
+            border: 1px solid white;
           }
         }
       }
@@ -82,3 +92,19 @@
 
   }
 }
+
+//-----Section
+
+.section{
+  
+}
+
+
+
+
+
+
+
+
+
+
