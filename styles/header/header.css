@@ -1,4 +1,4 @@
 .test .tester {
-  color: red;
+  color: var(--baseDarkTransparent);
 }
 /*# sourceMappingURL=header.css.map */
