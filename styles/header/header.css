@@ -1,4 +1,109 @@
-.test .tester {
-  color: var(--baseDarkTransparent);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: #383A45;
+  position: relative;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 15px 0;
+}
+
+.header .nav .navHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.header .nav .navHead .logo img {
+  width: 50px;
+}
+
+.header .nav .navHead .nav-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.header .nav .navHead .nav-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav .navHead .nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.header .nav .navHead .nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header .nav .navHead .login {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.header .nav .navHead .login a {
+  color: white;
+}
+
+.header .nav .navHead .login .singIn {
+  margin-right: 11px;
+}
+
+.header .nav .navHead .login .singIn:hover {
+  text-decoration: none;
+}
+
+.header .nav .navHead .login .singUp {
+  border: 1px solid white;
+  padding: 20px 20px;
+  border-radius: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header .nav .navHead .login .singUp:hover {
+  text-decoration: none;
+  background-color: #246CF9;
+  padding: 20px 20px;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=header.css.map */
