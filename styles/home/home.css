@@ -132,16 +132,7 @@
 }
 
 /**** Crypto Plarform ****/
-.homePlatform .cards .portfolioManager {
-  display: block;
-  position: absolute;
-  width: 285px;
-  height: 329px;
-  left: 165px;
-  top: 120px;
-}
-
-.homePlatform .cards .portfolioManager h2 {
+.homePlatform .portfolioManager h2 {
   font-family: 'Sofia Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -150,7 +141,7 @@
   color: white;
 }
 
-.homePlatform .cards .portfolioManager p {
+.homePlatform .portfolioManager p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -158,11 +149,11 @@
   color: var(--grey40);
 }
 
-.homePlatform .cards .mobileApps {
+.homePlatform .mobileApps {
   display: block;
 }
 
-.homePlatform .cards .mobileApps h2 {
+.homePlatform .mobileApps h2 {
   font-family: 'Sofia Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -171,7 +162,7 @@
   color: white;
 }
 
-.homePlatform .cards .mobileApps p {
+.homePlatform .mobileApps p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -179,11 +170,19 @@
   color: var(--grey40);
 }
 
-.homePlatform .cards .vaultProtection {
-  display: block;
+.homePlatform .lastCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.homePlatform .cards .vaultProtection h2 {
+.homePlatform .lastCard .vaultProtection h2 {
   font-family: 'Sofia Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -192,16 +191,12 @@
   color: white;
 }
 
-.homePlatform .cards .vaultProtection p {
+.homePlatform .lastCard .vaultProtection p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--grey40);
-}
-
-.homePlatform .explanation {
-  position: relative;
 }
 
 .homePlatform .explanation h1 {
