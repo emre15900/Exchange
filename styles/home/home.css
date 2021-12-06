@@ -132,6 +132,34 @@
 }
 
 /**** Crypto Plarform ****/
+.homePlatform {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.homePlatform .portfolioManager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--baseDarkTransparent);
+  border-radius: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 24px;
+  padding: 25px 20px;
+}
+
 .homePlatform .portfolioManager h2 {
   font-family: 'Sofia Pro', sans-serif;
   font-style: normal;
@@ -147,10 +175,29 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--grey40);
+  text-align: center;
 }
 
 .homePlatform .mobileApps {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 20px;
+  background-color: var(--baseDarkTransparent);
+  border-radius: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .homePlatform .mobileApps h2 {
@@ -168,9 +215,10 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--grey40);
+  text-align: center;
 }
 
-.homePlatform .lastCard {
+.homePlatform .vaultProt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +230,26 @@
           align-items: center;
 }
 
-.homePlatform .lastCard .vaultProtection h2 {
+.homePlatform .vaultProt .lastCard {
+  padding: 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--baseDarkTransparent);
+  border-radius: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homePlatform .vaultProt .lastCard h2 {
   font-family: 'Sofia Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -191,24 +258,59 @@
   color: white;
 }
 
-.homePlatform .lastCard .vaultProtection p {
+.homePlatform .vaultProt .lastCard p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--grey40);
+  text-align: center;
 }
 
-.homePlatform .explanation h1 {
+.homePlatform .explanations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 68px;
+}
+
+.homePlatform .explanations .explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: sta;
+      -ms-flex-align: sta;
+          align-items: sta;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homePlatform .explanations .explanation h1 {
   font-family: 'Sofia Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 37px;
   line-height: 110%;
   color: white;
+  text-align: start;
 }
 
-.homePlatform .explanation p {
+.homePlatform .explanations .explanation p {
   font-family: Graphik;
   font-style: normal;
   font-weight: normal;
@@ -217,7 +319,7 @@
   color: white;
 }
 
-.homePlatform .explanation span {
+.homePlatform .explanations .explanation span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,9 +327,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

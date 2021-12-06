@@ -122,10 +122,19 @@
 /**** Crypto Plarform ****/
 
 .homePlatform {
+  margin-top: 150px;
+  margin-bottom: 150px;
+
   .portfolioManager {
-
-
-    img {}
+    display: flex;
+    background-color: var(--baseDarkTransparent);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 24px;
+    padding: 25px 20px;
 
     h2 {
       font-family: 'Sofia Pro', sans-serif;
@@ -142,13 +151,19 @@
       font-size: 16px;
       line-height: 24px;
       color: var(--grey40);
+      text-align: center;
     }
   }
 
   .mobileApps {
-    display: block;
-
-    img {}
+    display: flex;
+    padding: 25px 20px;
+    background-color: var(--baseDarkTransparent);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     h2 {
       font-family: 'Sofia Pro', sans-serif;
@@ -165,16 +180,25 @@
       font-size: 16px;
       line-height: 24px;
       color: var(--grey40);
+      text-align: center;
     }
   }
 
-  .lastCard{
+  .vaultProt {
     display: flex;
     justify-content: center;
     align-items: center;
-    .vaultProtection {
-      img {}
-  
+
+    .lastCard {
+      padding: 25px 20px;
+      display: flex;
+      background-color: var(--baseDarkTransparent);
+      border-radius: 12px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+
       h2 {
         font-family: 'Sofia Pro', sans-serif;
         font-style: normal;
@@ -183,49 +207,63 @@
         line-height: 120%;
         color: white;
       }
-  
+
       p {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
         color: var(--grey40);
+        text-align: center;
+      }
+
+    }
+  }
+
+
+  .explanations {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 68px;
+    .explanation {
+      display: flex;
+      justify-content: center;
+      align-items: sta;
+      flex-direction: column;
+
+      h1 {
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 37px;
+        line-height: 110%;
+        color: white;
+        text-align: start;
+      }
+
+      p {
+        font-family: Graphik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+      }
+
+      span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 32px;
+        background: var(--royalBlue);
+        border-radius: 100px;
+        
       }
     }
   }
 
-
-  .explanation {
-
-    h1 {
-      font-family: 'Sofia Pro', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 37px;
-      line-height: 110%;
-      color: white;
-    }
-
-    p {
-      font-family: Graphik;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      color: white;
-    }
-
-    span {
-      
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 16px 32px;
-      background: var(--royalBlue);
-      border-radius: 100px;
-    }
-  }
 
 }
 
@@ -234,7 +272,7 @@
 
 
 
-.marketCap{
+.marketCap {
   display: flex;
   justify-content: center;
   align-items: center;
