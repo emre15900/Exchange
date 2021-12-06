@@ -2,6 +2,7 @@
   width: 100%;
   background: var(--grey100);
   position: relative;
+  z-index: 1;
 }
 
 .header .nav {
@@ -39,6 +40,11 @@
 
 .header .nav .navHead .logo .text {
   color: var(--grey0);
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .header .nav .navHead .nav-links {
@@ -68,6 +74,12 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .nav .navHead .nav-links ul li a:hover {
+  color: var(--royalPrime);
 }
 
 .header .nav .navHead .login {
@@ -83,15 +95,20 @@
 }
 
 .header .nav .navHead .login a {
+  font-family: 'Sofia Pro', sans-serif;
   color: var(--grey0);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .header .nav .navHead .login .singIn {
   border: 1px solid var(--grey0);
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
   margin-right: 11px;
 }
 

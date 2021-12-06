@@ -3,6 +3,7 @@
   width: 100%;
   background: var(--grey100);
   position: relative;
+  z-index: 1;
 
   .nav {
     display: flex;
@@ -24,6 +25,11 @@
 
         .text {
           color: var(--grey0);
+          font-family: 'Sora', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 23px;
         }
       }
 
@@ -40,16 +46,18 @@
             display: inline-block;
             padding: 8px 12px;
             position: relative;
-
             a {
               font-family: 'Roboto', sans-serif;
               color: var(--grey0);
               text-decoration: none;
-              
               font-style: normal;
               font-weight: 500;
               font-size: 14px;
               line-height: 22px;
+              transition: 0.5s;
+              &:hover{
+                color: var(--royalPrime);
+              }
             }
           }
         }
@@ -63,15 +71,20 @@
         margin: 0;
 
         a {
+          font-family: 'Sofia Pro', sans-serif;
           color: var(--grey0);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+
         }
 
         .singIn {
           border: 1px solid var(--grey0);
           padding: 12px 24px 12px 24px;
           border-radius: 100px;
-          transition: 0.5s;
-
+          transition: 1s;
           &:hover {
             text-decoration: none;
             background: var(--royalBlue);

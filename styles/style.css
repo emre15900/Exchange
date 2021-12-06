@@ -40,11 +40,16 @@
   --grey20: #e5e6ed;
   --grey0: #ffffff;
   --gray: #d8d8d8;
+  --royalPrime: rgb(83, 138, 242);
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {

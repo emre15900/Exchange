@@ -33,19 +33,28 @@
           align-items: center;
 }
 
-.homeSlider .row .col-6 img {
-  width: 100%;
+.homeSlider .row .col-6 h1 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: 110%;
+  margin-bottom: 24px;
 }
 
-.homeSlider .description {
+.homeSlider .row .col-6 .description {
   color: var(--gray);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
 }
 
-.homeSlider .homeSlider-btn {
+.homeSlider .row .col-6 .getStarted-btn {
   margin-top: 48px;
 }
 
-.homeSlider .homeSlider-btn .homeSlider-btna {
+.homeSlider .row .col-6 .getStarted-btn .getStarted {
   text-decoration: none;
   color: var(--grey0);
   padding: 18px 75px 18px 75px;
@@ -55,6 +64,10 @@
   background: var(--royalBlue);
   -webkit-transition: 2s;
   transition: 2s;
+}
+
+.homeSlider .row img {
+  width: 100%;
 }
 
 /**** SWIPER ****/
@@ -116,5 +129,115 @@
   border-radius: 10px;
   left: 0;
   top: 0;
+}
+
+/**** Crypto Plarform ****/
+.homePlatform .cards .portfolioManager {
+  display: block;
+  position: absolute;
+  width: 285px;
+  height: 329px;
+  left: 165px;
+  top: 120px;
+}
+
+.homePlatform .cards .portfolioManager h2 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 120%;
+  color: white;
+}
+
+.homePlatform .cards .portfolioManager p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey40);
+}
+
+.homePlatform .cards .mobileApps {
+  display: block;
+}
+
+.homePlatform .cards .mobileApps h2 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 120%;
+  color: white;
+}
+
+.homePlatform .cards .mobileApps p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey40);
+}
+
+.homePlatform .cards .vaultProtection {
+  display: block;
+}
+
+.homePlatform .cards .vaultProtection h2 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 120%;
+  color: white;
+}
+
+.homePlatform .cards .vaultProtection p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey40);
+}
+
+.homePlatform .explanation {
+  position: relative;
+}
+
+.homePlatform .explanation h1 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 37px;
+  line-height: 110%;
+  color: white;
+}
+
+.homePlatform .explanation p {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.homePlatform .explanation span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 32px;
+  background: var(--royalBlue);
+  border-radius: 100px;
 }
 /*# sourceMappingURL=home.css.map */
