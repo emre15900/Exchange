@@ -39,8 +39,9 @@
       }
       .buySellPath{
           display: flex;
+          flex-direction: column;
         .graphic-view {
-            width: 50%;
+            width: 100%;
             background: #2a2e39;
             .buy-ul {
               margin-left: 0;
@@ -68,7 +69,7 @@
                   height: auto;
                   position: absolute;
                   top: 0;
-                  left: -5px;
+                  right: 0;
                   bottom: 0;
                   background: rgba(#b7291e, 0.12);
                 }
@@ -78,7 +79,7 @@
               margin: 0;
               padding: 0;
               list-style: none;
-              background: var(--white-color);
+              background:var(--navyPrime);
               padding: 10px 15px 0 15px;
               .buy-sell-list {
                 display: flex;
@@ -86,6 +87,10 @@
                 align-items: center;
                 padding: 1.5px 0;
                 .value {
+                  color: var(--grey0);
+                  font-size: 12px;
+                }
+                .quantity {
                   color: var(--grey0);
                   font-size: 12px;
                 }
@@ -97,7 +102,7 @@
                 .drop {
                   color: var(--redPrimary);
                   font-size: 12px;
-                  padding: 3px 0;
+                  padding: 3px 10px;
                 }
               }
             }
@@ -125,8 +130,12 @@
 
   }
   
-
-  div#tradingview_39b50 {
-    float: left;
-    clear: both;
+.dataChart{
+  display: flex;
+  .chart{
+    width: 240vw;
+  }
+  .dataBuySell{
+    width: 100%;
+  }
 }

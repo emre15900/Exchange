@@ -69,10 +69,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .buy-sell-section .left-buy-sell .buySellPath .graphic-view {
-  width: 50%;
+  width: 100%;
   background: #2a2e39;
 }
 
@@ -106,7 +110,7 @@
   height: auto;
   position: absolute;
   top: 0;
-  left: -5px;
+  right: 0;
   bottom: 0;
   background: rgba(183, 41, 30, 0.12);
 }
@@ -115,7 +119,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background: var(--white-color);
+  background: var(--navyPrime);
   padding: 10px 15px 0 15px;
 }
 
@@ -137,6 +141,11 @@
   font-size: 12px;
 }
 
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .quantity {
+  color: var(--grey0);
+  font-size: 12px;
+}
+
 .buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .price {
   color: var(--greenPrimary);
   font-size: 12px;
@@ -146,7 +155,7 @@
 .buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .drop {
   color: var(--redPrimary);
   font-size: 12px;
-  padding: 3px 0;
+  padding: 3px 10px;
 }
 
 .buy-sell-section .left-buy-sell .buySellPath .graphic-view .drop-graphic {
@@ -171,8 +180,17 @@
   width: 100%;
 }
 
-div#tradingview_39b50 {
-  float: left;
-  clear: both;
+.dataChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dataChart .chart {
+  width: 240vw;
+}
+
+.dataChart .dataBuySell {
+  width: 100%;
 }
 /*# sourceMappingURL=exchange.css.map */
