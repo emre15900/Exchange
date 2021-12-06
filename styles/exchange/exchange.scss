@@ -1,0 +1,131 @@
+/* ======= BUY SELL ========*/
+.buy-sell-section {
+    .left-buy-sell {
+      border-radius: 5px;
+      padding: 0;
+      .buy-sell-hood {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #131722;
+        padding: 5px 10px;
+        margin: 0;
+        .quantity {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .title {
+            color: var(--grey0);
+            font-size: 14px;
+          }
+          .text {
+            font-size: 12px;
+            color: var(--grey0);
+          }
+        }
+        .price {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .title {
+            color: var(--grey0);
+            font-size: 14px;
+          }
+          .text {
+            font-size: 12px;
+            color: var(--grey0);
+          }
+        }
+      }
+      .buySellPath{
+          display: flex;
+        .graphic-view {
+            width: 50%;
+            background: #2a2e39;
+            .buy-ul {
+              margin-left: 0;
+              padding-left: 0;
+              .buy-sell-list {
+                position: relative;
+                &::before {
+                  content: "";
+                  width: 40%;
+                  height: auto;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  background: rgba(#03a66d, 0.12);
+                }
+              }
+            }
+            .sell-ul {
+              .buy-sell-list {
+                position: relative;
+                &::before {
+                  content: "";
+                  width: 40%;
+                  height: auto;
+                  position: absolute;
+                  top: 0;
+                  left: -5px;
+                  bottom: 0;
+                  background: rgba(#b7291e, 0.12);
+                }
+              }
+            }
+            .buy-sell-ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              background: var(--white-color);
+              padding: 10px 15px 0 15px;
+              .buy-sell-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5px 0;
+                .value {
+                  color: var(--grey0);
+                  font-size: 12px;
+                }
+                .price {
+                  color: var(--greenPrimary);
+                  font-size: 12px;
+                  padding: 3px 10px;
+                }
+                .drop {
+                  color: var(--redPrimary);
+                  font-size: 12px;
+                  padding: 3px 0;
+                }
+              }
+            }
+            .drop-graphic {
+              background: var(--white-color);
+              border-radius: 5px 0 0 5px;
+              padding: 15px 0 0 0;
+              margin: 10px 0;
+              img {
+                width: 100%;
+              }
+            }
+            .rise-graphic {
+              background: var(--white-color);
+              border-radius: 0 5px 5px 0;
+              padding: 15px 0 0 0;
+              margin: 10px 0;
+              img {
+                width: 100%;
+              }
+            }
+          }
+      }
+    }
+
+  }
+  
+
+  div#tradingview_39b50 {
+    float: left;
+}

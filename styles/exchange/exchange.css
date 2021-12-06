@@ -1,0 +1,177 @@
+/* ======= BUY SELL ========*/
+.buy-sell-section .left-buy-sell {
+  border-radius: 5px;
+  padding: 0;
+}
+
+.buy-sell-section .left-buy-sell .buy-sell-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #131722;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.buy-sell-section .left-buy-sell .buy-sell-hood .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.buy-sell-section .left-buy-sell .buy-sell-hood .quantity .title {
+  color: var(--grey0);
+  font-size: 14px;
+}
+
+.buy-sell-section .left-buy-sell .buy-sell-hood .quantity .text {
+  font-size: 12px;
+  color: var(--grey0);
+}
+
+.buy-sell-section .left-buy-sell .buy-sell-hood .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.buy-sell-section .left-buy-sell .buy-sell-hood .price .title {
+  color: var(--grey0);
+  font-size: 14px;
+}
+
+.buy-sell-section .left-buy-sell .buy-sell-hood .price .text {
+  font-size: 12px;
+  color: var(--grey0);
+}
+
+.buy-sell-section .left-buy-sell .buySellPath {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view {
+  width: 50%;
+  background: #2a2e39;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-ul .buy-sell-list {
+  position: relative;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-ul .buy-sell-list::before {
+  content: "";
+  width: 40%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(3, 166, 109, 0.12);
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .sell-ul .buy-sell-list {
+  position: relative;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .sell-ul .buy-sell-list::before {
+  content: "";
+  width: 40%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  bottom: 0;
+  background: rgba(183, 41, 30, 0.12);
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-sell-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--white-color);
+  padding: 10px 15px 0 15px;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5px 0;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .value {
+  color: var(--grey0);
+  font-size: 12px;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .price {
+  color: var(--greenPrimary);
+  font-size: 12px;
+  padding: 3px 10px;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .drop {
+  color: var(--redPrimary);
+  font-size: 12px;
+  padding: 3px 0;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .drop-graphic {
+  background: var(--white-color);
+  border-radius: 5px 0 0 5px;
+  padding: 15px 0 0 0;
+  margin: 10px 0;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .drop-graphic img {
+  width: 100%;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .rise-graphic {
+  background: var(--white-color);
+  border-radius: 0 5px 5px 0;
+  padding: 15px 0 0 0;
+  margin: 10px 0;
+}
+
+.buy-sell-section .left-buy-sell .buySellPath .graphic-view .rise-graphic img {
+  width: 100%;
+}
+
+div#tradingview_39b50 {
+  float: left;
+}
+/*# sourceMappingURL=exchange.css.map */
