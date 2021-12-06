@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-
 .header {
   width: 100%;
   background: var(--grey100);
@@ -67,7 +61,7 @@
 }
 
 .header .nav .navHead .nav-links ul li a {
-  color: white;
+  color: var(--grey0);
   text-decoration: none;
   font-size: 16px;
 }
@@ -85,11 +79,11 @@
 }
 
 .header .nav .navHead .login a {
-  color: white;
+  color: var(--grey0);
 }
 
 .header .nav .navHead .login .singIn {
-  border: 1px solid white;
+  border: 1px solid var(--grey0);
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
   -webkit-transition: 0.5s;
@@ -118,52 +112,7 @@
   background-color: #383a45;
   padding: 12px 24px 12px 24px;
   border-radius: 30px;
-  color: white;
-  border: 1px solid white;
-}
-
-.homeSlider {
-  background: var(--grey100);
   color: var(--grey0);
-}
-
-.homeSlider .row {
-  padding: 40px 0;
-}
-
-.homeSlider .row .col-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.homeSlider .row .col-6 img {
-  width: 100%;
-}
-
-.homeSlider .description {
-  color: var(--gray);
-}
-
-.homeSlider .homeSlider-btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 18px 32px 18px 32px;
-  border-radius: 100px;
-  font-size: 18px;
-  background: var(--royalBlue);
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.homeSlider .homeSlider-btn .homeSlider-btna {
-  text-decoration: none;
-  color: white;
+  border: 1px solid var(--grey0);
 }
 /*# sourceMappingURL=header.css.map */
