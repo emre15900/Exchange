@@ -122,63 +122,59 @@
 /**** Crypto Plarform ****/
 
 .homePlatform {
-  .cards {
-    .portfolioManager {
-      display: block;
-      position: absolute;
-      width: 285px;
-      height: 329px;
-      left: 165px;
-      top: 120px;
+  .portfolioManager {
 
-      img {}
 
-      h2 {
-        font-family: 'Sofia Pro', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 120%;
-        color: white;
-      }
+    img {}
 
-      p {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: var(--grey40);
-      }
+    h2 {
+      font-family: 'Sofia Pro', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 120%;
+      color: white;
     }
 
-    .mobileApps {
-      display: block;
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--grey40);
+    }
+  }
 
-      img {}
+  .mobileApps {
+    display: block;
 
-      h2 {
-        font-family: 'Sofia Pro', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 120%;
-        color: white;
-      }
+    img {}
 
-      p {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: var(--grey40);
-      }
+    h2 {
+      font-family: 'Sofia Pro', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 120%;
+      color: white;
     }
 
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--grey40);
+    }
+  }
+
+  .lastCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .vaultProtection {
-      display: block;
-
       img {}
-
+  
       h2 {
         font-family: 'Sofia Pro', sans-serif;
         font-style: normal;
@@ -187,7 +183,7 @@
         line-height: 120%;
         color: white;
       }
-
+  
       p {
         font-style: normal;
         font-weight: normal;
@@ -198,8 +194,8 @@
     }
   }
 
+
   .explanation {
-    position: relative;
 
     h1 {
       font-family: 'Sofia Pro', sans-serif;
@@ -230,7 +226,13 @@
       border-radius: 100px;
     }
   }
+
 }
+
+
+
+
+
 
 .marketCap{
   display: flex;
