@@ -1,7 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 50,
-    loop: true,
+    loop: false,
     scrollbar: {
         el: ".swiper-scrollbar",
         hide: true,
