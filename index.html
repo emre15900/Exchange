@@ -59,7 +59,7 @@
                   </span>
                 </div>
                 <div class="responsiveMenu">
-                    <a href="/"><i class="fas fa-bars"></i></a>
+                  <a href="/"><i class="fas fa-bars"></i></a>
                 </div>
               </div>
             </div>
@@ -121,7 +121,10 @@
           <div class="col-6 cards">
             <div class="col-3">
               <div class="portfolioManager">
-                <img src="/ikon/Crypto Plarform İkon/Portfolio Manager.svg" alt="" />
+                <img
+                  src="/ikon/Crypto Plarform İkon/Portfolio Manager.svg"
+                  alt=""
+                />
                 <h2>Portfolio Manager</h2>
                 <p>
                   Buy and sell populer digital currencies, keep track of them in
@@ -138,7 +141,10 @@
               </div>
             </div>
             <div class="col-3 vaultProtection">
-              <img src="/ikon/Crypto Plarform İkon/Vault protection.svg" alt="" />
+              <img
+                src="/ikon/Crypto Plarform İkon/Vault protection.svg"
+                alt=""
+              />
               <h2>Vault protection</h2>
               <p>
                 For added security, store yout funds in a voult with time
@@ -147,15 +153,53 @@
             </div>
           </div>
           <div class="col-6 explanation">
-            <h1>The most trusted cryptocurrency<br> plarform.</h1>
-            <p>Cryptolly has a variety of featuresthat make it the 
-              best place to start trading
+            <h1>
+              The most trusted cryptocurrency<br />
+              plarform.
+            </h1>
+            <p>
+              Cryptolly has a variety of featuresthat make it the best place to
+              start trading
             </p>
             <span><a href="/">Let's Trade Now</a></span>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="container marketCap">
+      <div class="row">
+        <div class="col-12">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright">
+              <a
+                href="https://tr.tradingview.com/markets/cryptocurrencies/prices-all/"
+                rel="noopener"
+                target="_blank"
+                >
+            </div>
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+              async
+            >
+                {
+                "width": 1000,
+                "height": 490,
+                "defaultColumn": "overview",
+                "screener_type": "crypto_mkt",
+                "displayCurrency": "BTC",
+                "colorTheme": "dark",
+                "locale": "tr"
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TradingView Widget END -->
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
