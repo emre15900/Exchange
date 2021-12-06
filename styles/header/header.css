@@ -136,4 +136,25 @@
   color: var(--grey0);
   border: 1px solid var(--grey0);
 }
+
+@media only screen and (max-width: 994px) {
+  .nav-links {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .login .singIn {
+    display: none;
+  }
+  .login .singUp {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 994px) {
+  .responsiveMenu {
+    display: none;
+  }
+}
 /*# sourceMappingURL=header.css.map */
