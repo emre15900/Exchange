@@ -34,7 +34,7 @@
 }
 
 .homeSlider .row .col-6 h1 {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 47px;
@@ -174,7 +174,7 @@
 }
 
 .homePlatform .portfolioManager h2 {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -228,7 +228,7 @@
 }
 
 .homePlatform .mobileApps h2 {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -291,7 +291,7 @@
 }
 
 .homePlatform .vaultProt .lastCard h2 {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -343,7 +343,7 @@
 }
 
 .homePlatform .explanations .explanation h1 {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 37px;
@@ -414,7 +414,7 @@
 .addCard h1 {
   color: var(--grey0);
   margin-bottom: 24px;
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 49px;
@@ -452,8 +452,8 @@
 
 .addCard .cardList2 .cardIkon:hover {
   cursor: pointer;
-  -webkit-box-shadow: 2px 2px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
-          box-shadow: 2px 2px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+  -webkit-box-shadow: 2px 2px 2px #11cabe, 0 0 25px #11cabe, 0 0 5px #11cabe;
+          box-shadow: 2px 2px 2px #11cabe, 0 0 25px #11cabe, 0 0 5px #11cabe;
 }
 
 .addCard .cardList3 {
@@ -469,8 +469,8 @@
 
 .addCard .cardList3 .cardIkon:hover {
   cursor: pointer;
-  -webkit-box-shadow: 2px 2px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
-          box-shadow: 2px 2px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+  -webkit-box-shadow: 2px 2px 2px #bd47fb, 0 0 25px #bd47fb, 0 0 5px #bd47fb;
+          box-shadow: 2px 2px 2px #bd47fb, 0 0 25px #bd47fb, 0 0 5px #bd47fb;
 }
 
 .addCard .cardIkon {
@@ -485,8 +485,8 @@
 
 .addCard .cardIkon:hover {
   cursor: pointer;
-  -webkit-box-shadow: 2px 2px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
-          box-shadow: 2px 2px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+  -webkit-box-shadow: 2px 2px 2px #f27f16, 0 0 25px #f27f16, 0 0 5px #f27f16;
+          box-shadow: 2px 2px 2px #f27f16, 0 0 25px #f27f16, 0 0 5px #f27f16;
 }
 
 .addCard .title {
@@ -497,11 +497,165 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   line-height: 120%;
+}
+
+/**** Establishment ****/
+.establishment {
+  margin-bottom: 150px;
+}
+
+.establishment .newsarea {
+  position: relative;
+}
+
+.establishment .newsarea .newsarea1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+  width: 120px;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  background-color: var(--baseDarkTransparent);
+  color: var(--grey40);
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  top: 0%;
+  right: 180px;
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid var(--grey0);
+}
+
+.establishment .newsarea .newsarea2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  background-color: var(--baseDarkTransparent);
+  color: var(--grey40);
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  left: 70px;
+  top: 90px;
+  color: #e41a1a;
+  text-shadow: 0.5px 0.5px 0.5px var(--grey100);
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 2px solid blue;
+}
+
+.establishment .newsarea .newsarea3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 160px;
+  width: 160px;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  background-color: var(--baseDarkTransparent);
+  color: var(--grey40);
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  right: 4%;
+  top: 60px;
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid var(--grey0);
+}
+
+.establishment .newsarea .newsarea4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100px;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  background-color: var(--baseDarkTransparent);
+  color: var(--grey40);
+  justify-content: center;
+  font-size: 15px;
+  position: absolute;
+  top: 200px;
+  right: 160px;
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid var(--grey0);
+}
+
+.establishment .test h1 {
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 110%;
+  color: var(--grey0);
+  margin-bottom: 40px;
+}
+
+.establishment .test p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 27px;
+  color: var(--grey0);
+  margin-bottom: 16px;
+}
+
+.establishment .test span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--grey40);
 }
 
 /* 

@@ -26,7 +26,7 @@
       align-items: center;
 
       h1 {
-        font-family: 'Sofia Pro', sans-serif;
+        font-family: "Sofia Pro", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 47px;
@@ -103,7 +103,7 @@
       height: 5px;
       width: 100%;
       border-radius: 10px;
-      background: rgba(0, 0, 0, .1);
+      background: rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -112,12 +112,11 @@
   height: 100%;
   width: 10%;
   position: relative;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   left: 0;
   top: 0;
 }
-
 
 /**** Crypto Plarform ****/
 
@@ -140,7 +139,8 @@
 
     &:hover {
       cursor: pointer;
-      box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+      box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0),
+        0 0 5px var(--grey0);
     }
 
     img {
@@ -148,7 +148,7 @@
     }
 
     h2 {
-      font-family: 'Sofia Pro', sans-serif;
+      font-family: "Sofia Pro", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 25px;
@@ -180,7 +180,8 @@
     transition: 1s;
 
     &:hover {
-      box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+      box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0),
+        0 0 5px var(--grey0);
       cursor: pointer;
     }
 
@@ -189,7 +190,7 @@
     }
 
     h2 {
-      font-family: 'Sofia Pro', sans-serif;
+      font-family: "Sofia Pro", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 25px;
@@ -225,7 +226,8 @@
       transition: 1s;
 
       &:hover {
-        box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+        box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0),
+          0 0 5px var(--grey0);
         cursor: pointer;
       }
 
@@ -234,7 +236,7 @@
       }
 
       h2 {
-        font-family: 'Sofia Pro', sans-serif;
+        font-family: "Sofia Pro", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 25px;
@@ -251,10 +253,8 @@
         color: var(--grey40);
         text-align: center;
       }
-
     }
   }
-
 
   .explanations {
     display: flex;
@@ -269,9 +269,8 @@
       align-items: sta;
       flex-direction: column;
 
-
       h1 {
-        font-family: 'Sofia Pro', sans-serif;
+        font-family: "Sofia Pro", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 37px;
@@ -325,11 +324,8 @@
           }
         }
       }
-
     }
   }
-
-
 }
 
 /**** addCard ****/
@@ -340,7 +336,7 @@
   h1 {
     color: var(--grey0);
     margin-bottom: 24px;
-    font-family: 'Sofia Pro', sans-serif;
+    font-family: "Sofia Pro", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 49px;
@@ -365,22 +361,22 @@
 
   .cardList2 {
     justify-content: center;
-    .cardIkon{
+    .cardIkon {
       transition: 1s;
       &:hover {
         cursor: pointer;
-        box-shadow: 2px 2px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+        box-shadow: 2px 2px 2px #11cabe, 0 0 25px #11cabe, 0 0 5px #11cabe;
       }
     }
   }
 
   .cardList3 {
     justify-content: flex-end;
-    .cardIkon{
+    .cardIkon {
       transition: 1s;
       &:hover {
         cursor: pointer;
-        box-shadow: 2px 2px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+        box-shadow: 2px 2px 2px #bd47fb, 0 0 25px #bd47fb, 0 0 5px #bd47fb;
       }
     }
   }
@@ -394,7 +390,7 @@
     transition: 1s;
     &:hover {
       cursor: pointer;
-      box-shadow: 2px 2px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+      box-shadow: 2px 2px 2px #f27f16, 0 0 25px #f27f16, 0 0 5px #f27f16;
     }
   }
 
@@ -402,7 +398,7 @@
     color: var(--grey0);
     display: flex;
     align-items: center;
-    font-family: 'Sofia Pro', sans-serif;
+    font-family: "Sofia Pro", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -410,6 +406,130 @@
   }
 }
 
+/**** Establishment ****/
+
+.establishment {
+  margin-bottom: 150px;
+  .newsarea {
+    position: relative;
+    .newsarea1 {
+      display: flex;
+      height: 120px;
+      width: 120px;
+      padding: 15px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      text-align: center;
+      background-color: var(--baseDarkTransparent);
+      color: var(--grey40);
+      justify-content: center;
+      font-size: 25px;
+      position: absolute;
+      top: 0%;
+      right: 180px;
+      font-family: "Sofia Pro", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      border: 1px solid var(--grey0);
+    }
+    .newsarea2 {
+      display: flex;
+      height: 200px;
+      width: 200px;
+      padding: 15px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      text-align: center;
+      background-color: var(--baseDarkTransparent);
+      color: var(--grey40);
+      justify-content: center;
+      font-size: 25px;
+      position: absolute;
+      left: 70px;
+      top: 90px;
+      color: rgb(228, 26, 26);
+      text-shadow: 0.5px 0.5px 0.5px var(--grey100);
+      font-family: "Sofia Pro", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      border: 2px solid blue;
+    }
+    .newsarea3 {
+      display: flex;
+      height: 160px;
+      width: 160px;
+      padding: 15px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      text-align: center;
+      background-color: var(--baseDarkTransparent);
+      color: var(--grey40);
+      justify-content: center;
+      font-size: 25px;
+      position: absolute;
+      right: 4%;
+      top: 60px;
+      font-family: "Sofia Pro", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      border: 1px solid var(--grey0);
+    }
+    .newsarea4{
+      display: flex;
+      height: 100px;
+      width: 100px;
+      padding: 15px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      text-align: center;
+      background-color: var(--baseDarkTransparent);
+      color: var(--grey40);
+      justify-content: center;
+      font-size: 15px;
+      position: absolute;
+      top: 200px ;
+      right: 160px;
+      font-family: "Sofia Pro", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      border: 1px solid var(--grey0);
+    }
+  }
+  .test {
+    h1 {
+      font-family: "Sofia Pro", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 49px;
+      line-height: 110%;
+      color: var(--grey0);
+      margin-bottom: 40px;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 27px;
+      color: var(--grey0);
+      margin-bottom: 16px;
+    }
+    span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: var(--grey40);
+    }
+  }
+}
 
 /* 
 .marketCap {
