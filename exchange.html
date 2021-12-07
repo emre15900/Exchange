@@ -24,36 +24,35 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 p-0">
-                    <div class="tradingview-widget-container">
-                        <div class="tradingview-widget-container__widget"></div>
-                        <div class="tradingview-widget-copyright"><a href="" rel="noopener" target="_blank"></div>
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                    <div class="tradingview-widget-container"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                      {
+                      "symbols": [
                         {
-                            "symbols": [
-                            {
-                                "proName": "BITSTAMP:BTCUSD",
-                                "title": "Bitcoin"
-                            },
-                            {
-                                "proName": "BITSTAMP:ETHUSD",
-                                "title": "Ethereum"
-                            },
-                            {
-                                "description": "BTC/TRY",
-                                "proName": "CAPITALCOM:BTCTRY"
-                            },
-                            {
-                                "description": "ETH/TRY",
-                                "proName": "CAPITALCOM:ETHTRY"
-                            }
-                            ],
-                            "colorTheme": "dark",
-                            "isTransparent": false,
-                            "showSymbolLogo": true,
-                            "locale": "tr"
+                          "proName": "BITSTAMP:BTCUSD",
+                          "title": "Bitcoin"
+                        },
+                        {
+                          "proName": "BITSTAMP:ETHUSD",
+                          "title": "Ethereum"
+                        },
+                        {
+                          "description": "BTCTRY",
+                          "proName": "BINANCE:BTCTRY"
+                        },
+                        {
+                          "description": "ETHTRY",
+                          "proName": "BINANCE:ETHTRY"
                         }
-                        </script>
-                      </div>
+                      ],
+                      "showSymbolLogo": true,
+                      "colorTheme": "dark",
+                      "isTransparent": false,
+                      "largeChartUrl": "",
+                      "displayMode": "adaptive",
+                      "locale": "tr"
+                    }
+                      </script>
                 </div>
             </div>
         </div>
@@ -372,5 +371,6 @@
         </div>
     </section>
 
+    
   </body>
 </html>
