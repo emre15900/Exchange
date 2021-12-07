@@ -1,5 +1,5 @@
 /* ======= BUY SELL ========*/
-.buy-sell-section {
+.chartSection {
     .left-buy-sell {
       border-radius: 5px;
       padding: 0;
@@ -36,13 +36,36 @@
             color: var(--grey0);
           }
         }
+        .lastPrice{
+          .title{
+            font-size: 14px;
+            color: var(--grey0);
+            .bigDollar{
+              font-size: 18px;
+              color: var(--greenPrimary);
+            }
+          }
+          .value{
+            font-size: 18px;
+            color: var(--greenPrimary);
+            small{
+              font-size: 12px;
+              color: var(--grey40);
+            }
+          }
+        }
+        .percentile{
+          .rise{
+            font-size: 18px;
+            color: var(--greenPrimary);
+          }
+        }
       }
       .buySellPath{
           display: flex;
           flex-direction: column;
         .graphic-view {
-            width: 100%;
-            background: #2a2e39;
+          max-width: 100%;
             .buy-ul {
               margin-left: 0;
               padding-left: 0;
@@ -130,12 +153,3 @@
 
   }
   
-.dataChart{
-  display: flex;
-  .chart{
-    width: 240vw;
-  }
-  .dataBuySell{
-    width: 100%;
-  }
-}

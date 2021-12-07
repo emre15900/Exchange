@@ -5,321 +5,372 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EXCHANGE</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/exchange/exchange.css">
 
-    <script
-    type="text/javascript"
-    src="https://s3.tradingview.com/tv.js"
-  ></script>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/exchange/exchange.css" />
+
   </head>
   <body>
 
-<!-- TradingView Widget BEGIN -->
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="tradingview-widget-container">
-                    <div class="tradingview-widget-container__widget"></div>
-                    <div class="tradingview-widget-copyright"><a href="" rel="noopener" target="_blank"></div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-                    {
-                        "symbols": [
+    <section class="priceBand">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="" rel="noopener" target="_blank"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
                         {
-                            "proName": "BITSTAMP:BTCUSD",
-                            "title": "Bitcoin"
-                        },
-                        {
-                            "proName": "BITSTAMP:ETHUSD",
-                            "title": "Ethereum"
-                        },
-                        {
-                            "description": "BTC/TRY",
-                            "proName": "CAPITALCOM:BTCTRY"
-                        },
-                        {
-                            "description": "ETH/TRY",
-                            "proName": "CAPITALCOM:ETHTRY"
+                            "symbols": [
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "Bitcoin"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "Ethereum"
+                            },
+                            {
+                                "description": "BTC/TRY",
+                                "proName": "CAPITALCOM:BTCTRY"
+                            },
+                            {
+                                "description": "ETH/TRY",
+                                "proName": "CAPITALCOM:ETHTRY"
+                            }
+                            ],
+                            "colorTheme": "dark",
+                            "isTransparent": false,
+                            "showSymbolLogo": true,
+                            "locale": "tr"
                         }
-                        ],
+                        </script>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sparkLineSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 p-0">
+                    <div class="tradingview-widget-container"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                        "symbol": "USDTRY",
+                        "width": "100%",
+                        "height": "220",
+                        "locale": "tr",
+                        "dateRange": "1D",
                         "colorTheme": "dark",
+                        "trendLineColor": "rgba(41, 98, 255, 1)",
+                        "underLineColor": "rgba(41, 98, 255, 0.3)",
+                        "underLineBottomColor": "rgba(41, 98, 255, 0)",
                         "isTransparent": false,
-                        "showSymbolLogo": true,
-                        "locale": "tr"
-                    }
+                        "autosize": false,
+                        "largeChartUrl": ""
+                        }
                     </script>
-                  </div>
+                </div>
+                <div class="col-4 p-0">
+                    <div class="tradingview-widget-container"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                          {
+                            "symbol": "FOREXCOM:EURTRY",
+                            "width": "100%",
+                            "height": "220",
+                            "locale": "tr",
+                            "dateRange": "1D",
+                            "colorTheme": "dark",
+                            "trendLineColor": "rgba(41, 98, 255, 1)",
+                            "underLineColor": "rgba(41, 98, 255, 0.3)",
+                            "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                            "isTransparent": false,
+                            "autosize": false,
+                            "largeChartUrl": ""
+                            }
+                    </script>
+                </div>
+                <div class="col-4 p-0">
+                    <div class="tradingview-widget-container"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                        "symbol": "CAPITALCOM:BTCTRY",
+                        "width": "100%",
+                        "height": "220",
+                        "locale": "tr",
+                        "dateRange": "1D",
+                        "colorTheme": "dark",
+                        "trendLineColor": "rgba(41, 98, 255, 1)",
+                        "underLineColor": "rgba(41, 98, 255, 0.3)",
+                        "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                        "isTransparent": false,
+                        "autosize": false,
+                        "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
             </div>
         </div>
-    </div>
-  <!-- TradingView Widget END -->
+    </section>
 
-    
-    </script>
-    </div>
-    <!-- TradingView Widget END -->
-
-    <!-- TradingView Widget BEGIN -->
-
-    <div class="container">
-        <div class="row">
-            <div class="dataChart">
-                <div class="col-6 chart">
-                    <div class="tradingview-widget-container" id="tvchart"></div>
+    <section class="chartSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 p-0">
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <div class="tradingview-widget-container" id="tvchart"></div>
+                            <script>
+                            LoadCharts();
+                            function LoadCharts() {
+                                new TradingView.widget({
+                                width: "100%",
+                                height: 610,
+                                symbol: "BINANCE:BTCUSDT",
+                                interval: "D",
+                                timezone: "Etc/UTC",
+                                theme: "dark",
+                                style: "1",
+                                locale: "tr",
+                                toolbar_bg: "#f1f3f6",
+                                hide_side_toolbar: false,
+                                allow_symbol_change: true,
+                                container_id: "tvchart",
+                                });
+                            }
+                            </script>
                 </div>
-                <div class="col-6 dataBuySell">
-                                    <!-- Buy Sell -->
-                    <section class="buy-sell-section">
-                        <div class="container-fluid">
-                            <div class="row">
-                            <div class="col-12 left-buy-sell">
-                                <div class="buy-sell-hood">
-                                <div class="quantity">
-                                    <span class="title">Fiyat</span>
-                                    <span class="text">(BTC)</span>
-                                </div>
-                                <div class="price">
-                                    <span class="title">Miktar</span>
-                                    <span class="text">(TRY)</span>
-                                </div>
-                                <div class="quantity">
-                                    <span class="title">Toplam</span>
-                                    <span class="text">(BTC)</span>
-                                </div>
-                                </div>
-                                <div class="row">
-                                <div class="buySellPath">
-                                     <div class="graphic-view pe-0 col-12">
-                                        <ul class="buy-sell-ul sell-ul">
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="drop">1453.908</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="graphic-view ps-0 col-12">
-                                        <ul class="buy-sell-ul buy-ul">
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                            <li class="buy-sell-list">
-                                            <span class="value">0.004934</span>
-                                            <span class="quantity">7732.213</span>
-                                            <span class="price">1453.908</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-12 left-buy-sell">
+                          <div class="buy-sell-hood">
+                            <div class="quantity">
+                              <span class="title">Fiyat</span>
+                              <span class="text">(BTC)</span>
                             </div>
+                            <div class="price">
+                              <span class="title">Miktar</span>
+                              <span class="text">(TRY)</span>
                             </div>
+                            <div class="quantity">
+                              <span class="title">Toplam</span>
+                              <span class="text">(BTC)</span>
+                            </div>
+                          </div>
+                          <div class="buySellPath">
+                              <div class="graphic-view">
+                                <ul class="buy-sell-ul sell-ul">
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="drop">1453.908</span>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="buy-sell-hood">
+                                <div class="lastPrice">
+                                    <span class="title">Son Fiyat: <span class="bigDollar">$</span></span>
+                                    <span class="value">51,349.99 <small>₺709,234.57</small> </span>
+                                </div>
+                                <div class="percentile">
+                                    <span class="rise">+13.66%</span>
+                                </div>
+                              </div>
+                              <div class="graphic-view">
+                                <ul class="buy-sell-ul buy-ul">
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                  <li class="buy-sell-list">
+                                    <span class="value">0.004934</span>
+                                    <span class="quantity">7732.213</span>
+                                    <span class="price">1453.908</span>
+                                  </li>
+                                </ul>
+                              </div>
+                          </div>
                         </div>
-                    </section>
-    
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <script>
-        LoadCharts();
-        function LoadCharts() {
-            new TradingView.widget({
-                    width: "100%",
-                    height: 610,
-                    symbol: "BINANCE:BTCUSDT",
-                    interval: "D",
-                    timezone: "Etc/UTC",
-                    theme: "dark",
-                    style: "1",
-                    locale: "tr",
-                    toolbar_bg: "#f1f3f6",
-                    hide_side_toolbar: false,
-                    allow_symbol_change: true,
-                    container_id: "tvchart",
-                  });
-        }
-    </script>
-
-    <!-- TradingView Widget END -->
-
-
-
-
-
-
-
-
-
+    </section>
 
   </body>
 </html>
