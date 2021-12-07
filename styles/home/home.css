@@ -158,6 +158,19 @@
           justify-content: space-evenly;
   margin-bottom: 24px;
   padding: 25px 20px;
+  border: 1px solid transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.homePlatform .portfolioManager:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+          box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+}
+
+.homePlatform .portfolioManager img {
+  margin-bottom: 40px;
 }
 
 .homePlatform .portfolioManager h2 {
@@ -167,6 +180,7 @@
   font-size: 25px;
   line-height: 120%;
   color: white;
+  margin-bottom: 16px;
 }
 
 .homePlatform .portfolioManager p {
@@ -198,6 +212,19 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  border: 1px solid transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.homePlatform .mobileApps:hover {
+  -webkit-box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+          box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+  cursor: pointer;
+}
+
+.homePlatform .mobileApps img {
+  margin-bottom: 40px;
 }
 
 .homePlatform .mobileApps h2 {
@@ -207,6 +234,7 @@
   font-size: 25px;
   line-height: 120%;
   color: white;
+  margin-bottom: 16px;
 }
 
 .homePlatform .mobileApps p {
@@ -247,6 +275,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.homePlatform .vaultProt .lastCard:hover {
+  -webkit-box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+          box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+  cursor: pointer;
+}
+
+.homePlatform .vaultProt .lastCard img {
+  margin-bottom: 40px;
 }
 
 .homePlatform .vaultProt .lastCard h2 {
@@ -256,6 +297,7 @@
   font-size: 25px;
   line-height: 120%;
   color: white;
+  margin-bottom: 16px;
 }
 
 .homePlatform .vaultProt .lastCard p {
@@ -308,18 +350,24 @@
   line-height: 110%;
   color: white;
   text-align: start;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 110%;
+  margin-bottom: 24px;
 }
 
 .homePlatform .explanations .explanation p {
-  font-family: Graphik;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: white;
+  margin-bottom: 24px;
 }
 
-.homePlatform .explanations .explanation span {
+.homePlatform .explanations .explanation .explanation-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,21 +378,138 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.homePlatform .explanations .explanation .explanation-btn span {
   padding: 16px 32px;
   background: var(--royalBlue);
   border-radius: 100px;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  border: 1px solid transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.marketCap {
+.homePlatform .explanations .explanation .explanation-btn span:hover {
+  border: 1px solid var(--grey0);
+}
+
+.homePlatform .explanations .explanation .explanation-btn span a {
+  color: var(--grey0);
+}
+
+.homePlatform .explanations .explanation .explanation-btn span a:hover {
+  text-decoration: none;
+}
+
+/**** addCard ****/
+.addCard {
+  margin-bottom: 150px;
+}
+
+.addCard h1 {
+  color: var(--grey0);
+  margin-bottom: 24px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 110%;
+}
+
+.addCard p {
+  color: var(--grey40);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.addCard .cardList {
+  color: var(--grey0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 32px;
+  margin-left: 32px;
+  margin-top: 40px;
+}
+
+.addCard .cardList2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.addCard .cardList2 .cardIkon {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.addCard .cardList2 .cardIkon:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+          box-shadow: 2px 2px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+}
+
+.addCard .cardList3 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.addCard .cardList3 .cardIkon {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.addCard .cardList3 .cardIkon:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+          box-shadow: 2px 2px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+}
+
+.addCard .cardIkon {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 28px 28px;
+  background: var(--baseDarkTransparent);
+  margin-right: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.addCard .cardIkon:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+          box-shadow: 2px 2px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+}
+
+.addCard .title {
+  color: var(--grey0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 120%;
+}
+
+/* 
+.marketCap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100px;
 }
+*/
 /*# sourceMappingURL=home.css.map */

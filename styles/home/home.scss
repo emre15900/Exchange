@@ -135,6 +135,17 @@
     justify-content: space-evenly;
     margin-bottom: 24px;
     padding: 25px 20px;
+    border: 1px solid transparent;
+    transition: 1s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+    }
+
+    img {
+      margin-bottom: 40px;
+    }
 
     h2 {
       font-family: 'Sofia Pro', sans-serif;
@@ -143,6 +154,7 @@
       font-size: 25px;
       line-height: 120%;
       color: white;
+      margin-bottom: 16px;
     }
 
     p {
@@ -164,6 +176,17 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    border: 1px solid transparent;
+    transition: 1s;
+
+    &:hover {
+      box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+      cursor: pointer;
+    }
+
+    img {
+      margin-bottom: 40px;
+    }
 
     h2 {
       font-family: 'Sofia Pro', sans-serif;
@@ -172,6 +195,7 @@
       font-size: 25px;
       line-height: 120%;
       color: white;
+      margin-bottom: 16px;
     }
 
     p {
@@ -197,7 +221,17 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      border: 1px solid transparent;
+      transition: 1s;
 
+      &:hover {
+        box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+        cursor: pointer;
+      }
+
+      img {
+        margin-bottom: 40px;
+      }
 
       h2 {
         font-family: 'Sofia Pro', sans-serif;
@@ -206,6 +240,7 @@
         font-size: 25px;
         line-height: 120%;
         color: white;
+        margin-bottom: 16px;
       }
 
       p {
@@ -227,11 +262,13 @@
     align-items: start;
     flex-direction: column;
     padding-left: 68px;
+
     .explanation {
       display: flex;
       justify-content: center;
       align-items: sta;
       flex-direction: column;
+
 
       h1 {
         font-family: 'Sofia Pro', sans-serif;
@@ -241,40 +278,144 @@
         line-height: 110%;
         color: white;
         text-align: start;
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 49px;
+        line-height: 110%;
+        margin-bottom: 24px;
       }
 
       p {
-        font-family: Graphik;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
         color: white;
+        margin-bottom: 24px;
       }
 
-      span {
+      .explanation-btn {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 16px 32px;
-        background: var(--royalBlue);
-        border-radius: 100px;
-        
+
+        span {
+          padding: 16px 32px;
+          background: var(--royalBlue);
+          border-radius: 100px;
+          font-family: Sofia Pro;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 160%;
+          border: 1px solid transparent;
+          transition: 1s;
+
+          &:hover {
+            border: 1px solid var(--grey0);
+          }
+
+          a {
+            color: var(--grey0);
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
       }
+
     }
   }
 
 
 }
 
+/**** addCard ****/
+
+.addCard {
+  margin-bottom: 150px;
+
+  h1 {
+    color: var(--grey0);
+    margin-bottom: 24px;
+    font-family: 'Sofia Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 110%;
+  }
+
+  p {
+    color: var(--grey40);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .cardList {
+    color: var(--grey0);
+    display: flex;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    margin-top: 40px;
+  }
+
+  .cardList2 {
+    justify-content: center;
+    .cardIkon{
+      transition: 1s;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+      }
+    }
+  }
+
+  .cardList3 {
+    justify-content: flex-end;
+    .cardIkon{
+      transition: 1s;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+      }
+    }
+  }
+
+  .cardIkon {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 28px 28px;
+    background: var(--baseDarkTransparent);
+    margin-right: 20px;
+    transition: 1s;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 2px 2px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+    }
+  }
+
+  .title {
+    color: var(--grey0);
+    display: flex;
+    align-items: center;
+    font-family: 'Sofia Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 120%;
+  }
+}
 
 
-
-
-
+/* 
 .marketCap {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 100px;
 }
+*/
