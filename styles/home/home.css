@@ -539,7 +539,6 @@
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
-  border: 1px solid var(--grey0);
 }
 
 .establishment .newsarea .newsarea2 {
@@ -599,7 +598,6 @@
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
-  border: 1px solid var(--grey0);
 }
 
 .establishment .newsarea .newsarea4 {
@@ -628,7 +626,6 @@
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
-  border: 1px solid var(--grey0);
 }
 
 .establishment .test h1 {
