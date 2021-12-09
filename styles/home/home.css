@@ -17,11 +17,11 @@
   right: 0;
 }
 
-.homeSlider .row {
+.homeSlider .rowSlider {
   padding: 40px 0;
 }
 
-.homeSlider .row .col-6 {
+.homeSlider .rowSlider .colSlider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +33,7 @@
           align-items: center;
 }
 
-.homeSlider .row .col-6 h1 {
+.homeSlider .rowSlider .colSlider h1 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -42,7 +42,7 @@
   margin-bottom: 24px;
 }
 
-.homeSlider .row .col-6 .description {
+.homeSlider .rowSlider .colSlider .description {
   color: var(--gray);
   font-style: normal;
   font-weight: normal;
@@ -50,11 +50,11 @@
   line-height: 27px;
 }
 
-.homeSlider .row .col-6 .getStarted-btn {
+.homeSlider .rowSlider .colSlider .getStarted-btn {
   margin-top: 48px;
 }
 
-.homeSlider .row .col-6 .getStarted-btn .getStarted {
+.homeSlider .rowSlider .colSlider .getStarted-btn .getStarted {
   text-decoration: none;
   color: var(--grey0);
   padding: 18px 75px 18px 75px;
@@ -66,7 +66,7 @@
   transition: 2s;
 }
 
-.homeSlider .row img {
+.homeSlider .rowSlider img {
   width: 100%;
 }
 
