@@ -807,9 +807,6 @@ footer .row2 .row2-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 24px;
 }
 
@@ -826,12 +823,15 @@ footer .row2 .row2-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  vertical-align: middle;
 }
 
-footer .row2 .row2-content a {
+footer .row2 .row2-content li {
+  list-style: none;
   margin-bottom: 24px;
+}
+
+footer .row2 .row2-content li a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -840,7 +840,6 @@ footer .row2 .row2-content a {
 }
 
 footer .row3 h2 {
-  text-align: center;
   font-family: 'Sofia Pro', sans-serif;
   font-style: normal;
   font-weight: bold;

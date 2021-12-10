@@ -701,7 +701,6 @@ footer {
       display: block;
       width: 100%;
       display: flex;
-      justify-content: center;
       margin-bottom: 24px;
 
       h2 {
@@ -716,22 +715,24 @@ footer {
 
     .row2-content {
       display: flex;
-      justify-content: space-around;
-
-      a {
+      vertical-align:middle ;
+      li{
+        list-style: none;
         margin-bottom: 24px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: var(--grey40);
+        a {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: var(--grey40);
+        }
       }
+      
     }
   }
 
   .row3 {
     h2 {
-      text-align: center;
       font-family: 'Sofia Pro', sans-serif;
       font-style: normal;
       font-weight: bold;
