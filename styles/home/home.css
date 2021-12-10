@@ -755,6 +755,108 @@
   color: var(--grey0);
 }
 
+/**** Footer *****/
+footer .row1 .row1-logo {
+  margin-bottom: 15px;
+}
+
+footer .row1 .row1-logo span {
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--grey0);
+}
+
+footer .row1 .row1-content p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--grey0);
+  margin-bottom: 30px;
+}
+
+footer .row1 .row1-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .row1 .row1-media a {
+  text-decoration: none;
+  color: var(--grey40);
+}
+
+footer .row1 .row1-media .fa-linkedin-in {
+  margin-right: 30px;
+}
+
+footer .row1 .row1-media .fa-facebook-f {
+  margin-right: 30px;
+}
+
+footer .row1 .row1-media .fa-instagram {
+  margin-right: 30px;
+}
+
+footer .row2 .row2-title {
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+}
+
+footer .row2 .row2-title h2 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--grey0);
+}
+
+footer .row2 .row2-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .row2 .row2-content a {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey40);
+}
+
+footer .row3 h2 {
+  text-align: center;
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--grey0);
+}
+
+footer .row3 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey40);
+}
+
 /* 
 .marketCap {
   display: flex;

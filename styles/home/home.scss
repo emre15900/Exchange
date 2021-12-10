@@ -622,7 +622,7 @@
 
 .register {
   margin-bottom: 120px;
-  
+
   .earnings {
     p {
       font-style: normal;
@@ -642,8 +642,111 @@
       text-align: center;
       color: var(--grey0);
     }
+  }
 
-    
+}
+
+/**** Footer *****/
+footer {
+  .row1 {
+    .row1-logo {
+      margin-bottom: 15px;
+
+      span {
+        font-family: 'Sora', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: var(--grey0);
+
+      }
+    }
+
+    .row1-content {
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--grey0);
+        margin-bottom: 30px;
+      }
+    }
+
+    .row1-media {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: var(--grey40);
+      }
+
+      .fa-linkedin-in {
+        margin-right: 30px;
+      }
+
+      .fa-facebook-f {
+        margin-right: 30px;
+      }
+
+      .fa-instagram {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .row2 {
+    .row2-title {
+      display: block;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+
+      h2 {
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--grey0);
+      }
+    }
+
+    .row2-content {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        margin-bottom: 24px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--grey40);
+      }
+    }
+  }
+
+  .row3 {
+    h2 {
+      text-align: center;
+      font-family: 'Sofia Pro', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 120%;
+      color: var(--grey0);
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--grey40);
+    }
   }
 }
 
