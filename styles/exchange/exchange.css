@@ -205,6 +205,11 @@
 }
 
 /* ======= CUSTOM EXCHANGE  ========*/
+.customExchange .coinBuy {
+  background: var(--navyPrime);
+  padding: 15px;
+}
+
 .customExchange .coinBuy .header {
   font-size: 16px;
   display: -webkit-box;
@@ -217,6 +222,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+  background: var(--navyPrime);
 }
 
 .customExchange .coinBuy .header .head {
@@ -236,6 +242,69 @@
   font-size: 11px;
 }
 
+.customExchange .coinBuy .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customExchange .coinBuy .content .typesLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customExchange .coinBuy .content .typesLine .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--grey0);
+  background: var(--grey100);
+  border: 1px solid var(--baseDarkTransparent);
+  border-radius: 5px;
+  width: 100%;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  font-weight: 400;
+}
+
+.customExchange .coinBuy .content .typesLine .button:nth-child(2) {
+  margin: 5px;
+}
+
+.customExchange .coinBuy .content .typesLine .button:hover {
+  color: var(--greenPrimary);
+  border: 1px solid var(--greenPrimary);
+  text-decoration: none;
+}
+
+.customExchange .coinBuy .content .typesLine .active {
+  color: var(--greenPrimary);
+  border: 1px solid var(--greenPrimary);
+  text-decoration: none;
+}
+
+.customExchange .coinSell {
+  background: var(--navyPrime);
+  padding: 15px;
+}
+
 .customExchange .coinSell .header {
   font-size: 16px;
   display: -webkit-box;
@@ -248,6 +317,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+  background: var(--navyPrime);
 }
 
 .customExchange .coinSell .header .head {
@@ -265,5 +335,63 @@
   text-align: end;
   color: var(--grey40);
   font-size: 11px;
+}
+
+.customExchange .coinSell .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customExchange .coinSell .content .typesLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customExchange .coinSell .content .typesLine .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--grey0);
+  background: var(--grey100);
+  border: 1px solid var(--baseDarkTransparent);
+  border-radius: 5px;
+  width: 100%;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  font-weight: 400;
+}
+
+.customExchange .coinSell .content .typesLine .button:nth-child(2) {
+  margin: 5px;
+}
+
+.customExchange .coinSell .content .typesLine .button:hover {
+  color: var(--redPrimary);
+  border: 1px solid var(--redPrimary);
+  text-decoration: none;
+}
+
+.customExchange .coinSell .content .typesLine .active {
+  color: var(--redPrimary);
+  border: 1px solid var(--redPrimary);
+  text-decoration: none;
 }
 /*# sourceMappingURL=exchange.css.map */

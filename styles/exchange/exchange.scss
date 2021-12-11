@@ -157,12 +157,15 @@
 /* ======= CUSTOM EXCHANGE  ========*/ 
 .customExchange{
   .coinBuy{
+    background: var(--navyPrime);
+    padding: 15px;
     .header{
       font-size: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 0;
+      background: var(--navyPrime);
       .head{
         color: var(--greenPrimary);
         font-weight: 700;
@@ -178,14 +181,52 @@
       color: var(--grey40);
       font-size: 11px;
     }
+    .content{
+      display: flex;
+      flex-direction: column;
+      .typesLine{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--grey0);
+          background: var(--grey100);
+          border: 1px solid var(--baseDarkTransparent);
+          border-radius: 5px;
+          width: 100%;
+          transition: 500ms ease;
+          font-weight: 400;
+          &:nth-child(2){
+            margin: 5px;
+          }
+          &:hover{
+            color: var(--greenPrimary);
+            border: 1px solid var(--greenPrimary);
+            text-decoration: none;
+          }
+        }
+        .active{
+          color: var(--greenPrimary);
+          border: 1px solid var(--greenPrimary);
+          text-decoration: none;
+        }
+      }
+    }
   }
+
   .coinSell{
+    background: var(--navyPrime);
+    padding: 15px;
     .header{
       font-size: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 0;
+      background: var(--navyPrime);
       .head{
         color: var(--redPrimary);
         font-weight: 700;
@@ -200,6 +241,40 @@
       text-align: end;
       color: var(--grey40);
       font-size: 11px;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      .typesLine{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--grey0);
+          background: var(--grey100);
+          border: 1px solid var(--baseDarkTransparent);
+          border-radius: 5px;
+          width: 100%;
+          transition: 500ms ease;
+          font-weight: 400;
+          &:nth-child(2){
+            margin: 5px;
+          }
+          &:hover{
+            color: var(--redPrimary);
+            border: 1px solid var(--redPrimary);
+            text-decoration: none;
+          }
+        }
+        .active{
+          color: var(--redPrimary);
+          border: 1px solid var(--redPrimary);
+          text-decoration: none;
+        }
+      }
     }
   }
 }
