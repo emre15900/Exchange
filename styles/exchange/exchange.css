@@ -203,4 +203,67 @@
 .chartSection .left-buy-sell .buySellPath .graphic-view .rise-graphic img {
   width: 100%;
 }
+
+/* ======= CUSTOM EXCHANGE  ========*/
+.customExchange .coinBuy .header {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.customExchange .coinBuy .header .head {
+  color: var(--greenPrimary);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.customExchange .coinBuy .header .balance {
+  color: var(--grey0);
+  font-size: 12px;
+}
+
+.customExchange .coinBuy .openOrders {
+  text-align: end;
+  color: var(--grey40);
+  font-size: 11px;
+}
+
+.customExchange .coinSell .header {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.customExchange .coinSell .header .head {
+  color: var(--redPrimary);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.customExchange .coinSell .header .balance {
+  color: var(--grey0);
+  font-size: 12px;
+}
+
+.customExchange .coinSell .openOrders {
+  text-align: end;
+  color: var(--grey40);
+  font-size: 11px;
+}
 /*# sourceMappingURL=exchange.css.map */

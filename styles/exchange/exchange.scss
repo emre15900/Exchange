@@ -153,3 +153,53 @@
 
   }
   
+
+/* ======= CUSTOM EXCHANGE  ========*/ 
+.customExchange{
+  .coinBuy{
+    .header{
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      .head{
+        color: var(--greenPrimary);
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .balance{
+        color: var(--grey0);
+        font-size: 12px;
+      }
+    }
+    .openOrders{
+      text-align: end;
+      color: var(--grey40);
+      font-size: 11px;
+    }
+  }
+  .coinSell{
+    .header{
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      .head{
+        color: var(--redPrimary);
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .balance{
+        color: var(--grey0);
+        font-size: 12px;
+      }
+    }
+    .openOrders{
+      text-align: end;
+      color: var(--grey40);
+      font-size: 11px;
+    }
+  }
+}
