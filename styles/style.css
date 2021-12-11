@@ -35,13 +35,13 @@
   --darkerGrey: #141518;
   --grey100: #1e1f25;
   --grey80: #34384c;
-  --grey60: #292b36;
+  --grey60: #717279;
   --grey40: #a5adcf;
   --grey20: #e5e6ed;
   --grey0: #ffffff;
   --gray: #d8d8d8;
   --royalPrime: rgb(83, 138, 242);
-  --navyPrime: #171B26;
+  --navyPrime: #171b26;
 }
 
 * {
@@ -55,5 +55,93 @@ a {
 
 body {
   background: var(--grey100);
+}
+
+.emailForm {
+  position: relative;
+}
+
+.emailForm input {
+  padding: 20px 25px;
+  background: var(--baseDarkTransparent);
+  border: 1px solid var(--grey80);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.emailForm input:focus {
+  border: 1px solid var(--grey80);
+  outline: 0;
+}
+
+.emailForm input::-webkit-input-placeholder {
+  color: var(--grey60);
+}
+
+.emailForm input:-ms-input-placeholder {
+  color: var(--grey60);
+}
+
+.emailForm input::-ms-input-placeholder {
+  color: var(--grey60);
+}
+
+.emailForm input::placeholder {
+  color: var(--grey60);
+}
+
+.emailForm button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: var(--grey0);
+  padding: 16px 32px;
+  background: var(--royalBlue);
+  border-radius: 100px;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid transparent;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.emailForm button:hover {
+  border: 1px solid var(--grey0);
+}
+
+.commonButton {
+  color: var(--grey0);
+  padding: 16px 32px;
+  background: var(--royalBlue);
+  border-radius: 100px;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid transparent;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.commonButton a {
+  color: var(--grey0);
+}
+
+.commonButton a:hover {
+  text-decoration: none;
+}
+
+.commonButton:hover {
+  border: 1px solid var(--grey0);
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

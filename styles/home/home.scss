@@ -266,7 +266,7 @@
     .explanation {
       display: flex;
       justify-content: center;
-      align-items: sta;
+      align-items: start;
       flex-direction: column;
 
       h1 {
@@ -624,6 +624,13 @@
   margin-bottom: 120px;
 
   .earnings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .email-subs-form{
+      width: 40%;
+    }
     p {
       font-style: normal;
       font-weight: normal;
