@@ -165,8 +165,8 @@
 
 .homePlatform .portfolioManager:hover {
   cursor: pointer;
-  -webkit-box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
-          box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+  -webkit-box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+          box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
 }
 
 .homePlatform .portfolioManager img {
@@ -218,8 +218,8 @@
 }
 
 .homePlatform .mobileApps:hover {
-  -webkit-box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
-          box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+  -webkit-box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+          box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
   cursor: pointer;
 }
 
@@ -281,8 +281,8 @@
 }
 
 .homePlatform .vaultProt .lastCard:hover {
-  -webkit-box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
-          box-shadow: 3px 3px 2px var(--grey0), 0 0 25px var(--grey0), 0 0 5px var(--grey0);
+  -webkit-box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+          box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
   cursor: pointer;
 }
 
@@ -660,7 +660,16 @@
   margin-bottom: 120px;
 }
 
-.mobileApplication .explanation h1 {
+.mobileApplication .main-explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobileApplication .main-explanation .explanation h1 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -670,7 +679,7 @@
   margin-bottom: 24px;
 }
 
-.mobileApplication .explanation p {
+.mobileApplication .main-explanation .explanation p {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -680,7 +689,7 @@
   font-family: 'Inter', sans-serif;
 }
 
-.mobileApplication .explanation h4 {
+.mobileApplication .main-explanation .explanation h4 {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -689,7 +698,7 @@
   margin-bottom: 24px;
 }
 
-.mobileApplication .explanation .store-btn {
+.mobileApplication .main-explanation .explanation .store-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,13 +717,22 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.mobileApplication .explanation .store-btn .logo {
+.mobileApplication .main-explanation .explanation .store-btn:hover {
+  cursor: pointer;
+  border: 1px solid var(--royalPrime);
+  -webkit-box-shadow: 3px 1px 1px var(--royalPrime), 0 0 1px var(--royalPrime), 0 0 1px var(--royalPrime);
+          box-shadow: 3px 1px 1px var(--royalPrime), 0 0 1px var(--royalPrime), 0 0 1px var(--royalPrime);
+}
+
+.mobileApplication .main-explanation .explanation .logo {
   margin-right: 24px;
 }
 
-.mobileApplication .explanation .store-btn .logoContent p {
+.mobileApplication .main-explanation .explanation .logoContent p {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -723,7 +741,7 @@
   margin-bottom: 0px;
 }
 
-.mobileApplication .explanation .store-btn .logoContent h2 {
+.mobileApplication .main-explanation .explanation .logoContent h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -773,6 +791,7 @@
   line-height: 110%;
   text-align: center;
   color: var(--grey0);
+  margin-bottom: 40px;
 }
 
 /**** Footer *****/
@@ -857,6 +876,17 @@ footer .row2 .row2-content li a {
   font-size: 16px;
   line-height: 24px;
   color: var(--grey40);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+footer .row2 .row2-content li a:hover {
+  color: var(--royalPrime);
+  text-decoration: none;
+}
+
+footer .row3 {
+  margin-bottom: 85px;
 }
 
 footer .row3 h2 {
@@ -874,6 +904,34 @@ footer .row3 p {
   font-size: 16px;
   line-height: 24px;
   color: var(--grey40);
+}
+
+footer .row4 {
+  color: var(--grey60);
+  border-top: 1px solid var(--grey80);
+}
+
+footer .row4 p {
+  margin-top: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer .row4 .row4-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .row4 .row4-right .row4-1 {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid var(--grey80);
 }
 
 /* 
