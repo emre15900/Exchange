@@ -59,7 +59,6 @@
       </nav>
     </header>
 
-
     <section class="priceBand">
       <div class="container-fluid">
         <div class="row">
@@ -182,7 +181,6 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-8 p-0">
-
             <select onChange="LoadCharts();" id="pairs" class="d-none">
               <option value="BTCUSDT">BTCUSDT</option>
               <option value="ETHUSDT">ETHUSDT</option>
@@ -195,10 +193,12 @@
 
             <div class="tradingview-widget-container" id="tvchart"></div>
 
-            <script>  
-              var sym = exchangeInfo.symbols,markup="";
-              sym.forEach(d => {
-                markup += '<option value="' + d.symbol + '">' + d.symbol + '</option>';
+            <script>
+              var sym = exchangeInfo.symbols,
+                markup = "";
+              sym.forEach((d) => {
+                markup +=
+                  '<option value="' + d.symbol + '">' + d.symbol + "</option>";
               });
 
               document.getElementById("pairs").innerHTML = markup;
@@ -224,45 +224,161 @@
               }
             </script>
 
-
-
             <div class="customExchange">
-              <div class="container">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="col-6 p-0">
                     <div class="coinBuy">
                       <div>
                         <p class="header">
-                          <span class="head">BTC AL</span>
-                          <span class="balance"> Bakiye: 0.00 TRY </span>
+                          <span class="head">BUY BTC</span>
+                          <span class="balance"> Balance: 0.00 TRY </span>
                         </p>
-                        <p class="openOrders">Açık Emirler: 0.00 TRY</p>
+                        <p class="openOrders">Open Orders: 0.00 TRY</p>
                       </div>
                       <div class="content">
                         <div class="typesLine">
-                          <a href="" class="button">Hızlı Al</a>
-                          <a href="" class="button active">Limit</a>
-                          <a href="" class="button">Stop Limit</a>
+                          <a href="javascript:void(0)" class="button"
+                            >Stop-limit</a
+                          >
+                          <a href="javascript:void(0)" class="button active"
+                            >Limit</a
+                          >
+                          <a href="javascript:void(0)" class="button"
+                            >Market</a
+                          >
                         </div>
+                      </div>
+                      <div class="limitPrice">
+                        <label for="ask__price" class="ask__label">
+                          <input
+                            type="text"
+                            id="ask__price"
+                            class="inputRate"
+                            maxlength="14"
+                            value=""
+                            placeholder="Price"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                          />
+                          <span class="symbol">USDT</span>
+                        </label>
+
+                        <label for="ask__amount" class="ask__label">
+                          <input
+                            type="text"
+                            id="ask__amount"
+                            class="inputRate"
+                            maxlength="14"
+                            value=""
+                            placeholder="Amount"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                          />
+                          <span class="symbol">BTC</span>
+                        </label>
+
+                        <div class="percentile">
+                          <div class="typesLine">
+                            <a href="javascript:void(0)" class="button">25%</a>
+                            <a href="javascript:void(0)" class="button active"
+                              >50%</a
+                            >
+                            <a href="javascript:void(0)" class="button">75%</a>
+                            <a href="javascript:void(0)" class="button">100%</a>
+                          </div>
+                        </div>
+
+                        <label for="ask__total" class="ask__label">
+                          <input
+                            type="text"
+                            id="ask__total"
+                            class="inputRate"
+                            maxlength="14"
+                            value=""
+                            placeholder="Total"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                          />
+                          <span class="symbol">BTC</span>
+                        </label>
+
+                        <a href="javascript:void(0)" class="buyBTC">Buy BTC</a>
                       </div>
                     </div>
                   </div>
                   <div class="col-6 p-0">
                     <div class="coinSell">
-                        <div>
-                          <p class="header">
-                            <span class="head">BTC SAT</span>
-                            <span class="balance"> Bakiye: 0.00 TRY </span>
-                          </p>
-                          <p class="openOrders">Açık Emirler: 0.00 TRY</p>
+                      <div>
+                        <p class="header">
+                          <span class="head">SELL BTC</span>
+                          <span class="balance"> Balance: 0.00 TRY </span>
+                        </p>
+                        <p class="openOrders">Open Orders: 0.00 TRY</p>
+                      </div>
+                      <div class="content">
+                        <div class="typesLine">
+                          <a href="javascript:void(0)" class="button"
+                            >Stop-limit</a
+                          >
+                          <a href="javascript:void(0)" class="button active"
+                            >Limit</a
+                          >
+                          <a href="javascript:void(0)" class="button"
+                            >Market</a
+                          >
                         </div>
-                        <div class="content">
+                      </div>
+                      <div class="limitPrice">
+                        <label for="ask__price" class="ask__label">
+                          <input
+                            type="text"
+                            id="ask__price"
+                            class="inputRate"
+                            maxlength="14"
+                            value=""
+                            placeholder="Price"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                          />
+                          <span class="symbol">USDT</span>
+                        </label>
+
+                        <label for="ask__amount" class="ask__label">
+                          <input
+                            type="text"
+                            id="ask__amount"
+                            class="inputRate"
+                            maxlength="14"
+                            value=""
+                            placeholder="Amount"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                          />
+                          <span class="symbol">BTC</span>
+                        </label>
+
+                        <div class="percentile">
                           <div class="typesLine">
-                            <a href="" class="button">Hızlı Al</a>
-                            <a href="" class="button active">Limit</a>
-                            <a href="" class="button">Stop Limit</a>
+                            <a href="javascript:void(0)" class="button">25%</a>
+                            <a href="javascript:void(0)" class="button active"
+                              >50%</a
+                            >
+                            <a href="javascript:void(0)" class="button">75%</a>
+                            <a href="javascript:void(0)" class="button">100%</a>
                           </div>
                         </div>
+
+                        <label for="ask__total" class="ask__label">
+                          <input
+                            type="text"
+                            id="ask__total"
+                            class="inputRate"
+                            maxlength="14"
+                            value=""
+                            placeholder="Total"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                          />
+                          <span class="symbol">BTC</span>
+                        </label>
+
+                        <a href="javascript:void(0)" class="sellBTC">Buy BTC</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -274,15 +390,15 @@
               <div class="col-12 left-buy-sell">
                 <div class="buy-sell-hood">
                   <div class="quantity">
-                    <span class="title">Fiyat</span>
+                    <span class="title">Price</span>
                     <span class="text">(BTC)</span>
                   </div>
                   <div class="price">
-                    <span class="title">Miktar</span>
+                    <span class="title">Amount</span>
                     <span class="text">(TRY)</span>
                   </div>
                   <div class="quantity">
-                    <span class="title">Toplam</span>
+                    <span class="title">Total</span>
                     <span class="text">(BTC)</span>
                   </div>
                 </div>
@@ -384,7 +500,7 @@
                   <div class="buy-sell-hood">
                     <div class="lastPrice">
                       <span class="title"
-                        >Son Fiyat: <span class="bigDollar">$</span></span
+                        >Last Price: <span class="bigDollar">$</span></span
                       >
                       <span class="value"
                         >51,349.99 <small>₺709,234.57</small>
@@ -495,5 +611,12 @@
         </div>
       </div>
     </section>
+    <!-- JQUERY CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript/exchange.js"></script>
   </body>
 </html>

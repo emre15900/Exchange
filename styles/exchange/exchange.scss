@@ -215,6 +215,94 @@
         }
       }
     }
+    .limitPrice{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .ask__label{
+        width: 100%;
+        display: flex;
+        position: relative;
+        .inputRate{
+          background: var(--grey100);
+          border: 2px solid var(--baseDarkTransparent);
+          border-radius: 20px;
+          padding: 15px;
+          outline: none;
+          width: 100%;
+          margin: 8px 0;
+          color: var(--grey0);
+          &::placeholder{
+            color: var(--grey60);
+          }
+          &:focus{
+            border: 1px solid var(--grey60);
+          }
+        }
+        .symbol{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 15px;
+          display: flex;
+          align-items: center;
+          color: var(--grey60);
+        }
+      }
+      .percentile{
+        display: flex;
+        width: 100%;
+        .typesLine{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--grey0);
+            background: var(--grey100);
+            border: 1px solid var(--baseDarkTransparent);
+            border-radius: 5px;
+            width: 100%;
+            transition: 500ms ease;
+            font-weight: 400;
+            &:nth-child(2){
+              margin: 5px;
+            }
+            &:nth-child(3){
+              margin-right: 5px;
+            }
+            &:hover{
+              color: var(--greenPrimary);
+              border: 1px solid var(--greenPrimary);
+              text-decoration: none;
+            }
+          }
+          .active{
+            color: var(--greenPrimary);
+            border: 1px solid var(--greenPrimary);
+            text-decoration: none;
+          }
+        }
+      }
+      .buyBTC{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 15px;
+        background: var(--greenPrimary);
+        color: var(--grey0);
+        text-decoration: none;
+        border-radius: 30px;
+        &:hover{
+          background: var(--lightGreen);
+        }
+      }
+    }
   }
 
   .coinSell{
@@ -273,6 +361,94 @@
           color: var(--redPrimary);
           border: 1px solid var(--redPrimary);
           text-decoration: none;
+        }
+      }
+    }
+    .limitPrice{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .ask__label{
+        width: 100%;
+        display: flex;
+        position: relative;
+        .inputRate{
+          background: var(--grey100);
+          border: 2px solid var(--baseDarkTransparent);
+          border-radius: 20px;
+          padding: 15px;
+          outline: none;
+          width: 100%;
+          margin: 8px 0;
+          color: var(--grey0);
+          &::placeholder{
+            color: var(--grey60);
+          }
+          &:focus{
+            border: 1px solid var(--grey60);
+          }
+        }
+        .symbol{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 15px;
+          display: flex;
+          align-items: center;
+          color: var(--grey60);
+        }
+      }
+      .percentile{
+        display: flex;
+        width: 100%;
+        .typesLine{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--grey0);
+            background: var(--grey100);
+            border: 1px solid var(--baseDarkTransparent);
+            border-radius: 5px;
+            width: 100%;
+            transition: 500ms ease;
+            font-weight: 400;
+            &:nth-child(2){
+              margin: 5px;
+            }
+            &:nth-child(3){
+              margin-right: 5px;
+            }
+            &:hover{
+              color: var(--redPrimary);
+              border: 1px solid var(--redPrimary);
+              text-decoration: none;
+            }
+          }
+          .active{
+            color: var(--redPrimary);
+            border: 1px solid var(--redPrimary);
+            text-decoration: none;
+          }
+        }
+      }
+      .sellBTC{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 15px;
+        background: var(--redPrimary);
+        color: var(--grey0);
+        text-decoration: none;
+        border-radius: 30px;
+        &:hover{
+          background: lighten(#c91f47, .5);
         }
       }
     }
