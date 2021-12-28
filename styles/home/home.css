@@ -165,8 +165,8 @@
 
 .homePlatform .portfolioManager:hover {
   cursor: pointer;
-  -webkit-box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
-          box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+  -webkit-box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+          box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
 }
 
 .homePlatform .portfolioManager img {
@@ -218,8 +218,8 @@
 }
 
 .homePlatform .mobileApps:hover {
-  -webkit-box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
-          box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+  -webkit-box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+          box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
   cursor: pointer;
 }
 
@@ -281,8 +281,8 @@
 }
 
 .homePlatform .vaultProt .lastCard:hover {
-  -webkit-box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
-          box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+  -webkit-box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+          box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
   cursor: pointer;
 }
 
@@ -942,4 +942,12 @@ footer .row4 .row4-right .row4-1 {
   max-width: 100px;
 }
 */
+@media only screen and (max-width: 994px) {
+  .homePlatform .lastCard {
+    margin-top: 25px;
+  }
+  .establishment .explanation {
+    margin-top: 350px;
+  }
+}
 /*# sourceMappingURL=home.css.map */
