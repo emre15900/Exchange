@@ -942,12 +942,4 @@ footer .row4 .row4-right .row4-1 {
   max-width: 100px;
 }
 */
-@media only screen and (max-width: 994px) {
-  .homePlatform .lastCard {
-    margin-top: 25px;
-  }
-  .establishment .explanation {
-    margin-top: 350px;
-  }
-}
 /*# sourceMappingURL=home.css.map */
