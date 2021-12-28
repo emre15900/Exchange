@@ -434,9 +434,7 @@
       justify-content: center;
       font-size: 25px;
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
+      top: 0%;
       right: 180px;
       font-family: "Sofia Pro", sans-serif;
       font-style: normal;
@@ -459,10 +457,8 @@
       justify-content: center;
       font-size: 25px;
       position: absolute;
-      top: 90px;
-      bottom: 0;
-      right: 0;
       left: 70px;
+      top: 90px;
       color: rgb(228, 26, 26);
       text-shadow: 0.5px 0.5px 0.5px var(--grey100);
       font-family: "Sofia Pro", sans-serif;
@@ -486,10 +482,8 @@
       justify-content: center;
       font-size: 25px;
       position: absolute;
+      right: 4%;
       top: 60px;
-      bottom: 0;
-      right: 40px;
-      left: 0;
       font-family: "Sofia Pro", sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -511,9 +505,7 @@
       font-size: 15px;
       position: absolute;
       top: 200px;
-      bottom: 0;
       right: 160px;
-      left: 0;
       font-family: "Sofia Pro", sans-serif;
       font-style: normal;
       font-weight: bold;
