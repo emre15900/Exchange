@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 .header {
   width: 100%;
   background: var(--grey100);
@@ -119,7 +125,7 @@
   border-radius: 30px;
 }
 
-.header .nav .navHead .login .singUp {
+.header .nav .navHead .login .singUp .singUp {
   background: var(--royalBlue);
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
@@ -128,7 +134,7 @@
   border: 1px solid transparent;
 }
 
-.header .nav .navHead .login .singUp:hover {
+.header .nav .navHead .login .singUp .singUp:hover {
   text-decoration: none;
   background-color: #383a45;
   padding: 12px 24px 12px 24px;
@@ -153,8 +159,19 @@
 }
 
 @media only screen and (min-width: 994px) {
-  .responsiveMenu {
+  .navHead .responsiveMenu {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  .header .navHead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
   }
 }
 /*# sourceMappingURL=header.css.map */
