@@ -124,7 +124,7 @@
   
 }
 
-@media only screen and (max-width: 994px) {
+@media only screen and (max-width: 992px) {
   .nav-links{
     display: none;
   }
@@ -139,12 +139,20 @@
   }
 }
 
-@media only screen and (min-width: 994px) {
+@media only screen and (min-width: 993px) {
   .responsiveMenu{
-
     display: none;
   }
 
 }
 
+}
+//------Responsive
+@media screen and (max-width:992px){
+  .header .nav .navHead{
+    justify-content: space-between;
+  }
+  .responsiveMenu{
+    margin-right: 25px;
+  }
 }
