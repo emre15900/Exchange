@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 .header {
   width: 100%;
   background: var(--grey100);
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header .nav {
@@ -138,22 +144,22 @@
 }
 
 @media only screen and (max-width: 994px) {
-  .nav-links {
+  .header .nav-links {
     display: none;
   }
-  .login {
+  .header .login {
     display: none;
   }
-  .login .singIn {
+  .header .login .singIn {
     display: none;
   }
-  .login .singUp {
+  .header .login .singUp {
     display: none;
   }
 }
 
 @media only screen and (min-width: 994px) {
-  .responsiveMenu {
+  .header .responsiveMenu {
     display: none;
   }
 }

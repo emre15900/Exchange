@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 
 * {
   margin: 0;
@@ -7,15 +6,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
->>>>>>> Stashed changes
 //------Header
 .header {
   width: 100%;
   background: var(--grey100);
   position: relative;
-  z-index: 1;
-
+  z-index: 3;
   .nav {
     display: flex;
     justify-content: space-between;
@@ -105,12 +101,8 @@
 
           margin-right: 11px;
         }
-<<<<<<< Updated upstream
 
-        .singUp {
-=======
         .singUp{
->>>>>>> Stashed changes
           background: var(--royalBlue);
           padding: 12px 24px 12px 24px;
           border-radius: 100px;
@@ -126,14 +118,9 @@
             border: 1px solid var(--grey0);
           }
         }
-      }
     }
   }
-<<<<<<< Updated upstream
-}
-=======
 
-    
   
 }
 
@@ -154,24 +141,10 @@
 
 @media only screen and (min-width: 994px) {
   .responsiveMenu{
+
     display: none;
   }
 
 }
 
-//-----Section
-
-.section{
-
 }
-
-
-
-
-
-
-
-
-
-
->>>>>>> Stashed changes
