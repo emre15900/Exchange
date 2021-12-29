@@ -165,8 +165,8 @@
 
 .homePlatform .portfolioManager:hover {
   cursor: pointer;
-  -webkit-box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
-          box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+  -webkit-box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+          box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
 }
 
 .homePlatform .portfolioManager img {
@@ -181,6 +181,7 @@
   line-height: 120%;
   color: white;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .homePlatform .portfolioManager p {
@@ -218,8 +219,8 @@
 }
 
 .homePlatform .mobileApps:hover {
-  -webkit-box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
-          box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+  -webkit-box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+          box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
   cursor: pointer;
 }
 
@@ -256,6 +257,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .homePlatform .vaultProt .lastCard {
@@ -281,8 +283,8 @@
 }
 
 .homePlatform .vaultProt .lastCard:hover {
-  -webkit-box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
-          box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+  -webkit-box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+          box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
   cursor: pointer;
 }
 
@@ -504,7 +506,7 @@
   line-height: 120%;
 }
 
-/**** Establishment ****/
+/**** News ****/
 .establishment {
   margin-bottom: 150px;
 }
@@ -514,6 +516,9 @@
 }
 
 .establishment .newsarea .newsarea1 {
+  position: absolute;
+  top: 0px;
+  right: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,22 +538,21 @@
   color: var(--grey40);
   justify-content: center;
   font-size: 25px;
-  position: absolute;
-  top: 0%;
-  right: 180px;
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
 .establishment .newsarea .newsarea2 {
+  position: absolute;
+  top: 90px;
+  left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 200px;
   width: 200px;
   padding: 15px;
-  border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -561,9 +565,6 @@
   color: var(--grey40);
   justify-content: center;
   font-size: 25px;
-  position: absolute;
-  left: 70px;
-  top: 90px;
   color: #e41a1a;
   text-shadow: 0.5px 0.5px 0.5px var(--grey100);
   font-family: "Sofia Pro", sans-serif;
@@ -573,6 +574,9 @@
 }
 
 .establishment .newsarea .newsarea3 {
+  position: absolute;
+  top: 60px;
+  right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,15 +596,15 @@
   color: var(--grey40);
   justify-content: center;
   font-size: 25px;
-  position: absolute;
-  right: 4%;
-  top: 60px;
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
 .establishment .newsarea .newsarea4 {
+  position: absolute;
+  top: 200px;
+  right: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,9 +624,6 @@
   color: var(--grey40);
   justify-content: center;
   font-size: 15px;
-  position: absolute;
-  top: 200px;
-  right: 160px;
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -942,4 +943,21 @@ footer .row4 .row4-right .row4-1 {
   max-width: 100px;
 }
 */
+/*** Responsive ****/
+@media screen and (max-width: 1200px) {
+  .establishment .newsarea .newsarea2 {
+    top: 90px;
+    left: 0px;
+  }
+  .establishment .newsarea .newsarea4 {
+    top: 200px;
+    right: 150px;
+  }
+  .register .earnings button .circle {
+    display: none;
+  }
+  footer .row3 .email-subs-form .emailForm .footer-btn {
+    display: none;
+  }
+}
 /*# sourceMappingURL=home.css.map */

@@ -155,6 +155,7 @@
       line-height: 120%;
       color: white;
       margin-bottom: 16px;
+      text-align: center;
     }
 
     p {
@@ -213,7 +214,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
     .lastCard {
       padding: 25px 20px;
       display: flex;
@@ -411,7 +412,7 @@
   }
 }
 
-/**** Establishment ****/
+/**** News ****/
 
 .establishment {
   margin-bottom: 150px;
@@ -420,6 +421,9 @@
     position: relative;
 
     .newsarea1 {
+      position: absolute;
+      top: 0px;
+      right: 180px;
       display: flex;
       height: 120px;
       width: 120px;
@@ -433,9 +437,6 @@
       color: var(--grey40);
       justify-content: center;
       font-size: 25px;
-      position: absolute;
-      top: 0%;
-      right: 180px;
       font-family: "Sofia Pro", sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -443,11 +444,13 @@
     }
 
     .newsarea2 {
+      position: absolute;
+      top: 90px;
+      left: 70px;
       display: flex;
       height: 200px;
       width: 200px;
       padding: 15px;
-      border-radius: 50%;
       justify-content: center;
       align-items: center;
       border-radius: 100%;
@@ -456,9 +459,6 @@
       color: var(--grey40);
       justify-content: center;
       font-size: 25px;
-      position: absolute;
-      left: 70px;
-      top: 90px;
       color: rgb(228, 26, 26);
       text-shadow: 0.5px 0.5px 0.5px var(--grey100);
       font-family: "Sofia Pro", sans-serif;
@@ -468,6 +468,9 @@
     }
 
     .newsarea3 {
+      position: absolute;
+      top: 60px;
+      right: 20px;
       display: flex;
       height: 160px;
       width: 160px;
@@ -481,15 +484,15 @@
       color: var(--grey40);
       justify-content: center;
       font-size: 25px;
-      position: absolute;
-      right: 4%;
-      top: 60px;
       font-family: "Sofia Pro", sans-serif;
       font-style: normal;
       font-weight: bold;
     }
 
     .newsarea4 {
+      position: absolute;
+      top: 200px;
+      right: 160px;
       display: flex;
       height: 100px;
       width: 100px;
@@ -503,9 +506,6 @@
       color: var(--grey40);
       justify-content: center;
       font-size: 15px;
-      position: absolute;
-      top: 200px;
-      right: 160px;
       font-family: "Sofia Pro", sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -546,9 +546,11 @@
 
 .mobileApplication {
   margin-bottom: 120px;
-  .main-explanation{
+
+  .main-explanation {
     display: flex;
     align-items: center;
+
     .explanation {
       h1 {
         font-family: "Sofia Pro", sans-serif;
@@ -559,7 +561,7 @@
         color: var(--grey0);
         margin-bottom: 24px;
       }
-  
+
       p {
         font-style: normal;
         font-weight: 600;
@@ -569,7 +571,7 @@
         margin-bottom: 48px;
         font-family: 'Inter', sans-serif;
       }
-  
+
       h4 {
         font-style: normal;
         font-weight: 600;
@@ -578,8 +580,8 @@
         color: var(--grey0);
         margin-bottom: 24px;
       }
-  
-  
+
+
       .store-btn {
         display: flex;
         flex-direction: row;
@@ -590,7 +592,7 @@
         box-sizing: border-box;
         border-radius: 100px;
         transition: 0.5s;
-  
+
         &:hover {
           cursor: pointer;
           border: 1px solid var(--royalPrime);
@@ -598,11 +600,11 @@
             0 0 1px var(--royalPrime);
         }
       }
-  
+
       .logo {
         margin-right: 24px;
       }
-  
+
       .logoContent {
         p {
           font-style: normal;
@@ -612,7 +614,7 @@
           color: var(--grey40);
           margin-bottom: 0px;
         }
-  
+
         h2 {
           font-style: normal;
           font-weight: 500;
@@ -638,6 +640,7 @@
 
     .email-subs-form {
       width: 40%;
+
     }
 
     p {
@@ -810,3 +813,43 @@ footer {
   max-width: 100px;
 }
 */
+
+/*** Responsive ****/
+
+@media screen and (max-width:1200px) {
+  .establishment {
+    .newsarea {
+      .newsarea2 {
+        top: 90px;
+        left: 0px;
+      }
+
+      .newsarea4 {
+        top: 200px;
+        right: 150px;
+      }
+    }
+  }
+
+  .register {
+    .earnings {
+      button{
+        .circle{
+          display: none;
+        }
+      }
+    }
+  }
+
+  footer{
+    .row3{
+      .email-subs-form{
+        .emailForm{
+          .footer-btn{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
