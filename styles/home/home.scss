@@ -722,6 +722,20 @@
 }
 
 @media screen and (max-width:993px){
+  .homePlatform{
+    .mobileApps{
+      h2{
+        text-align: center;
+      }
+    }
+    .explanations{
+      .explanation{
+        h1{
+          font-size: 40px;
+        }
+      }
+    }
+  }
 
   .addCard{
     .cardList{
@@ -776,4 +790,75 @@
     }
   }
  
+}
+@media screen and (max-width:768px){
+.homeSlider{
+  .rowSlider{
+    img{
+      margin-top: 60px;
+    }
+  }
+}
+
+.homePlatform{
+  .vaultProt{
+    .lastCard{
+      margin-top: 25px;
+    }
+  }
+  .explanations{
+    margin-top:52px;
+    .explanation{
+      h1{
+        text-align: center;
+      }
+      .commonButton{
+        width: 60%;
+        text-align: center;
+        margin: auto;
+      }
+    }
+    
+  }
+}
+
+.addCard{
+  margin-bottom: 60px;
+  .cardList{
+    justify-content: flex-start;
+  }
+  .buySellCard{
+    margin-top:60px;
+  }
+}
+
+.establishment{
+  .newsarea{
+    
+    .newsarea1{
+      height: 110px;
+      width: 110px;
+      font-size: 18px;
+      right:210px;
+    }
+    .newsarea2{
+      height: 190px;
+      width: 190px;
+      font-size: 20px;
+    }
+    .newsarea3{
+      height:160px;
+      width: 160px;
+    }
+    .newsarea4{
+      right: 170px;
+    }
+  }
+  .explanation{
+    margin-top: 400px;
+  }
+}
+.mobileApplication{
+  margin-bottom: 0px;
+}
 }

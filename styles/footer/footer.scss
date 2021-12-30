@@ -139,10 +139,31 @@ footer {
 //----Responsive
 @media screen and (max-width:993px){
     footer{
+
         .emailForm{
             button{
                 padding: 16px 23px;
             }
         }
+
     }
+}
+@media screen and (max-width:768px){
+
+  footer{
+    .row{
+      .col-md-4{
+        margin-bottom: 70px;
+      }
+      .row3{
+        margin-bottom: 0px;
+      }
+    }
+
+
+  }
+  
+
+
+
 }

@@ -838,6 +838,12 @@
 }
 
 @media screen and (max-width: 993px) {
+  .homePlatform .mobileApps h2 {
+    text-align: center;
+  }
+  .homePlatform .explanations .explanation h1 {
+    font-size: 40px;
+  }
   .addCard .cardList {
     width: 100%;
     margin-bottom: 0;
@@ -873,6 +879,61 @@
   }
   .register .earnings .email-subs-form .circle {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeSlider .rowSlider img {
+    margin-top: 60px;
+  }
+  .homePlatform .vaultProt .lastCard {
+    margin-top: 25px;
+  }
+  .homePlatform .explanations {
+    margin-top: 52px;
+  }
+  .homePlatform .explanations .explanation h1 {
+    text-align: center;
+  }
+  .homePlatform .explanations .explanation .commonButton {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+  }
+  .addCard {
+    margin-bottom: 60px;
+  }
+  .addCard .cardList {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .addCard .buySellCard {
+    margin-top: 60px;
+  }
+  .establishment .newsarea .newsarea1 {
+    height: 110px;
+    width: 110px;
+    font-size: 18px;
+    right: 210px;
+  }
+  .establishment .newsarea .newsarea2 {
+    height: 190px;
+    width: 190px;
+    font-size: 20px;
+  }
+  .establishment .newsarea .newsarea3 {
+    height: 160px;
+    width: 160px;
+  }
+  .establishment .newsarea .newsarea4 {
+    right: 170px;
+  }
+  .establishment .explanation {
+    margin-top: 400px;
+  }
+  .mobileApplication {
+    margin-bottom: 0px;
   }
 }
 /*# sourceMappingURL=home.css.map */

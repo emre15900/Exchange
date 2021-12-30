@@ -142,4 +142,13 @@ footer .row4 .row4-right .row4-1 {
     padding: 16px 23px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  footer .row .col-md-4 {
+    margin-bottom: 70px;
+  }
+  footer .row .row3 {
+    margin-bottom: 0px;
+  }
+}
 /*# sourceMappingURL=footer.css.map */
