@@ -123,7 +123,7 @@ footer {
         line-height: 24px;
       }
   
-      .row4-rightTop {
+      .row4-right {
         display: flex;
         justify-content: flex-end;
   
@@ -159,20 +159,11 @@ footer {
         margin-bottom: 0px;
       }
     }
-    .row4{
-      text-align: center;
-      p{
-        margin-top: 10px;
-      }
-      .row4-leftBottom{
-        order: 2;   
-        margin: 0;
-      }
-      .row4-rightTop{
-        order: 1;
-        justify-content: center;
-        
-      }
-    }
+
+
   }
+  
+
+
+
 }

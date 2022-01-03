@@ -728,7 +728,13 @@
         text-align: center;
       }
     }
-    
+    .explanations{
+      .explanation{
+        h1{
+          font-size: 40px;
+        }
+      }
+    }
   }
 
   .addCard{
@@ -795,23 +801,13 @@
 }
 
 .homePlatform{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  .portfBlock{
-    order: 2;
-    .vaultProt{
-      .lastCard{
-        margin-top: 25px;
-      }
+  .vaultProt{
+    .lastCard{
+      margin-top: 25px;
     }
   }
-  
   .explanations{
-    padding: 0;
-    text-align: center;
-    order: 1;
     margin-top:52px;
-    margin-bottom: 35px;
     .explanation{
       h1{
         text-align: center;
@@ -865,66 +861,4 @@
 .mobileApplication{
   margin-bottom: 0px;
 }
-}
-
-@media screen and (max-width:510px){
-  .homePlatform{
-    .portfBlock{
-      order: 2;
-      .portf-mobil{
-        margin-right: 45px;
-        margin-left: 45px;
-        h2{
-          font-size: 18px;
-        }
-        p{
-          font-size: 14px;
-        }
-      }
-      .vaultProt{
-        margin-right: 45px;
-        margin-left: 45px;
-        h2{
-          font-size: 18px;
-        }
-        p{
-          font-size: 14px;
-        }
-      }
-    }
-    .explanations{
-      order: 1;
-      padding:10px 10px;
-      .explanation{
-        h1{
-          font-size: 28px;
-          text-align: center;
-        }
-        p{
-          font-size: 14px;
-          text-align: center;
-        }
-        .commonButton{
-          span{
-            a{
-              font-size:14px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .addCard{
-    h1{
-      font-size: 28px;
-    }
-    p{
-      font-size: 14px;
-    }
-    .cardList{
-      .title{
-        font-size:18px;
-      }
-    }
-  }
 }
