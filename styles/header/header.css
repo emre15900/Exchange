@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -10,130 +10,92 @@
   position: relative;
   z-index: 3;
 }
-
 .header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
   padding: 15px 0;
 }
-
 .header .nav .navHead {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-
 .header .nav .navHead .logo img {
   width: 50px;
 }
-
 .header .nav .navHead .logo .text {
   color: var(--grey0);
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
 }
-
 .header .nav .navHead .nav-links {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   text-align: right;
 }
-
 .header .nav .navHead .nav-links ul {
   margin: 0;
   padding: 0;
 }
-
 .header .nav .navHead .nav-links ul li {
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
   position: relative;
 }
-
 .header .nav .navHead .nav-links ul li a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--grey0);
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .header .nav .navHead .nav-links ul li a:hover {
   color: var(--royalPrime);
 }
-
 .header .nav .navHead .login {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding: 0;
   margin: 0;
 }
-
 .header .nav .navHead .login a {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   color: var(--grey0);
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
 }
-
 .header .nav .navHead .login .singIn {
   border: 1px solid var(--grey0);
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
-  -webkit-transition: 1s;
   transition: 1s;
   margin-right: 11px;
 }
-
 .header .nav .navHead .login .singIn:hover {
   text-decoration: none;
   background: var(--royalBlue);
   padding: 12px 24px 12px 24px;
   border-radius: 30px;
 }
-
 .header .nav .navHead .login .singUp {
   background: var(--royalBlue);
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid transparent;
 }
-
 .header .nav .navHead .login .singUp:hover {
   text-decoration: none;
   background-color: #383a45;
@@ -142,7 +104,6 @@
   color: var(--grey0);
   border: 1px solid var(--grey0);
 }
-
 @media only screen and (max-width: 992px) {
   .header .nav-links {
     display: none;
@@ -157,7 +118,6 @@
     display: none;
   }
 }
-
 @media only screen and (min-width: 993px) {
   .header .responsiveMenu {
     display: none;
@@ -166,12 +126,10 @@
 
 @media screen and (max-width: 992px) {
   .header .nav .navHead {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
+
   .responsiveMenu {
     margin-right: 25px;
   }
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */
