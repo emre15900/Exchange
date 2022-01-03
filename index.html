@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/header/header.css" />
     <link rel="stylesheet" href="styles/home/home.css" />
-    <link rel="stylesheet" href="styles/footer/footer.css">
+    <link rel="stylesheet" href="styles/footer/footer.css" />
   </head>
   <body>
     <!-- Header -->
@@ -60,10 +60,60 @@
                   </span>
                 </div>
                 <div class="responsiveMenu">
-                  <a href="/"><i class="fas fa-bars"></i></a>
+                  <div class="responsiveMenu">
+                    <div class="hamburger-menu">
+                      <input id="menu-toggle" type="checkbox" />
+                      <label class="menu-btn" for="menu-toggle">
+                        <span></span>
+                      </label>
+
+                      <ul class="menu__box">
+                        <li class="logo">
+                          <a href="#"
+                            ><img src="./img/logo.svg" alt="" />
+                            <span class="text">Cryptolly.</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="menu-item" href="javascript:void(0)"
+                            >Exchange</a
+                          >
+                        </li>
+                        <li>
+                          <a class="menu-item" href="javascript:void(0)"
+                            >Pricing</a
+                          >
+                        </li>
+                        <li>
+                          <a class="menu-item" href="javascript:void(0)"
+                            >Wallet</a
+                          >
+                        </li>
+                        <li>
+                          <a class="menu-item" href="javascript:void(0)"
+                            >Company</a
+                          >
+                        </li>
+                        <li>
+                          <a class="menu-item" href="javascript:void(0)"
+                            >Blog</a
+                          >
+                        </li>
+                        <li>
+                          <a class="menu-item" href="javascript:void(0)"
+                            >Sign In</a
+                          >
+                        </li>
+                        <li>
+                          <a class="menu-item" href="javascript:void(0)"
+                            >Sign Up</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -334,7 +384,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 buySellCard">
-            <div><img src="./img/Form.svg" alt="" width="100%"></div>
+            <div><img src="./img/Form.svg" alt="" width="100%" /></div>
           </div>
         </div>
       </div>
@@ -401,7 +451,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 explanation-img">
-            <img src="./img/Phone.svg" alt="" width="100%">
+            <img src="./img/Phone.svg" alt="" width="100%" />
           </div>
         </div>
       </div>
@@ -417,9 +467,21 @@
             crypto rewards.
           </h1>
           <div class="email-subs-form">
-            <form action="/" method="POST" name="feedback-form" class="emailForm">
-              <input type="email" placeholder="Enter your email address" name="abone">
-              <button type="submit" name="submit" class="lnk btn-main bg-btn"><span class="circle">Get Started </span> <i class="fas fa-chevron-right fa-icon"></i></button>
+            <form
+              action="/"
+              method="POST"
+              name="feedback-form"
+              class="emailForm"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                name="abone"
+              />
+              <button type="submit" name="submit" class="lnk btn-main bg-btn">
+                <span class="circle">Get Started </span>
+                <i class="fas fa-chevron-right fa-icon"></i>
+              </button>
             </form>
           </div>
         </div>
@@ -437,7 +499,7 @@
                 <a href="/"><span class="text">Cryptolly.</span></a>
               </div>
               <div class="row1-content">
-              <p>Your best crypto partner</p>
+                <p>Your best crypto partner</p>
               </div>
               <div class="row">
                 <div class="col-12 row1-media">
@@ -446,8 +508,7 @@
                   <a href="/"><i class="fab fa-instagram"></i></a>
                   <a href="/"><i class="fab fa-twitter"></i></a>
                 </div>
-              </div>   
-              
+              </div>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
@@ -460,7 +521,7 @@
                   <ul>
                     <li><a href="/">Buy/Sell</a></li>
                     <li><a href="/">Trade Now</a></li>
-                    <li><a href="/">Pricing</a></li> 
+                    <li><a href="/">Pricing</a></li>
                   </ul>
                 </div>
                 <div class="col-6 row2-content">
@@ -475,12 +536,27 @@
           <div class="col-md-4 col-sm-12">
             <div class="row3">
               <h2>Submit for updates.</h2>
-              <p>Subscribe to get update and notify our exchange and products</p>
+              <p>
+                Subscribe to get update and notify our exchange and products
+              </p>
               <!-- Email Construction -->
               <div class="email-subs-form">
-                <form action="/" method="POST" name="feedback-form" class="emailForm">
-                  <input type="email" placeholder="Enter your email address" name="abone">
-                  <button type="submit" name="submit" class="btn-main bg-btn"><span class="footer-btn">Send </span><i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+                <form
+                  action="/"
+                  method="POST"
+                  name="feedback-form"
+                  class="emailForm"
+                >
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    name="abone"
+                  />
+                  <button type="submit" name="submit" class="btn-main bg-btn">
+                    <span class="footer-btn">Send </span
+                    ><i class="fas fa-chevron-right fa-icon"></i
+                    ><span class="circle"></span>
+                  </button>
                 </form>
               </div>
             </div>
@@ -499,7 +575,7 @@
         </div>
       </div>
     </footer>
-   
+
     <!-- <div class="container marketCap">
       <div class="row">
         <div class="col-12">
