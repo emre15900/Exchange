@@ -1,16 +1,14 @@
 footer .row1 .row1-logo {
   margin-bottom: 15px;
 }
-
 footer .row1 .row1-logo span {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   color: var(--grey0);
 }
-
 footer .row1 .row1-content p {
   font-style: normal;
   font-weight: normal;
@@ -19,88 +17,67 @@ footer .row1 .row1-content p {
   color: var(--grey0);
   margin-bottom: 30px;
 }
-
 footer .row1 .row1-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 footer .row1 .row1-media a {
   text-decoration: none;
   color: var(--grey40);
 }
-
 footer .row1 .row1-media .fa-linkedin-in {
   margin-right: 30px;
 }
-
 footer .row1 .row1-media .fa-facebook-f {
   margin-right: 30px;
 }
-
 footer .row1 .row1-media .fa-instagram {
   margin-right: 30px;
 }
-
 footer .row2 .row2-title {
   display: block;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 24px;
 }
-
 footer .row2 .row2-title h2 {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 120%;
   color: var(--grey0);
 }
-
 footer .row2 .row2-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   vertical-align: middle;
 }
-
 footer .row2 .row2-content li {
   list-style: none;
   margin-bottom: 24px;
 }
-
 footer .row2 .row2-content li a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--grey40);
-  -webkit-transition: 0.6s;
   transition: 0.6s;
 }
-
 footer .row2 .row2-content li a:hover {
   color: var(--royalPrime);
   text-decoration: none;
 }
-
 footer .row3 {
   margin-bottom: 85px;
 }
-
 footer .row3 h2 {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 120%;
   color: var(--grey0);
 }
-
 footer .row3 p {
   font-style: normal;
   font-weight: normal;
@@ -108,12 +85,10 @@ footer .row3 p {
   line-height: 24px;
   color: var(--grey40);
 }
-
 footer .row4 {
   color: var(--grey60);
   border-top: 1px solid var(--grey80);
 }
-
 footer .row4 p {
   margin-top: 32px;
   font-style: normal;
@@ -121,16 +96,10 @@ footer .row4 p {
   font-size: 16px;
   line-height: 24px;
 }
-
 footer .row4 .row4-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 footer .row4 .row4-right .row4-1 {
   margin-right: 20px;
   padding-right: 20px;
@@ -142,7 +111,6 @@ footer .row4 .row4-right .row4-1 {
     padding: 16px 23px;
   }
 }
-
 @media screen and (max-width: 768px) {
   footer .row .col-md-4 {
     margin-bottom: 70px;
@@ -150,5 +118,4 @@ footer .row4 .row4-right .row4-1 {
   footer .row .row3 {
     margin-bottom: 0px;
   }
-}
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */
