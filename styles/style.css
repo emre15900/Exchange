@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400;1,900&family=Sora:wght@100;200;500;600;700;800&display=swap");
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
 :root {
   --royalBlue: linear-gradient(
     90deg,
@@ -54,34 +56,43 @@ a {
 
 body {
   background: var(--grey100);
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400;1,900&family=Sora:wght@100;200;500;600;700;800&display=swap");
-  @import url("http://fonts.cdnfonts.com/css/sofia-pro");
 }
 
 .emailForm {
   position: relative;
 }
+
 .emailForm input {
   padding: 20px 25px;
   background: var(--baseDarkTransparent);
   border: 1px solid var(--grey80);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 100px;
   width: 100%;
 }
+
 .emailForm input:focus {
   border: 1px solid var(--grey80);
   outline: 0;
 }
-.emailForm input::-moz-placeholder {
+
+.emailForm input::-webkit-input-placeholder {
   color: var(--grey60);
 }
+
 .emailForm input:-ms-input-placeholder {
   color: var(--grey60);
 }
+
+.emailForm input::-ms-input-placeholder {
+  color: var(--grey60);
+}
+
 .emailForm input::placeholder {
   color: var(--grey60);
 }
+
 .emailForm button {
   position: absolute;
   right: 0;
@@ -96,10 +107,12 @@ body {
   font-weight: 600;
   font-size: 16px;
   border: 1px solid transparent;
+  -webkit-transition: 700ms;
   transition: 700ms;
   margin: 5px;
   cursor: pointer;
 }
+
 .emailForm button:hover {
   border: 1px solid var(--grey0);
 }
@@ -114,17 +127,22 @@ body {
   font-weight: 600;
   font-size: 16px;
   border: 1px solid transparent;
+  -webkit-transition: 700ms;
   transition: 700ms;
   margin: 5px;
   cursor: pointer;
 }
+
 .commonButton a {
   color: var(--grey0);
 }
+
 .commonButton a:hover {
   text-decoration: none;
 }
+
 .commonButton:hover {
   border: 1px solid var(--grey0);
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
