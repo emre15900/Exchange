@@ -1,192 +1,194 @@
 /* ======= BUY SELL ========*/
 .chartSection {
-  .left-buy-sell {
-    border-radius: 5px;
-    padding: 0;
-    .buy-sell-hood {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #131722;
-      padding: 5px 10px;
-      margin: 0;
-      .quantity {
+    .left-buy-sell {
+      border-radius: 5px;
+      padding: 0;
+      .buy-sell-hood {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        .title {
-          color: var(--grey0);
-          font-size: 14px;
+        justify-content: space-between;
+        align-items: center;
+        background: #131722;
+        padding: 5px 10px;
+        margin: 0;
+        .quantity {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .title {
+            color: var(--grey0);
+            font-size: 14px;
+          }
+          .text {
+            font-size: 12px;
+            color: var(--grey0);
+          }
         }
-        .text {
-          font-size: 12px;
-          color: var(--grey0);
+        .price {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .title {
+            color: var(--grey0);
+            font-size: 14px;
+          }
+          .text {
+            font-size: 12px;
+            color: var(--grey0);
+          }
         }
-      }
-      .price {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        .title {
-          color: var(--grey0);
-          font-size: 14px;
+        .lastPrice{
+          .title{
+            font-size: 14px;
+            color: var(--grey0);
+            .bigDollar{
+              font-size: 18px;
+              color: var(--greenPrimary);
+            }
+          }
+          .value{
+            font-size: 18px;
+            color: var(--greenPrimary);
+            small{
+              font-size: 12px;
+              color: var(--grey40);
+            }
+          }
         }
-        .text {
-          font-size: 12px;
-          color: var(--grey0);
-        }
-      }
-      .lastPrice {
-        .title {
-          font-size: 14px;
-          color: var(--grey0);
-          .bigDollar {
+        .percentile{
+          .rise{
             font-size: 18px;
             color: var(--greenPrimary);
           }
         }
-        .value {
-          font-size: 18px;
-          color: var(--greenPrimary);
-          small {
-            font-size: 12px;
-            color: var(--grey40);
-          }
-        }
       }
-      .percentile {
-        .rise {
-          font-size: 18px;
-          color: var(--greenPrimary);
-        }
-      }
-    }
-    .buySellPath {
-      display: flex;
-      flex-direction: column;
-      .graphic-view {
-        max-width: 100%;
-        .buy-ul {
-          margin-left: 0;
-          padding-left: 0;
-          .buy-sell-list {
-            position: relative;
-            &::before {
-              content: "";
-              width: 40%;
-              height: auto;
-              position: absolute;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              background: rgba(var(--greenPrimary), 0.12);
+      .buySellPath{
+          display: flex;
+          flex-direction: column;
+        .graphic-view {
+          max-width: 100%;
+            .buy-ul {
+              margin-left: 0;
+              padding-left: 0;
+              .buy-sell-list {
+                position: relative;
+                &::before {
+                  content: "";
+                  width: 40%;
+                  height: auto;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  background: rgba(#03a66d, 0.12);
+                }
+              }
+            }
+            .sell-ul {
+              .buy-sell-list {
+                position: relative;
+                &::before {
+                  content: "";
+                  width: 40%;
+                  height: auto;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  background: rgba(#b7291e, 0.12);
+                }
+              }
+            }
+            .buy-sell-ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              background:var(--navyPrime);
+              padding: 10px 15px 0 15px;
+              .buy-sell-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5px 0;
+                .value {
+                  color: var(--grey0);
+                  font-size: 12px;
+                }
+                .quantity {
+                  color: var(--grey0);
+                  font-size: 12px;
+                }
+                .price {
+                  color: var(--greenPrimary);
+                  font-size: 12px;
+                  padding: 3px 10px;
+                }
+                .drop {
+                  color: var(--redPrimary);
+                  font-size: 12px;
+                  padding: 3px 10px;
+                }
+              }
+            }
+            .drop-graphic {
+              background: var(--white-color);
+              border-radius: 5px 0 0 5px;
+              padding: 15px 0 0 0;
+              margin: 10px 0;
+              img {
+                width: 100%;
+              }
+            }
+            .rise-graphic {
+              background: var(--white-color);
+              border-radius: 0 5px 5px 0;
+              padding: 15px 0 0 0;
+              margin: 10px 0;
+              img {
+                width: 100%;
+              }
             }
           }
-        }
-        .sell-ul {
-          .buy-sell-list {
-            position: relative;
-            &::before {
-              content: "";
-              width: 40%;
-              height: auto;
-              position: absolute;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              background: rgba(#b7291e, 0.12);
-            }
-          }
-        }
-        .buy-sell-ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          background: var(--navyPrime);
-          padding: 10px 15px 0 15px;
-          .buy-sell-list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5px 0;
-            .value {
-              color: var(--grey0);
-              font-size: 12px;
-            }
-            .quantity {
-              color: var(--grey0);
-              font-size: 12px;
-            }
-            .price {
-              color: var(--greenPrimary);
-              font-size: 12px;
-              padding: 3px 10px;
-            }
-            .drop {
-              color: var(--redPrimary);
-              font-size: 12px;
-              padding: 3px 10px;
-            }
-          }
-        }
-        .drop-graphic {
-          background: var(--white-color);
-          border-radius: 5px 0 0 5px;
-          padding: 15px 0 0 0;
-          margin: 10px 0;
-          img {
-            width: 100%;
-          }
-        }
-        .rise-graphic {
-          background: var(--white-color);
-          border-radius: 0 5px 5px 0;
-          padding: 15px 0 0 0;
-          margin: 10px 0;
-          img {
-            width: 100%;
-          }
-        }
       }
     }
-  }
-}
 
-/* ======= CUSTOM EXCHANGE  ========*/
-.customExchange {
-  .coinBuy {
+  }
+  
+
+/* ======= CUSTOM EXCHANGE  ========*/ 
+.customExchange{
+  .coinBuy{
     background: var(--navyPrime);
     padding: 15px;
-    .header {
+    .header{
       font-size: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 0;
       background: var(--navyPrime);
-      .head {
+      .head{
         color: var(--greenPrimary);
         font-weight: 700;
         font-size: 16px;
       }
-      .balance {
+      .balance{
         color: var(--grey0);
         font-size: 12px;
       }
     }
-    .openOrders {
+    .openOrders{
       text-align: end;
       color: var(--grey40);
       font-size: 11px;
     }
-    .content {
+    .content{
       display: flex;
       flex-direction: column;
-      .typesLine {
+      .typesLine{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .button {
+        .button{
           display: flex;
           justify-content: center;
           align-items: center;
@@ -197,32 +199,32 @@
           width: 100%;
           transition: 500ms ease;
           font-weight: 400;
-          &:nth-child(2) {
+          &:nth-child(2){
             margin: 5px;
           }
-          &:hover {
+          &:hover{
             color: var(--greenPrimary);
             border: 1px solid var(--greenPrimary);
             text-decoration: none;
           }
         }
-        .active {
+        .active{
           color: var(--greenPrimary);
           border: 1px solid var(--greenPrimary);
           text-decoration: none;
         }
       }
     }
-    .limitPrice {
+    .limitPrice{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .ask__label {
+      .ask__label{
         width: 100%;
         display: flex;
         position: relative;
-        .inputRate {
+        .inputRate{
           background: var(--grey100);
           border: 2px solid var(--baseDarkTransparent);
           border-radius: 20px;
@@ -231,14 +233,14 @@
           width: 100%;
           margin: 8px 0;
           color: var(--grey0);
-          &::placeholder {
+          &::placeholder{
             color: var(--grey60);
           }
-          &:focus {
+          &:focus{
             border: 1px solid var(--grey60);
           }
         }
-        .symbol {
+        .symbol{
           position: absolute;
           top: 0;
           bottom: 0;
@@ -248,15 +250,15 @@
           color: var(--grey60);
         }
       }
-      .percentile {
+      .percentile{
         display: flex;
         width: 100%;
-        .typesLine {
+        .typesLine{
           display: flex;
           justify-content: space-between;
           align-items: center;
           width: 100%;
-          .button {
+          .button{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -267,26 +269,26 @@
             width: 100%;
             transition: 500ms ease;
             font-weight: 400;
-            &:nth-child(2) {
+            &:nth-child(2){
               margin: 5px;
             }
-            &:nth-child(3) {
+            &:nth-child(3){
               margin-right: 5px;
             }
-            &:hover {
+            &:hover{
               color: var(--greenPrimary);
               border: 1px solid var(--greenPrimary);
               text-decoration: none;
             }
           }
-          .active {
+          .active{
             color: var(--greenPrimary);
             border: 1px solid var(--greenPrimary);
             text-decoration: none;
           }
         }
       }
-      .buyBTC {
+      .buyBTC{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -296,46 +298,46 @@
         color: var(--grey0);
         text-decoration: none;
         border-radius: 30px;
-        &:hover {
+        &:hover{
           background: var(--lightGreen);
         }
       }
     }
   }
 
-  .coinSell {
+  .coinSell{
     background: var(--navyPrime);
     padding: 15px;
-    .header {
+    .header{
       font-size: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 0;
       background: var(--navyPrime);
-      .head {
+      .head{
         color: var(--redPrimary);
         font-weight: 700;
         font-size: 16px;
       }
-      .balance {
+      .balance{
         color: var(--grey0);
         font-size: 12px;
       }
     }
-    .openOrders {
+    .openOrders{
       text-align: end;
       color: var(--grey40);
       font-size: 11px;
     }
-    .content {
+    .content{
       display: flex;
       flex-direction: column;
-      .typesLine {
+      .typesLine{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .button {
+        .button{
           display: flex;
           justify-content: center;
           align-items: center;
@@ -346,32 +348,32 @@
           width: 100%;
           transition: 500ms ease;
           font-weight: 400;
-          &:nth-child(2) {
+          &:nth-child(2){
             margin: 5px;
           }
-          &:hover {
+          &:hover{
             color: var(--redPrimary);
             border: 1px solid var(--redPrimary);
             text-decoration: none;
           }
         }
-        .active {
+        .active{
           color: var(--redPrimary);
           border: 1px solid var(--redPrimary);
           text-decoration: none;
         }
       }
     }
-    .limitPrice {
+    .limitPrice{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .ask__label {
+      .ask__label{
         width: 100%;
         display: flex;
         position: relative;
-        .inputRate {
+        .inputRate{
           background: var(--grey100);
           border: 2px solid var(--baseDarkTransparent);
           border-radius: 20px;
@@ -380,14 +382,14 @@
           width: 100%;
           margin: 8px 0;
           color: var(--grey0);
-          &::placeholder {
+          &::placeholder{
             color: var(--grey60);
           }
-          &:focus {
+          &:focus{
             border: 1px solid var(--grey60);
           }
         }
-        .symbol {
+        .symbol{
           position: absolute;
           top: 0;
           bottom: 0;
@@ -397,15 +399,15 @@
           color: var(--grey60);
         }
       }
-      .percentile {
+      .percentile{
         display: flex;
         width: 100%;
-        .typesLine {
+        .typesLine{
           display: flex;
           justify-content: space-between;
           align-items: center;
           width: 100%;
-          .button {
+          .button{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -416,26 +418,26 @@
             width: 100%;
             transition: 500ms ease;
             font-weight: 400;
-            &:nth-child(2) {
+            &:nth-child(2){
               margin: 5px;
             }
-            &:nth-child(3) {
+            &:nth-child(3){
               margin-right: 5px;
             }
-            &:hover {
+            &:hover{
               color: var(--redPrimary);
               border: 1px solid var(--redPrimary);
               text-decoration: none;
             }
           }
-          .active {
+          .active{
             color: var(--redPrimary);
             border: 1px solid var(--redPrimary);
             text-decoration: none;
           }
         }
       }
-      .sellBTC {
+      .sellBTC{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -445,408 +447,10 @@
         color: var(--grey0);
         text-decoration: none;
         border-radius: 30px;
-        &:hover {
-          background: lighten(#c91f47, 0.5);
+        &:hover{
+          background: lighten(#c91f47, .5);
         }
       }
-    }
-  }
-}
-
-/* ======= FILTER  ========*/
-.exchangeFilter {
-  .content {
-    background: var(--navyPrime);
-    padding: 16px;
-    .search {
-      position: relative;
-      input {
-        width: 100%;
-        outline: 0;
-        background: var(--grey100);
-        border: 1px var(--grey60);
-        padding: 8px 35px;
-        color: var(--grey0);
-        border-radius: 8px;
-      }
-      img {
-        position: absolute;
-        top: 14px;
-        left: 12px;
-        cursor: pointer;
-      }
-    }
-    .coin-list {
-      .coin-item {
-        background: var(--grey100);
-        border-radius: 8px;
-        margin: 8px 0;
-        padding: 8px 10px;
-        &:first-child {
-          margin-top: 10px;
-        }
-      }
-      .ripple {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .ripple-detail {
-          display: flex;
-          img {
-            margin-right: 16px;
-          }
-          .ripple-title {
-            .ripple-text {
-              display: block;
-              font-size: 16px;
-              color: var(--grey0);
-            }
-            .xrp {
-              font-size: 14px;
-              color: var(--grey60);
-            }
-          }
-        }
-        .data {
-          text-align: end;
-          .price {
-            display: block;
-            font-size: 16px;
-            color: var(--grey0);
-          }
-          .drop {
-            font-size: 14px;
-            color: var(--redPrimary);
-          }
-        }
-      }
-      .bittorrent {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .bittorrent-detail {
-          display: flex;
-          img {
-            margin-right: 16px;
-          }
-          .bittorrent-title {
-            .bittorrent-text {
-              display: block;
-              font-size: 16px;
-              color: var(--grey0);
-            }
-            .btt {
-              font-size: 14px;
-              color: var(--grey60);
-            }
-          }
-        }
-        .data {
-          text-align: end;
-          .price {
-            display: block;
-            font-size: 16px;
-            color: var(--grey0);
-          }
-          .drop {
-            font-size: 14px;
-            color: var(--redPrimary);
-          }
-          .rise {
-            font-size: 16px;
-            color: var(--greenPrimary);
-          }
-        }
-      }
-      .bitcoin-cash {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .bitcoin-cash-detail {
-          display: flex;
-          img {
-            margin-right: 16px;
-          }
-          .bitcoin-cash-title {
-            .bitcoin-cash-text {
-              display: block;
-              font-size: 16px;
-              color: var(--grey0);
-            }
-            .bch {
-              font-size: 14px;
-              color: var(--grey60);
-            }
-          }
-        }
-        .data {
-          text-align: end;
-          .price {
-            display: block;
-            font-size: 16px;
-            color: var(--grey0);
-          }
-          .drop {
-            font-size: 14px;
-            color: var(--redPrimary);
-          }
-          .rise {
-            font-size: 16px;
-            color: var(--greenPrimary);
-          }
-        }
-      }
-      .ethereum {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .ethereum-detail {
-          display: flex;
-          img {
-            margin-right: 16px;
-          }
-          .ethereum-title {
-            .ethereum-text {
-              display: block;
-              font-size: 16px;
-              color: var(--grey0);
-            }
-            .eth {
-              font-size: 14px;
-              color: var(--grey60);
-            }
-          }
-        }
-        .data {
-          text-align: end;
-          .price {
-            display: block;
-            font-size: 16px;
-            color: var(--grey0);
-          }
-          .drop {
-            font-size: 14px;
-            color: var(--redPrimary);
-          }
-          .rise {
-            font-size: 16px;
-            color: var(--greenPrimary);
-          }
-        }
-      }
-      .digibyte {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 10px;
-        .digibyte-detail {
-          display: flex;
-          img {
-            margin-right: 16px;
-          }
-          .digibyte-title {
-            .digibyte-text {
-              display: block;
-              font-size: 16px;
-              color: var(--grey0);
-            }
-            .dgb {
-              font-size: 14px;
-              color: var(--grey60);
-            }
-          }
-        }
-        .data {
-          text-align: end;
-          .price {
-            display: block;
-            font-size: 16px;
-            color: var(--grey0);
-          }
-          .drop {
-            font-size: 14px;
-            color: var(--redPrimary);
-          }
-          .rise {
-            font-size: 16px;
-            color: var(--greenPrimary);
-          }
-        }
-      }
-      .holo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .holo-detail {
-          display: flex;
-          img {
-            margin-right: 16px;
-          }
-          .holo-title {
-            .holo-text {
-              display: block;
-              font-size: 16px;
-              color: var(--grey0);
-            }
-            .hot {
-              font-size: 14px;
-              color: var(--grey60);
-            }
-          }
-        }
-        .data {
-          text-align: end;
-          .price {
-            display: block;
-            font-size: 16px;
-            color: var(--grey0);
-          }
-          .drop {
-            font-size: 14px;
-            color: var(--redPrimary);
-          }
-          .rise {
-            font-size: 16px;
-            color: var(--greenPrimary);
-          }
-        }
-      }
-      .litecoin {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .litecoin-detail {
-          display: flex;
-          img {
-            margin-right: 16px;
-          }
-          .litecoin-title {
-            .litecoin-text {
-              display: block;
-              font-size: 16px;
-              color: var(--grey0);
-            }
-            .ltc {
-              font-size: 14px;
-              color: var(--grey60);
-            }
-          }
-        }
-        .data {
-          text-align: end;
-          .price {
-            display: block;
-            font-size: 16px;
-            color: var(--grey0);
-          }
-          .drop {
-            font-size: 14px;
-            color: var(--redPrimary);
-          }
-          .rise {
-            font-size: 16px;
-            color: var(--greenPrimary);
-          }
-        }
-      }
-    }
-  }
-  .statistics-data {
-    background-color: var(--navyPrime);
-    display: flex;
-    flex-direction: column;
-    padding: 17px 32px;
-    span {
-      color: var(--grey60);
-    }
-    .hood {
-      font-size: 20px;
-      color: var(--grey0);
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    .tether-title {
-      font-size: 14px;
-      color: var(--grey0);
-      margin-bottom: 9px;
-    }
-    .tether-data {
-      font-size: 16px;
-      margin-bottom: 16px;
-    }
-    .market-value {
-      font-size: 14px;
-      color: var(--grey0);
-      margin-bottom: 9px;
-    }
-    .market-data {
-      font-size: 16px;
-      margin-bottom: 16px;
-    }
-    .min-max {
-      display: flex;
-      .minimal-maximum {
-        font-size: 14px;
-        color: var(--grey0);
-        margin-bottom: 9px;
-        margin-right: 50px;
-      }
-      .days {
-        color: var(--grey0);
-        font-size: 12px;
-        padding: 1px 15px 3px 15px;
-        background: var(--grey100);
-        border-radius: 5px;
-        max-height: 23px;
-      }
-    }
-    .min-max-value {
-      font-size: 16px;
-      margin-bottom: 16px;
-    }
-    .all-time-hight {
-      font-size: 14px;
-      color: var(--grey0);
-      margin-bottom: 9px;
-    }
-    .all-time-low {
-      font-size: 14px;
-      color: var(--grey0);
-      margin-bottom: 9px;
-    }
-    .value-percentile {
-      display: flex;
-      .value {
-        font-size: 16px;
-        margin-bottom: 16px;
-        margin-right: 10px;
-      }
-      .drop {
-        font-size: 16px;
-        color: var(--redPrimary);
-      }
-      .rise {
-        font-size: 16px;
-        color: var(--greenPrimary);
-      }
-    }
-    .total-supply {
-      font-size: 14px;
-      color: var(--grey0);
-      margin-bottom: 9px;
-    }
-    .supply-value {
-      font-size: 16px;
-      margin-bottom: 16px;
-    }
-    .max-supply {
-      font-size: 14px;
-      color: var(--grey0);
-      margin-bottom: 9px;
-    }
-    .supply-data {
-      font-size: 16px;
-      margin-bottom: 16px;
     }
   }
 }
