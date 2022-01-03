@@ -1,506 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exchange Home Page</title>
-    <!-- Bootstrap CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <!-- FONTAWESOME CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <!-- SWIPER CDN -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <!-- PLUGIN CSS -->
-    <link rel="stylesheet" href="styles/plugin.min.css" />
-    <!-- Styling CSS -->
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/header/header.css" />
-    <link rel="stylesheet" href="styles/home/home.css" />
-    <link rel="stylesheet" href="styles/footer/footer.css">
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <nav class="nav">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="row navHead">
-                <div class="col-3 logo">
-                  <a href="/"><img src="./img/logo.svg" /></a>
-                  <a href="/"><span class="text">Cryptolly.</span></a>
-                </div>
-                <div class="col-6 nav-links">
-                  <ul>
-                    <li><a href="exchange.html">Exchange</a></li>
-                    <li><a href="build-creation.html">Pricing</a></li>
-                    <li><a href="build-creation.html">Wallet</a></li>
-                    <li><a href="build-creation.html">Company</a></li>
-                    <li><a href="build-creation.html">Blog</a></li>
-                  </ul>
-                </div>
-                <div class="col-3 login">
-                  <span>
-                    <a href="build-creation.html" class="singIn">Sing In</a>
-                  </span>
-                  <span>
-                    <a href="build-creation.html" class="singUp">Sing Up</a>
-                  </span>
-                </div>
-                <div class="responsiveMenu">
-                  <a href="/"><i class="fas fa-bars"></i></a>
-                </div>
-              </div>
 
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exchange Home Page</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <!-- FONTAWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- SWIPER CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- PLUGIN CSS -->
+  <link rel="stylesheet" href="styles/plugin.min.css" />
+  <!-- Styling CSS -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/header/header.css" />
+  <link rel="stylesheet" href="styles/home/home.css" />
+  <link rel="stylesheet" href="styles/footer/footer.css">
+</head>
 
-    <!-- Slider -->
-    <section class="homeSlider">
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
       <div class="container">
-        <div class="row rowSlider">
-          <div class="colSlider col-sm-12 col-md-6">
-            <div class="">
-              <h1>A trusted and secure cryptocurrency exchange.</h1>
-              <span class="description">
-                Your guide to the world of an open financial system. Get<br />
-                started with the easiest and most secure platform to buy and<br />
-                trade cryptocurrency.<br />
-              </span>
-              <div class="getStarted-btn">
-                <a href="/" class="getStarted">Get Started Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="colSlider col-sm-12 col-md-6">
-            <img src="./img/frame.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Swiper -->
-    <section class="homeSwiper">
-      <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="tradingview-widget-container"></div>
-                  <script
-                    type="text/javascript"
-                    src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                    async
-                  >
-                      {
-                      "symbol": "COINBASE:BTCUSD",
-                      "width": "100%",
-                      "height": "100%",
-                      "locale": "tr",
-                      "dateRange": "1D",
-                      "colorTheme": "dark",
-                      "trendLineColor": "rgba(41, 98, 255, 1)",
-                      "underLineColor": "rgba(41, 98, 255, 0.3)",
-                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
-                      "isTransparent": false,
-                      "autosize": false,
-                      "largeChartUrl": ""
-                    }
-                  </script>
-                </div>
-                <div class="swiper-slide">
-                  <div class="tradingview-widget-container"></div>
-                  <script
-                    type="text/javascript"
-                    src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                    async
-                  >
-                      {
-                      "symbol": "COINBASE:ETHUSD",
-                      "width": "100%",
-                      "height": "100%",
-                      "locale": "tr",
-                      "dateRange": "1D",
-                      "colorTheme": "dark",
-                      "trendLineColor": "rgba(41, 98, 255, 1)",
-                      "underLineColor": "rgba(41, 98, 255, 0.3)",
-                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
-                      "isTransparent": false,
-                      "autosize": true,
-                      "largeChartUrl": ""
-                    }
-                  </script>
-                </div>
-                <div class="swiper-slide">
-                  <div class="tradingview-widget-container"></div>
-                  <script
-                    type="text/javascript"
-                    src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                    async
-                  >
-                      {
-                      "symbol": "BINANCEUS:BNBUSD",
-                      "width": "100%",
-                      "height": "100%",
-                      "locale": "tr",
-                      "dateRange": "1D",
-                      "colorTheme": "dark",
-                      "trendLineColor": "rgba(41, 98, 255, 1)",
-                      "underLineColor": "rgba(41, 98, 255, 0.3)",
-                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
-                      "isTransparent": false,
-                      "autosize": true,
-                      "largeChartUrl": ""
-                    }
-                  </script>
-                </div>
-                <div class="swiper-slide">
-                  <div class="tradingview-widget-container"></div>
-                  <script
-                    type="text/javascript"
-                    src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                    async
-                  >
-                      {
-                      "symbol": "COINBASE:ALGOUSD",
-                      "width": "100%",
-                      "height": "100%",
-                      "locale": "tr",
-                      "dateRange": "1D",
-                      "colorTheme": "dark",
-                      "trendLineColor": "rgba(41, 98, 255, 1)",
-                      "underLineColor": "rgba(41, 98, 255, 0.3)",
-                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
-                      "isTransparent": false,
-                      "autosize": true,
-                      "largeChartUrl": ""
-                    }
-                  </script>
-                </div>
-                <div class="swiper-slide">
-                  <div class="tradingview-widget-container"></div>
-                  <script
-                    type="text/javascript"
-                    src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                    async
-                  >
-                      {
-                      "symbol": "FX:USDTRY",
-                      "width": "100%",
-                      "height": "100%",
-                      "locale": "tr",
-                      "dateRange": "1M",
-                      "colorTheme": "dark",
-                      "trendLineColor": "rgba(41, 98, 255, 1)",
-                      "underLineColor": "rgba(41, 98, 255, 0.3)",
-                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
-                      "isTransparent": false,
-                      "autosize": true,
-                      "largeChartUrl": ""
-                    }
-                  </script>
-                </div>
-                <div class="swiper-slide">
-                  <div class="tradingview-widget-container"></div>
-                  <script
-                    type="text/javascript"
-                    src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                    async
-                  >
-                      {
-                      "symbol": "CAPITALCOM:EURTRY",
-                      "width": "100%",
-                      "height": "100%",
-                      "locale": "tr",
-                      "dateRange": "1D",
-                      "colorTheme": "dark",
-                      "trendLineColor": "rgba(41, 98, 255, 1)",
-                      "underLineColor": "rgba(41, 98, 255, 0.3)",
-                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
-                      "isTransparent": false,
-                      "autosize": true,
-                      "largeChartUrl": ""
-                    }
-                  </script>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Crypto Plarform -->
-    <section class="homePlatform">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <div class="portfolioManager">
-                  <img src="./img/portfolio-manager.svg" alt="" />
-                  <h2>Portfolio Manager</h2>
-                  <p>
-                    Buy and sell populer digital currencies, keep track of them
-                    in the one plece.
-                  </p>
-                </div>
-                <div class="mobileApps">
-                  <img src="./img/mobile-apps.svg" alt="" />
-                  <h2>Mobile Apps</h2>
-                  <p>
-                    Stay on top of the markets with the Cryptolly app for
-                    Android or iOS.
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 vaultProt">
-                <div class="lastCard">
-                  <img src="./img/vault-protection.svg" alt="" />
-                  <h2>Vault protection</h2>
-                  <p>
-                    For added security, store yout funds in a voult with time
-                    delayed withdrawals.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 explanations">
-            <div class="explanation">
-              <h1>
-                The most trusted cryptocurrency<br />
-                plarform.
-              </h1>
-              <p>
-                Cryptolly has a variety of featuresthat make it the best place
-                to start trading
-              </p>
-              <!-- Button Construction -->
-              <div class="commonButton">
-                <span><a href="/">Let's Trade Now</a></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Add Card-->
-    <section class="addCard">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h1>One click, instant payout with credit or debit card.</h1>
-            <p>
-              Become a crypto owner in minutes using your debit or credit card
-              and quickly purchase top cryptocurrencies.
-            </p>
-            <div class="cardList">
-              <div class="cardIkon">
-                <img src="./img/add-user.svg" alt="" />
-              </div>
-              <h2 class="title">Create an account</h2>
-            </div>
-            <div class="cardList cardList2">
-              <div class="cardIkon">
-                <img src="./img/bank.svg" alt="" />
-              </div>
-              <h2 class="title">Link your bank account</h2>
-            </div>
-            <div class="cardList cardList3">
-              <div class="cardIkon">
-                <img src="./img/wallet.svg" alt="" />
-              </div>
-              <h2 class="title">Start buying & selling</h2>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 buySellCard">
-            <div><img src="./img/Form.svg" alt="" width="100%"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- News -->
-    <section class="establishment">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <div class="newsarea">
-              <div class="newsarea1">Forbes</div>
-              <div class="newsarea2">Newsweek</div>
-              <div class="newsarea3">MetroNews</div>
-              <div class="newsarea4">EuroNews</div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 explanation">
-            <h1>What media says about Cryptolly?</h1>
-            <p>
-              “Derivative exchange America-based Cryptolly believes they will
-              continue to grow in 2020.”
-            </p>
-            <span>Newsweek, 2020</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mobile Application-->
-    <section class="mobileApplication">
-      <div class="container">
-        <div class="row main-explanation">
-          <div class="col-sm-12 col-md-6 explanation">
-            <h1>Build your crypto portfolio anywhere.</h1>
-            <p>
-              A powerful cryptocurrency exchange in your pocket. Buy, sell and
-              trade crypto on the go.
-            </p>
-            <h4>Get the Cryptolly Wallet Mobile App Now!</h4>
-            <div class="row">
-              <div class="col-6">
-                <div class="store-btn playStore">
-                  <div class="logo">
-                    <img src="./img/playStore.svg" />
-                  </div>
-                  <div class="logoContent">
-                    <p>GET IT ON</p>
-                    <h2>Google Play</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="store-btn">
-                  <div class="logo">
-                    <img src="./img/appStore.svg" />
-                  </div>
-                  <div class="logoContent">
-                    <p>Dowload on the</p>
-                    <h2>App Store</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 explanation-img">
-            <img src="./img/Phone.svg" alt="" width="100%">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Register -->
-    <section class="register">
-      <div class="container">
-        <div class="earnings">
-          <p>Ready to start trading cryptocurrency?</p>
-          <h1>
-            New users can earn up to $80 in<br />
-            crypto rewards.
-          </h1>
-          <div class="email-subs-form">
-            <form action="/" method="POST" name="feedback-form" class="emailForm">
-              <input type="email" placeholder="Enter your email address" name="abone">
-              <button type="submit" name="submit" class="lnk btn-main bg-btn"><span class="circle">Get Started </span> <i class="fas fa-chevron-right fa-icon"></i></button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="row1">
-              <div class="row1-logo">
+            <div class="row navHead">
+              <div class="col-3 logo">
                 <a href="/"><img src="./img/logo.svg" /></a>
                 <a href="/"><span class="text">Cryptolly.</span></a>
               </div>
-              <div class="row1-content">
+              <div class="col-6 nav-links">
+                <ul>
+                  <li><a href="exchange.html">Exchange</a></li>
+                  <li><a href="build-creation.html">Pricing</a></li>
+                  <li><a href="build-creation.html">Wallet</a></li>
+                  <li><a href="build-creation.html">Company</a></li>
+                  <li><a href="build-creation.html">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-3 login">
+                <span>
+                  <a href="build-creation.html" class="singIn">Sing In</a>
+                </span>
+                <span>
+                  <a href="build-creation.html" class="singUp">Sing Up</a>
+                </span>
+              </div>
+              <div class="responsiveMenu">
+                <div class="responsiveMenu">
+                  <div class="hamburger-menu">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class="menu-btn" for="menu-toggle">
+                      <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                      <li class="logo">
+                        <a href="#"><img src="./img/logo.svg" alt="" />
+                          <span class="text">Cryptolly.</span></a>
+                      </li>
+                      <li>
+                        <a class="menu-item" href="javascript:void(0)">Exchange</a>
+                      </li>
+                      <li>
+                        <a class="menu-item" href="javascript:void(0)">Pricing</a>
+                      </li>
+                      <li>
+                        <a class="menu-item" href="javascript:void(0)">Wallet</a>
+                      </li>
+                      <li>
+                        <a class="menu-item" href="javascript:void(0)">Company</a>
+                      </li>
+                      <li>
+                        <a class="menu-item" href="javascript:void(0)">Blog</a>
+                      </li>
+                      <li>
+                        <a class="menu-item" href="javascript:void(0)">Sign In</a>
+                      </li>
+                      <li>
+                        <a class="menu-item" href="javascript:void(0)">Sign Up</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slider -->
+  <section class="homeSlider">
+    <div class="container">
+      <div class="row rowSlider">
+        <div class="colSlider col-sm-12 col-md-6">
+          <div class="">
+            <h1>A trusted and secure cryptocurrency exchange.</h1>
+            <span class="description">
+              Your guide to the world of an open financial system. Get<br />
+              started with the easiest and most secure platform to buy and<br />
+              trade cryptocurrency.<br />
+            </span>
+            <div class="getStarted-btn">
+              <a href="/" class="getStarted">Get Started Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="colSlider col-sm-12 col-md-6">
+          <img src="./img/frame.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper -->
+  <section class="homeSwiper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="tradingview-widget-container"></div>
+                <script type="text/javascript"
+                  src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                      "symbol": "COINBASE:BTCUSD",
+                        "width": "100%",
+                          "height": "100%",
+                            "locale": "tr",
+                              "dateRange": "1D",
+                                "colorTheme": "dark",
+                                  "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                        "isTransparent": false,
+                                          "autosize": false,
+                                            "largeChartUrl": ""
+                    }
+                  </script>
+              </div>
+              <div class="swiper-slide">
+                <div class="tradingview-widget-container"></div>
+                <script type="text/javascript"
+                  src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                      "symbol": "COINBASE:ETHUSD",
+                        "width": "100%",
+                          "height": "100%",
+                            "locale": "tr",
+                              "dateRange": "1D",
+                                "colorTheme": "dark",
+                                  "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                        "isTransparent": false,
+                                          "autosize": true,
+                                            "largeChartUrl": ""
+                    }
+                  </script>
+              </div>
+              <div class="swiper-slide">
+                <div class="tradingview-widget-container"></div>
+                <script type="text/javascript"
+                  src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                      "symbol": "BINANCEUS:BNBUSD",
+                        "width": "100%",
+                          "height": "100%",
+                            "locale": "tr",
+                              "dateRange": "1D",
+                                "colorTheme": "dark",
+                                  "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                        "isTransparent": false,
+                                          "autosize": true,
+                                            "largeChartUrl": ""
+                    }
+                  </script>
+              </div>
+              <div class="swiper-slide">
+                <div class="tradingview-widget-container"></div>
+                <script type="text/javascript"
+                  src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                      "symbol": "COINBASE:ALGOUSD",
+                        "width": "100%",
+                          "height": "100%",
+                            "locale": "tr",
+                              "dateRange": "1D",
+                                "colorTheme": "dark",
+                                  "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                        "isTransparent": false,
+                                          "autosize": true,
+                                            "largeChartUrl": ""
+                    }
+                  </script>
+              </div>
+              <div class="swiper-slide">
+                <div class="tradingview-widget-container"></div>
+                <script type="text/javascript"
+                  src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                      "symbol": "FX:USDTRY",
+                        "width": "100%",
+                          "height": "100%",
+                            "locale": "tr",
+                              "dateRange": "1M",
+                                "colorTheme": "dark",
+                                  "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                        "isTransparent": false,
+                                          "autosize": true,
+                                            "largeChartUrl": ""
+                    }
+                  </script>
+              </div>
+              <div class="swiper-slide">
+                <div class="tradingview-widget-container"></div>
+                <script type="text/javascript"
+                  src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                      "symbol": "CAPITALCOM:EURTRY",
+                        "width": "100%",
+                          "height": "100%",
+                            "locale": "tr",
+                              "dateRange": "1D",
+                                "colorTheme": "dark",
+                                  "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                        "isTransparent": false,
+                                          "autosize": true,
+                                            "largeChartUrl": ""
+                    }
+                  </script>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crypto Plarform -->
+  <section class="homePlatform">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="portfolioManager">
+                <img src="./img/portfolio-manager.svg" alt="" />
+                <h2>Portfolio Manager</h2>
+                <p>
+                  Buy and sell populer digital currencies, keep track of them
+                  in the one plece.
+                </p>
+              </div>
+              <div class="mobileApps">
+                <img src="./img/mobile-apps.svg" alt="" />
+                <h2>Mobile Apps</h2>
+                <p>
+                  Stay on top of the markets with the Cryptolly app for
+                  Android or iOS.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 vaultProt">
+              <div class="lastCard">
+                <img src="./img/vault-protection.svg" alt="" />
+                <h2>Vault protection</h2>
+                <p>
+                  For added security, store yout funds in a voult with time
+                  delayed withdrawals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 explanations">
+          <div class="explanation">
+            <h1>
+              The most trusted cryptocurrency<br />
+              plarform.
+            </h1>
+            <p>
+              Cryptolly has a variety of featuresthat make it the best place
+              to start trading
+            </p>
+            <!-- Button Construction -->
+            <div class="commonButton">
+              <span><a href="/">Let's Trade Now</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add Card-->
+  <section class="addCard">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h1>One click, instant payout with credit or debit card.</h1>
+          <p>
+            Become a crypto owner in minutes using your debit or credit card
+            and quickly purchase top cryptocurrencies.
+          </p>
+          <div class="cardList">
+            <div class="cardIkon">
+              <img src="./img/add-user.svg" alt="" />
+            </div>
+            <h2 class="title">Create an account</h2>
+          </div>
+          <div class="cardList cardList2">
+            <div class="cardIkon">
+              <img src="./img/bank.svg" alt="" />
+            </div>
+            <h2 class="title">Link your bank account</h2>
+          </div>
+          <div class="cardList cardList3">
+            <div class="cardIkon">
+              <img src="./img/wallet.svg" alt="" />
+            </div>
+            <h2 class="title">Start buying & selling</h2>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 buySellCard">
+          <div><img src="./img/Form.svg" alt="" width="100%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="establishment">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="newsarea">
+            <div class="newsarea1">Forbes</div>
+            <div class="newsarea2">Newsweek</div>
+            <div class="newsarea3">MetroNews</div>
+            <div class="newsarea4">EuroNews</div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 explanation">
+          <h1>What media says about Cryptolly?</h1>
+          <p>
+            “Derivative exchange America-based Cryptolly believes they will
+            continue to grow in 2020.”
+          </p>
+          <span>Newsweek, 2020</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Application-->
+  <section class="mobileApplication">
+    <div class="container">
+      <div class="row main-explanation">
+        <div class="col-sm-12 col-md-6 explanation">
+          <h1>Build your crypto portfolio anywhere.</h1>
+          <p>
+            A powerful cryptocurrency exchange in your pocket. Buy, sell and
+            trade crypto on the go.
+          </p>
+          <h4>Get the Cryptolly Wallet Mobile App Now!</h4>
+          <div class="row">
+            <div class="col-6">
+              <div class="store-btn playStore">
+                <div class="logo">
+                  <img src="./img/playStore.svg" />
+                </div>
+                <div class="logoContent">
+                  <p>GET IT ON</p>
+                  <h2>Google Play</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="store-btn">
+                <div class="logo">
+                  <img src="./img/appStore.svg" />
+                </div>
+                <div class="logoContent">
+                  <p>Dowload on the</p>
+                  <h2>App Store</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 explanation-img">
+          <img src="./img/Phone.svg" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register -->
+  <section class="register">
+    <div class="container">
+      <div class="earnings">
+        <p>Ready to start trading cryptocurrency?</p>
+        <h1>
+          New users can earn up to $80 in<br />
+          crypto rewards.
+        </h1>
+        <div class="email-subs-form">
+          <form action="/" method="POST" name="feedback-form" class="emailForm">
+            <input type="email" placeholder="Enter your email address" name="abone">
+            <button type="submit" name="submit" class="lnk btn-main bg-btn"><span class="circle">Get Started </span> <i
+                class="fas fa-chevron-right fa-icon"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="row1">
+            <div class="row1-logo">
+              <a href="/"><img src="./img/logo.svg" /></a>
+              <a href="/"><span class="text">Cryptolly.</span></a>
+            </div>
+            <div class="row1-content">
               <p>Your best crypto partner</p>
-              </div>
-              <div class="row">
-                <div class="col-12 row1-media">
-                  <a href="/"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="/"><i class="fab fa-facebook-f"></i></a>
-                  <a href="/"><i class="fab fa-instagram"></i></a>
-                  <a href="/"><i class="fab fa-twitter"></i></a>
-                </div>
-              </div>   
-              
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="row2">
-              <div class="row2-title">
-                <h2>Quick Links.</h2>
-              </div>
-              <div class="row">
-                <div class="col-6 row2-content">
-                  <ul>
-                    <li><a href="/">Buy/Sell</a></li>
-                    <li><a href="/">Trade Now</a></li>
-                    <li><a href="/">Pricing</a></li> 
-                  </ul>
-                </div>
-                <div class="col-6 row2-content">
-                  <ul>
-                    <li><a href="/">Wallets</a></li>
-                    <li><a href="/">Company</a></li>
-                  </ul>
-                </div>
+            <div class="row">
+              <div class="col-12 row1-media">
+                <a href="/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="/"><i class="fab fa-facebook-f"></i></a>
+                <a href="/"><i class="fab fa-instagram"></i></a>
+                <a href="/"><i class="fab fa-twitter"></i></a>
               </div>
             </div>
+
           </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="row3">
-              <h2>Submit for updates.</h2>
-              <p>Subscribe to get update and notify our exchange and products</p>
-              <!-- Email Construction -->
-              <div class="email-subs-form">
-                <form action="/" method="POST" name="feedback-form" class="emailForm">
-                  <input type="email" placeholder="Enter your email address" name="abone">
-                  <button type="submit" name="submit" class="btn-main bg-btn"><span class="footer-btn">Send </span><i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
-                </form>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="row2">
+            <div class="row2-title">
+              <h2>Quick Links.</h2>
+            </div>
+            <div class="row">
+              <div class="col-6 row2-content">
+                <ul>
+                  <li><a href="/">Buy/Sell</a></li>
+                  <li><a href="/">Trade Now</a></li>
+                  <li><a href="/">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="col-6 row2-content">
+                <ul>
+                  <li><a href="/">Wallets</a></li>
+                  <li><a href="/">Company</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row row4">
-          <div class="col-sm-12 col-md-6">
-            <p>Cryptolly ©. All rights reserved.</p>
-          </div>
-          <div class="col-sm-12 col-md-6 row4-right">
-            <p class="row4-1">Term of Service</p>
-            <p>Privacy Policy</p>
+        <div class="col-md-4 col-sm-12">
+          <div class="row3">
+            <h2>Submit for updates.</h2>
+            <p>Subscribe to get update and notify our exchange and products</p>
+            <!-- Email Construction -->
+            <div class="email-subs-form">
+              <form action="/" method="POST" name="feedback-form" class="emailForm">
+                <input type="email" placeholder="Enter your email address" name="abone">
+                <button type="submit" name="submit" class="btn-main bg-btn"><span class="footer-btn">Send </span><i
+                    class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-   
-    <!-- <div class="container marketCap">
+    </div>
+    <div class="container">
+      <div class="row row4">
+        <div class="col-sm-12 col-md-6">
+          <p>Cryptolly ©. All rights reserved.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 row4-right">
+          <p class="row4-1">Term of Service</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <div class="container marketCap">
       <div class="row">
         <div class="col-12">
           <div class="tradingview-widget-container">
@@ -532,19 +543,17 @@
       </div>
     </div> -->
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Javascript -->
-    <script src="javascript/home.js"></script>
-    <script src="javascript/javascript.js"></script>
-    <!-- WOW AND TILT -->
-    <script src="javascript/wow-and-tilt.js"></script>
-    <!-- JQUERY CDN -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Javascript -->
+  <script src="javascript/home.js"></script>
+  <script src="javascript/javascript.js"></script>
+  <!-- WOW AND TILT -->
+  <script src="javascript/wow-and-tilt.js"></script>
+  <!-- JQUERY CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
 </html>
