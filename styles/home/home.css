@@ -841,9 +841,6 @@
   .homePlatform .mobileApps h2 {
     text-align: center;
   }
-  .homePlatform .explanations .explanation h1 {
-    font-size: 40px;
-  }
   .addCard .cardList {
     width: 100%;
     margin-bottom: 0;
@@ -886,11 +883,26 @@
   .homeSlider .rowSlider img {
     margin-top: 60px;
   }
-  .homePlatform .vaultProt .lastCard {
+  .homePlatform {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .homePlatform .portfBlock {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .homePlatform .portfBlock .vaultProt .lastCard {
     margin-top: 25px;
   }
   .homePlatform .explanations {
+    padding: 0;
+    text-align: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     margin-top: 52px;
+    margin-bottom: 35px;
   }
   .homePlatform .explanations .explanation h1 {
     text-align: center;
@@ -934,6 +946,60 @@
   }
   .mobileApplication {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .homePlatform .portfBlock {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .homePlatform .portfBlock .portf-mobil {
+    margin-right: 45px;
+    margin-left: 45px;
+  }
+  .homePlatform .portfBlock .portf-mobil h2 {
+    font-size: 18px;
+  }
+  .homePlatform .portfBlock .portf-mobil p {
+    font-size: 14px;
+  }
+  .homePlatform .portfBlock .vaultProt {
+    margin-right: 45px;
+    margin-left: 45px;
+  }
+  .homePlatform .portfBlock .vaultProt h2 {
+    font-size: 18px;
+  }
+  .homePlatform .portfBlock .vaultProt p {
+    font-size: 14px;
+  }
+  .homePlatform .explanations {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 10px 10px;
+  }
+  .homePlatform .explanations .explanation h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .homePlatform .explanations .explanation p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .homePlatform .explanations .explanation .commonButton span a {
+    font-size: 14px;
+  }
+  .addCard h1 {
+    font-size: 28px;
+  }
+  .addCard p {
+    font-size: 14px;
+  }
+  .addCard .cardList .title {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=home.css.map */
