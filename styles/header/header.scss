@@ -24,6 +24,8 @@
       align-content: center;
 
       .logo {
+        display: flex;
+        align-items: center;
         img {
           width: 50px;
         }
@@ -155,6 +157,7 @@
   &:checked {
     ~ {
       .menu-btn {
+        margin-right: 25px;
         > span {
           transform: rotate(45deg);
           &::before {

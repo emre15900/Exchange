@@ -4,6 +4,7 @@
   color: var(--grey0);
   position: relative;
 }
+
 .homeSlider::before {
   content: "";
   background-image: url(../../img/line.svg);
@@ -15,14 +16,23 @@
   left: 0;
   right: 0;
 }
+
 .homeSlider .rowSlider {
   padding: 40px 0;
 }
+
 .homeSlider .rowSlider .colSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .homeSlider .rowSlider .colSlider h1 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
@@ -31,6 +41,7 @@
   line-height: 110%;
   margin-bottom: 24px;
 }
+
 .homeSlider .rowSlider .colSlider .description {
   color: var(--gray);
   font-style: normal;
@@ -38,9 +49,11 @@
   font-size: 18px;
   line-height: 27px;
 }
+
 .homeSlider .rowSlider .colSlider .getStarted-btn {
   margin-top: 48px;
 }
+
 .homeSlider .rowSlider .colSlider .getStarted-btn .getStarted {
   text-decoration: none;
   color: var(--grey0);
@@ -49,8 +62,10 @@
   font-size: 18px;
   line-height: 28px;
   background: var(--royalBlue);
+  -webkit-transition: 2s;
   transition: 2s;
 }
+
 .homeSlider .rowSlider img {
   width: 100%;
 }
@@ -60,10 +75,12 @@
   background: var(--grey100);
   margin-top: 50px;
 }
+
 .homeSwiper .swiper {
   width: 100%;
   height: 100%;
 }
+
 .homeSwiper .swiper .swiper-slide {
   width: 346px;
   height: 178px;
@@ -73,11 +90,18 @@
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   color: var(--grey0);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 24px !important;
 }
+
 .homeSwiper .swiper .swiper-slide img {
   display: block;
   width: 100%;
@@ -85,6 +109,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .homeSwiper .swiper .swiper-scrollbar {
   position: absolute;
   left: 0;
@@ -111,26 +136,43 @@
   margin-top: 150px;
   margin-bottom: 150px;
 }
+
 .homePlatform .portfolioManager {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: var(--baseDarkTransparent);
   border-radius: 12px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: 24px;
   padding: 25px 20px;
   border: 1px solid transparent;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .homePlatform .portfolioManager:hover {
   cursor: pointer;
-  box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+  -webkit-box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
+          box-shadow: 3px 3px 2px #F27F16, 0 0 25px #F27F16, 0 0 5px #F27F16;
 }
+
 .homePlatform .portfolioManager img {
   margin-bottom: 40px;
 }
+
 .homePlatform .portfolioManager h2 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
@@ -141,6 +183,7 @@
   margin-bottom: 16px;
   text-align: center;
 }
+
 .homePlatform .portfolioManager p {
   font-style: normal;
   font-weight: normal;
@@ -149,25 +192,42 @@
   color: var(--grey40);
   text-align: center;
 }
+
 .homePlatform .mobileApps {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 25px 20px;
   background-color: var(--baseDarkTransparent);
   border-radius: 12px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border: 1px solid transparent;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .homePlatform .mobileApps:hover {
-  box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+  -webkit-box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
+          box-shadow: 3px 3px 2px #BD47FB, 0 0 25px #BD47FB, 0 0 5px #BD47FB;
   cursor: pointer;
 }
+
 .homePlatform .mobileApps img {
   margin-bottom: 40px;
 }
+
 .homePlatform .mobileApps h2 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
@@ -177,6 +237,7 @@
   color: white;
   margin-bottom: 16px;
 }
+
 .homePlatform .mobileApps p {
   font-style: normal;
   font-weight: normal;
@@ -185,30 +246,52 @@
   color: var(--grey40);
   text-align: center;
 }
+
 .homePlatform .vaultProt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
+
 .homePlatform .vaultProt .lastCard {
   padding: 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: var(--baseDarkTransparent);
   border-radius: 12px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 1px solid transparent;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .homePlatform .vaultProt .lastCard:hover {
-  box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+  -webkit-box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
+          box-shadow: 3px 3px 2px #11CABE, 0 0 25px #11CABE, 0 0 5px #11CABE;
   cursor: pointer;
 }
+
 .homePlatform .vaultProt .lastCard img {
   margin-bottom: 40px;
 }
+
 .homePlatform .vaultProt .lastCard h2 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
@@ -218,6 +301,7 @@
   color: white;
   margin-bottom: 16px;
 }
+
 .homePlatform .vaultProt .lastCard p {
   font-style: normal;
   font-weight: normal;
@@ -226,19 +310,40 @@
   color: var(--grey40);
   text-align: center;
 }
+
 .homePlatform .explanations {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 68px;
 }
+
 .homePlatform .explanations .explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .homePlatform .explanations .explanation h1 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
@@ -254,6 +359,7 @@
   line-height: 110%;
   margin-bottom: 24px;
 }
+
 .homePlatform .explanations .explanation p {
   font-style: normal;
   font-weight: normal;
@@ -262,11 +368,20 @@
   color: white;
   margin-bottom: 24px;
 }
+
 .homePlatform .explanations .explanation .explanation-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .homePlatform .explanations .explanation .explanation-btn span {
   padding: 16px 32px;
   background: var(--royalBlue);
@@ -277,14 +392,18 @@
   font-size: 16px;
   line-height: 160%;
   border: 1px solid transparent;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .homePlatform .explanations .explanation .explanation-btn span:hover {
   border: 1px solid var(--grey0);
 }
+
 .homePlatform .explanations .explanation .explanation-btn span a {
   color: var(--grey0);
 }
+
 .homePlatform .explanations .explanation .explanation-btn span a:hover {
   text-decoration: none;
 }
@@ -293,6 +412,7 @@
 .addCard {
   margin-bottom: 150px;
 }
+
 .addCard h1 {
   color: var(--grey0);
   margin-bottom: 24px;
@@ -302,6 +422,7 @@
   font-size: 49px;
   line-height: 110%;
 }
+
 .addCard p {
   color: var(--grey40);
   font-style: normal;
@@ -309,80 +430,124 @@
   font-size: 16px;
   line-height: 24px;
 }
+
 .addCard .cardList {
   color: var(--grey0);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 32px;
   margin-left: 32px;
   margin-top: 40px;
 }
+
 .addCard .cardList2 {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .addCard .cardList2 .cardIkon {
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .addCard .cardList2 .cardIkon:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 2px #11cabe, 0 0 25px #11cabe, 0 0 5px #11cabe;
+  -webkit-box-shadow: 2px 2px 2px #11cabe, 0 0 25px #11cabe, 0 0 5px #11cabe;
+          box-shadow: 2px 2px 2px #11cabe, 0 0 25px #11cabe, 0 0 5px #11cabe;
 }
+
 .addCard .cardList3 {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .addCard .cardList3 .cardIkon {
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .addCard .cardList3 .cardIkon:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 2px #bd47fb, 0 0 25px #bd47fb, 0 0 5px #bd47fb;
+  -webkit-box-shadow: 2px 2px 2px #bd47fb, 0 0 25px #bd47fb, 0 0 5px #bd47fb;
+          box-shadow: 2px 2px 2px #bd47fb, 0 0 25px #bd47fb, 0 0 5px #bd47fb;
 }
+
 .addCard .cardIkon {
   display: inline-block;
   border-radius: 50%;
   padding: 28px 28px;
   background: var(--baseDarkTransparent);
   margin-right: 20px;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .addCard .cardIkon:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 2px #f27f16, 0 0 25px #f27f16, 0 0 5px #f27f16;
+  -webkit-box-shadow: 2px 2px 2px #f27f16, 0 0 25px #f27f16, 0 0 5px #f27f16;
+          box-shadow: 2px 2px 2px #f27f16, 0 0 25px #f27f16, 0 0 5px #f27f16;
 }
+
 .addCard .title {
   color: var(--grey0);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   line-height: 120%;
 }
+
 .addCard .buySellCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /**** News ****/
 .establishment {
   margin-bottom: 150px;
 }
+
 .establishment .newsarea {
   position: relative;
 }
+
 .establishment .newsarea .newsarea1 {
   position: absolute;
   top: 0px;
   right: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 120px;
   width: 120px;
   padding: 15px;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 100%;
   text-align: center;
   background-color: var(--baseDarkTransparent);
@@ -393,16 +558,23 @@
   font-style: normal;
   font-weight: bold;
 }
+
 .establishment .newsarea .newsarea2 {
   position: absolute;
   top: 90px;
   left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 200px;
   width: 200px;
   padding: 15px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 100%;
   text-align: center;
   background-color: var(--baseDarkTransparent);
@@ -416,17 +588,24 @@
   font-weight: bold;
   border: 2px solid blue;
 }
+
 .establishment .newsarea .newsarea3 {
   position: absolute;
   top: 60px;
   right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 160px;
   width: 160px;
   padding: 15px;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 100%;
   text-align: center;
   background-color: var(--baseDarkTransparent);
@@ -437,17 +616,24 @@
   font-style: normal;
   font-weight: bold;
 }
+
 .establishment .newsarea .newsarea4 {
   position: absolute;
   top: 200px;
   right: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100px;
   width: 100px;
   padding: 15px;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 100%;
   text-align: center;
   background-color: var(--baseDarkTransparent);
@@ -458,6 +644,7 @@
   font-style: normal;
   font-weight: bold;
 }
+
 .establishment .explanation h1 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
@@ -467,6 +654,7 @@
   color: var(--grey0);
   margin-bottom: 40px;
 }
+
 .establishment .explanation p {
   font-style: normal;
   font-weight: normal;
@@ -475,6 +663,7 @@
   color: var(--grey0);
   margin-bottom: 16px;
 }
+
 .establishment .explanation span {
   font-style: normal;
   font-weight: 600;
@@ -487,10 +676,16 @@
 .mobileApplication {
   margin-bottom: 120px;
 }
+
 .mobileApplication .main-explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .mobileApplication .main-explanation .explanation h1 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
@@ -500,6 +695,7 @@
   color: var(--grey0);
   margin-bottom: 24px;
 }
+
 .mobileApplication .main-explanation .explanation p {
   font-style: normal;
   font-weight: 600;
@@ -507,8 +703,9 @@
   line-height: 27px;
   color: var(--grey40);
   margin-bottom: 48px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
+
 .mobileApplication .main-explanation .explanation h4 {
   font-style: normal;
   font-weight: 600;
@@ -517,25 +714,41 @@
   color: var(--grey0);
   margin-bottom: 24px;
 }
+
 .mobileApplication .main-explanation .explanation .store-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 25px;
   border: 1px solid var(--grey0);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 100px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .mobileApplication .main-explanation .explanation .store-btn:hover {
   cursor: pointer;
   border: 1px solid var(--royalPrime);
-  box-shadow: 3px 1px 1px var(--royalPrime), 0 0 1px var(--royalPrime), 0 0 1px var(--royalPrime);
+  -webkit-box-shadow: 3px 1px 1px var(--royalPrime), 0 0 1px var(--royalPrime), 0 0 1px var(--royalPrime);
+          box-shadow: 3px 1px 1px var(--royalPrime), 0 0 1px var(--royalPrime), 0 0 1px var(--royalPrime);
 }
+
 .mobileApplication .main-explanation .explanation .logo {
   margin-right: 24px;
 }
+
 .mobileApplication .main-explanation .explanation .logoContent p {
   font-style: normal;
   font-weight: normal;
@@ -544,6 +757,7 @@
   color: var(--grey40);
   margin-bottom: 0px;
 }
+
 .mobileApplication .main-explanation .explanation .logoContent h2 {
   font-style: normal;
   font-weight: 500;
@@ -556,15 +770,27 @@
 .register {
   margin-bottom: 120px;
 }
+
 .register .earnings {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .register .earnings .email-subs-form {
   width: 40%;
 }
+
 .register .earnings p {
   font-style: normal;
   font-weight: normal;
@@ -573,6 +799,7 @@
   color: var(--grey40);
   text-align: center;
 }
+
 .register .earnings h1 {
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
@@ -602,15 +829,14 @@
     top: 200px;
     right: 150px;
   }
-
   .register .earnings button .circle {
     display: none;
   }
-
   footer .row3 .email-subs-form .emailForm .footer-btn {
     display: none;
   }
 }
+
 @media screen and (max-width: 993px) {
   .homePlatform .mobileApps h2 {
     text-align: center;
@@ -618,13 +844,11 @@
   .homePlatform .explanations .explanation h1 {
     font-size: 40px;
   }
-
   .addCard .cardList {
     width: 100%;
     margin-bottom: 0;
     margin-left: 0;
   }
-
   .establishment .newsarea .newsarea1 {
     height: 80px;
     width: 80px;
@@ -644,14 +868,12 @@
   .establishment .newsarea .newsarea4 {
     right: 78px;
   }
-
   .mobileApplication .main-explanation .explanation .store-btn {
     padding: 0px 0px;
   }
   .mobileApplication .main-explanation .explanation .col-6 {
     padding-right: 0px;
   }
-
   .register .earnings .email-subs-form {
     width: 100%;
   }
@@ -659,59 +881,226 @@
     display: inline-block;
   }
 }
+
 @media screen and (max-width: 768px) {
   .homeSlider .rowSlider img {
     margin-top: 60px;
   }
-
-  .homePlatform .vaultProt .lastCard {
+  .homeSlider .rowSlider .colSlider h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .homeSlider .rowSlider .colSlider .description {
+    font-size: 16px;
+  }
+  .homeSlider .rowSlider .colSlider .getStarted-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeSlider .rowSlider .colSlider .getStarted-btn .getStarted {
+    font-size: 16px;
+  }
+  .homePlatform {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .homePlatform .platformBlock {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .homePlatform .platformBlock h2 {
+    font-size: 18px;
+  }
+  .homePlatform .platformBlock p {
+    font-size: 14px;
+  }
+  .homePlatform .platformBlock .vaultProt .lastCard {
     margin-top: 25px;
   }
+  .homePlatform .platformBlock .vaultProt .lastCard h2 {
+    font-size: 18px;
+  }
+  .homePlatform .platformBlock .vaultProt .lastCard p {
+    font-size: 14px;
+  }
   .homePlatform .explanations {
-    margin-top: 52px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+  .homePlatform .explanations .explanation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .homePlatform .explanations .explanation h1 {
     text-align: center;
+    font-size: 28px;
+  }
+  .homePlatform .explanations .explanation p {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 14px;
   }
   .homePlatform .explanations .explanation .commonButton {
     width: 60%;
     text-align: center;
     margin: auto;
+    font-size: 14px;
   }
-
   .addCard {
     margin-bottom: 60px;
   }
+  .addCard h1 {
+    font-size: 28px;
+  }
+  .addCard p {
+    font-size: 14px;
+  }
   .addCard .cardList {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .addCard .cardList h2 {
+    font-size: 18px;
   }
   .addCard .buySellCard {
     margin-top: 60px;
   }
-
+  .establishment {
+    margin-bottom: 60px;
+  }
   .establishment .newsarea .newsarea1 {
-    height: 110px;
-    width: 110px;
+    height: 80px;
+    width: 80px;
     font-size: 18px;
-    right: 210px;
+    left: 150px;
   }
   .establishment .newsarea .newsarea2 {
-    height: 190px;
-    width: 190px;
+    left: 50px;
+    height: 130px;
+    width: 130px;
     font-size: 20px;
   }
   .establishment .newsarea .newsarea3 {
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
+    left: 250px;
   }
   .establishment .newsarea .newsarea4 {
-    right: 170px;
+    left: 175px;
   }
   .establishment .explanation {
-    margin-top: 400px;
+    margin-top: 350px;
   }
-
+  .establishment .explanation h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .establishment .explanation p {
+    font-size: 20px;
+  }
+  .establishment .explanation span {
+    font-size: 16px;
+  }
   .mobileApplication {
-    margin-bottom: 0px;
+    margin-bottom: 70px;
   }
-}/*# sourceMappingURL=home.css.map */
+  .mobileApplication .main-explanation .explanation {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .mobileApplication .main-explanation .explanation h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .mobileApplication .main-explanation .explanation p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .mobileApplication .main-explanation .explanation h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .mobileApplication .main-explanation .explanation .store-btn {
+    margin-bottom: 10px;
+  }
+  .mobileApplication .main-explanation .explanation-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .register {
+    margin-bottom: 50px;
+  }
+  .register .earnings p {
+    font-size: 14px;
+  }
+  .register .earnings h1 {
+    font-size: 28px;
+  }
+  .register .earnings .emailForm input {
+    font-size: 14px;
+  }
+  .register .earnings .emailForm .circle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .homePlatform .portfolioManager {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .homePlatform .vaultProt {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .homePlatform .mobileApps {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .establishment .newsarea .newsarea1 {
+    height: 80px;
+    width: 80px;
+    font-size: 18px;
+    left: 100px;
+  }
+  .establishment .newsarea .newsarea2 {
+    left: 0px;
+    height: 130px;
+    width: 130px;
+    font-size: 20px;
+  }
+  .establishment .newsarea .newsarea3 {
+    height: 130px;
+    width: 130px;
+    left: 160px;
+  }
+  .establishment .newsarea .newsarea4 {
+    left: 125px;
+  }
+  .register .earnings .email-subs-form .circle {
+    display: none;
+  }
+}
+/*# sourceMappingURL=home.css.map */

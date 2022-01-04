@@ -1,5 +1,5 @@
 footer {
-    .row1 {
+    .section1 {
       .row1-logo {
         margin-bottom: 15px;
   
@@ -47,7 +47,7 @@ footer {
       }
     }
   
-    .row2 {
+    .section2 {
       .row2-title {
         display: block;
         width: 100%;
@@ -90,7 +90,7 @@ footer {
       }
     }
   
-    .row3 {
+    .section3 {
       margin-bottom: 85px;
   
       h2 {
@@ -111,7 +111,7 @@ footer {
       }
     }
   
-    .row4 {
+    .section4 {
       color: var(--grey60);
       border-top: 1px solid var(--grey80);
   
@@ -123,7 +123,7 @@ footer {
         line-height: 24px;
       }
   
-      .row4-right {
+      .section4-rightTop {
         display: flex;
         justify-content: flex-end;
   
@@ -151,19 +151,59 @@ footer {
 @media screen and (max-width:768px){
 
   footer{
-    .row{
-      .col-md-4{
-        margin-bottom: 70px;
+      .generalSection{
+        margin-bottom: 40px;
+        .section1{
+          .row1-content{
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+        .section2{
+          .row2-title{
+            h2{
+              font-size: 16px;
+            }
+          }
+          .row2-content{
+            li{
+              a{
+                font-size: 14px;
+              }
+              
+            }
+          }
+        }
+        .section3{
+          margin-bottom: 0px;
+          h2{
+            font-size: 16px;
+          }
+          p{
+            font-size: 14px;
+          }
+          .email-subs-form{
+            input{
+              font-size: 14px;
+            }
+            button{
+              font-size: 14px;
+            }
+          }
+        }
       }
-      .row3{
-        margin-bottom: 0px;
+      .section4{
+        .section4-leftBottom{
+          p{
+            font-size:14px ;
+          }
+        }
+        .section4-rightTop{
+          p{
+            font-size: 14px;
+          }
+        }
       }
-    }
-
-
   }
-  
-
-
-
 }

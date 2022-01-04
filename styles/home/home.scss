@@ -797,25 +797,73 @@
     img{
       margin-top: 60px;
     }
+    .colSlider{
+      h1{
+        font-size: 34px;
+        text-align: center;
+      }
+      .description{
+        font-size: 16px;
+      }
+      .getStarted-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .getStarted{
+          font-size:16px ;
+        }
+      }
+    }
   }
 }
 
 .homePlatform{
-  .vaultProt{
-    .lastCard{
-      margin-top: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .platformBlock{
+    order: 2;
+    h2{
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+    .vaultProt{
+      .lastCard{
+        margin-top: 25px;
+        h2{
+          font-size: 18px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
     }
   }
+  
   .explanations{
-    margin-top:52px;
+    order: 1;
+    margin-top:50px;
+    margin-bottom: 35px;
+    padding: 0;
     .explanation{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       h1{
         text-align: center;
+        font-size: 28px;
+      }
+      p{
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 14px;
       }
       .commonButton{
         width: 60%;
         text-align: center;
         margin: auto;
+        font-size:14px ;
       }
     }
     
@@ -824,8 +872,17 @@
 
 .addCard{
   margin-bottom: 60px;
+  h1{
+    font-size:28px;
+  }
+  p{
+    font-size: 14px;
+  }
   .cardList{
     justify-content: flex-start;
+    h2{
+      font-size: 18px;
+    }
   }
   .buySellCard{
     margin-top:60px;
@@ -833,32 +890,138 @@
 }
 
 .establishment{
+  margin-bottom: 60px;
   .newsarea{
-    
     .newsarea1{
-      height: 110px;
-      width: 110px;
+      height: 80px;
+      width: 80px;
       font-size: 18px;
-      right:210px;
+      left: 150px;
     }
     .newsarea2{
-      height: 190px;
-      width: 190px;
+      left: 50px;
+      height: 130px;
+      width: 130px;
       font-size: 20px;
+
     }
     .newsarea3{
-      height:160px;
-      width: 160px;
+      height:130px;
+      width: 130px;
+      left: 250px;
     }
     .newsarea4{
-      right: 170px;
+      left: 175px;
     }
   }
   .explanation{
-    margin-top: 400px;
+    margin-top: 350px;
+    h1{
+      font-size: 28px;
+      text-align: center;
+    }
+    p{
+      font-size: 20px;
+    }
+    span{
+      font-size: 16px;
+    }
   }
 }
 .mobileApplication{
-  margin-bottom: 0px;
+  margin-bottom: 70px;
+  .main-explanation{
+    .explanation{
+      order: 2;
+      h1{
+        font-size: 28px;
+        text-align: center;
+      }
+      p{
+        font-size: 14px;
+        text-align: center;
+      }
+      h4{
+        font-size: 14px;
+        text-align: center;
+      }
+      .store-btn{
+        margin-bottom: 10px;
+      }
+    }
+    .explanation-img{
+      order: 1;
+    }
+  }
+}
+.register{
+  margin-bottom: 50px;
+  .earnings{
+    p{
+      font-size: 14px;
+    }
+    h1{
+      font-size: 28px;
+    }
+    .emailForm{
+      input{
+        font-size: 14px;
+      }
+      .circle{
+        font-size: 14px;
+      }
+    }
+  }
 }
 }
+@media screen and (max-width:430px){
+  .homePlatform{
+    .portfolioManager{
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+    .vaultProt{
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+    .mobileApps{
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+  .establishment{
+    .newsarea{
+      .newsarea1{
+        height: 80px;
+        width: 80px;
+        font-size: 18px;
+        left: 100px;
+      }
+      .newsarea2{
+        left: 0px;
+        height: 130px;
+        width: 130px;
+        font-size: 20px;
+  
+      }
+      .newsarea3{
+        height:130px;
+        width: 130px;
+        left: 160px;
+      }
+      .newsarea4{
+        left: 125px;
+      }
+    }
+  }
+  .register{
+    .earnings{
+      .email-subs-form{
+        .circle{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
