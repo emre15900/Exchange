@@ -171,11 +171,36 @@ footer .section4 .section4-rightTop .row4-1 {
   footer .generalSection .section3 .email-subs-form button {
     font-size: 14px;
   }
+  footer .section4 p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  footer .section4 .section4-leftBottom {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
   footer .section4 .section4-leftBottom p {
+    margin-top: 0px;
     font-size: 14px;
+    text-align: center;
+  }
+  footer .section4 .section4-rightTop {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer .section4 .section4-rightTop p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .section3 .email-subs-form .emailForm span {
+    display: none;
   }
 }
 /*# sourceMappingURL=footer.css.map */

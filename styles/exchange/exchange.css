@@ -3,74 +3,116 @@
   border-radius: 5px;
   padding: 0;
 }
+
 .chartSection .left-buy-sell .buy-sell-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #131722;
   padding: 5px 10px;
   margin: 0;
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .quantity .title {
   color: var(--grey0);
   font-size: 14px;
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .quantity .text {
   font-size: 12px;
   color: var(--grey0);
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .price .title {
   color: var(--grey0);
   font-size: 14px;
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .price .text {
   font-size: 12px;
   color: var(--grey0);
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .lastPrice .title {
   font-size: 14px;
   color: var(--grey0);
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .lastPrice .title .bigDollar {
   font-size: 18px;
   color: var(--greenPrimary);
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .lastPrice .value {
   font-size: 18px;
   color: var(--greenPrimary);
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .lastPrice .value small {
   font-size: 12px;
   color: var(--grey40);
 }
+
 .chartSection .left-buy-sell .buy-sell-hood .percentile .rise {
   font-size: 18px;
   color: var(--greenPrimary);
 }
+
 .chartSection .left-buy-sell .buySellPath {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view {
   max-width: 100%;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-ul {
   margin-left: 0;
   padding-left: 0;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-ul .buy-sell-list {
   position: relative;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-ul .buy-sell-list::before {
   content: "";
   width: 40%;
@@ -81,9 +123,11 @@
   bottom: 0;
   background: rgba(var(--greenPrimary), 0.12);
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .sell-ul .buy-sell-list {
   position: relative;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .sell-ul .buy-sell-list::before {
   content: "";
   width: 40%;
@@ -94,6 +138,7 @@
   bottom: 0;
   background: rgba(183, 41, 30, 0.12);
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-sell-ul {
   margin: 0;
   padding: 0;
@@ -101,45 +146,60 @@
   background: var(--navyPrime);
   padding: 10px 15px 0 15px;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1.5px 0;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .value {
   color: var(--grey0);
   font-size: 12px;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .quantity {
   color: var(--grey0);
   font-size: 12px;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .price {
   color: var(--greenPrimary);
   font-size: 12px;
   padding: 3px 10px;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .buy-sell-ul .buy-sell-list .drop {
   color: var(--redPrimary);
   font-size: 12px;
   padding: 3px 10px;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .drop-graphic {
   background: var(--white-color);
   border-radius: 5px 0 0 5px;
   padding: 15px 0 0 0;
   margin: 10px 0;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .drop-graphic img {
   width: 100%;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .rise-graphic {
   background: var(--white-color);
   border-radius: 0 5px 5px 0;
   padding: 15px 0 0 0;
   margin: 10px 0;
 }
+
 .chartSection .left-buy-sell .buySellPath .graphic-view .rise-graphic img {
   width: 100%;
 }
@@ -149,73 +209,121 @@
   background: var(--navyPrime);
   padding: 15px;
 }
+
 .customExchange .coinBuy .header {
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   background: var(--navyPrime);
 }
+
 .customExchange .coinBuy .header .head {
   color: var(--greenPrimary);
   font-weight: 700;
   font-size: 16px;
 }
+
 .customExchange .coinBuy .header .balance {
   color: var(--grey0);
   font-size: 12px;
 }
+
 .customExchange .coinBuy .openOrders {
   text-align: end;
   color: var(--grey40);
   font-size: 11px;
 }
+
 .customExchange .coinBuy .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .customExchange .coinBuy .content .typesLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .customExchange .coinBuy .content .typesLine .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--grey0);
   background: var(--grey100);
   border: 1px solid var(--baseDarkTransparent);
   border-radius: 5px;
   width: 100%;
+  -webkit-transition: 500ms ease;
   transition: 500ms ease;
   font-weight: 400;
 }
+
 .customExchange .coinBuy .content .typesLine .button:nth-child(2) {
   margin: 5px;
 }
+
 .customExchange .coinBuy .content .typesLine .button:hover {
   color: var(--greenPrimary);
   border: 1px solid var(--greenPrimary);
   text-decoration: none;
 }
+
 .customExchange .coinBuy .content .typesLine .active {
   color: var(--greenPrimary);
   border: 1px solid var(--greenPrimary);
   text-decoration: none;
 }
+
 .customExchange .coinBuy .limitPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .customExchange .coinBuy .limitPrice .ask__label {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
+
 .customExchange .coinBuy .limitPrice .ask__label .inputRate {
   background: var(--grey100);
   border: 2px solid var(--baseDarkTransparent);
@@ -226,69 +334,111 @@
   margin: 8px 0;
   color: var(--grey0);
 }
-.customExchange .coinBuy .limitPrice .ask__label .inputRate::-moz-placeholder {
+
+.customExchange .coinBuy .limitPrice .ask__label .inputRate::-webkit-input-placeholder {
   color: var(--grey60);
 }
+
 .customExchange .coinBuy .limitPrice .ask__label .inputRate:-ms-input-placeholder {
   color: var(--grey60);
 }
+
+.customExchange .coinBuy .limitPrice .ask__label .inputRate::-ms-input-placeholder {
+  color: var(--grey60);
+}
+
 .customExchange .coinBuy .limitPrice .ask__label .inputRate::placeholder {
   color: var(--grey60);
 }
+
 .customExchange .coinBuy .limitPrice .ask__label .inputRate:focus {
   border: 1px solid var(--grey60);
 }
+
 .customExchange .coinBuy .limitPrice .ask__label .symbol {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--grey60);
 }
+
 .customExchange .coinBuy .limitPrice .percentile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
+
 .customExchange .coinBuy .limitPrice .percentile .typesLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
+
 .customExchange .coinBuy .limitPrice .percentile .typesLine .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--grey0);
   background: var(--grey100);
   border: 1px solid var(--baseDarkTransparent);
   border-radius: 5px;
   width: 100%;
+  -webkit-transition: 500ms ease;
   transition: 500ms ease;
   font-weight: 400;
 }
+
 .customExchange .coinBuy .limitPrice .percentile .typesLine .button:nth-child(2) {
   margin: 5px;
 }
+
 .customExchange .coinBuy .limitPrice .percentile .typesLine .button:nth-child(3) {
   margin-right: 5px;
 }
+
 .customExchange .coinBuy .limitPrice .percentile .typesLine .button:hover {
   color: var(--greenPrimary);
   border: 1px solid var(--greenPrimary);
   text-decoration: none;
 }
+
 .customExchange .coinBuy .limitPrice .percentile .typesLine .active {
   color: var(--greenPrimary);
   border: 1px solid var(--greenPrimary);
   text-decoration: none;
 }
+
 .customExchange .coinBuy .limitPrice .buyBTC {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 15px;
   background: var(--greenPrimary);
@@ -296,80 +446,130 @@
   text-decoration: none;
   border-radius: 30px;
 }
+
 .customExchange .coinBuy .limitPrice .buyBTC:hover {
   background: var(--lightGreen);
 }
+
 .customExchange .coinSell {
   background: var(--navyPrime);
   padding: 15px;
 }
+
 .customExchange .coinSell .header {
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   background: var(--navyPrime);
 }
+
 .customExchange .coinSell .header .head {
   color: var(--redPrimary);
   font-weight: 700;
   font-size: 16px;
 }
+
 .customExchange .coinSell .header .balance {
   color: var(--grey0);
   font-size: 12px;
 }
+
 .customExchange .coinSell .openOrders {
   text-align: end;
   color: var(--grey40);
   font-size: 11px;
 }
+
 .customExchange .coinSell .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .customExchange .coinSell .content .typesLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .customExchange .coinSell .content .typesLine .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--grey0);
   background: var(--grey100);
   border: 1px solid var(--baseDarkTransparent);
   border-radius: 5px;
   width: 100%;
+  -webkit-transition: 500ms ease;
   transition: 500ms ease;
   font-weight: 400;
 }
+
 .customExchange .coinSell .content .typesLine .button:nth-child(2) {
   margin: 5px;
 }
+
 .customExchange .coinSell .content .typesLine .button:hover {
   color: var(--redPrimary);
   border: 1px solid var(--redPrimary);
   text-decoration: none;
 }
+
 .customExchange .coinSell .content .typesLine .active {
   color: var(--redPrimary);
   border: 1px solid var(--redPrimary);
   text-decoration: none;
 }
+
 .customExchange .coinSell .limitPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .customExchange .coinSell .limitPrice .ask__label {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
+
 .customExchange .coinSell .limitPrice .ask__label .inputRate {
   background: var(--grey100);
   border: 2px solid var(--baseDarkTransparent);
@@ -380,69 +580,111 @@
   margin: 8px 0;
   color: var(--grey0);
 }
-.customExchange .coinSell .limitPrice .ask__label .inputRate::-moz-placeholder {
+
+.customExchange .coinSell .limitPrice .ask__label .inputRate::-webkit-input-placeholder {
   color: var(--grey60);
 }
+
 .customExchange .coinSell .limitPrice .ask__label .inputRate:-ms-input-placeholder {
   color: var(--grey60);
 }
+
+.customExchange .coinSell .limitPrice .ask__label .inputRate::-ms-input-placeholder {
+  color: var(--grey60);
+}
+
 .customExchange .coinSell .limitPrice .ask__label .inputRate::placeholder {
   color: var(--grey60);
 }
+
 .customExchange .coinSell .limitPrice .ask__label .inputRate:focus {
   border: 1px solid var(--grey60);
 }
+
 .customExchange .coinSell .limitPrice .ask__label .symbol {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--grey60);
 }
+
 .customExchange .coinSell .limitPrice .percentile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
+
 .customExchange .coinSell .limitPrice .percentile .typesLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
+
 .customExchange .coinSell .limitPrice .percentile .typesLine .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--grey0);
   background: var(--grey100);
   border: 1px solid var(--baseDarkTransparent);
   border-radius: 5px;
   width: 100%;
+  -webkit-transition: 500ms ease;
   transition: 500ms ease;
   font-weight: 400;
 }
+
 .customExchange .coinSell .limitPrice .percentile .typesLine .button:nth-child(2) {
   margin: 5px;
 }
+
 .customExchange .coinSell .limitPrice .percentile .typesLine .button:nth-child(3) {
   margin-right: 5px;
 }
+
 .customExchange .coinSell .limitPrice .percentile .typesLine .button:hover {
   color: var(--redPrimary);
   border: 1px solid var(--redPrimary);
   text-decoration: none;
 }
+
 .customExchange .coinSell .limitPrice .percentile .typesLine .active {
   color: var(--redPrimary);
   border: 1px solid var(--redPrimary);
   text-decoration: none;
 }
+
 .customExchange .coinSell .limitPrice .sellBTC {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 15px;
   background: var(--redPrimary);
@@ -450,6 +692,7 @@
   text-decoration: none;
   border-radius: 30px;
 }
+
 .customExchange .coinSell .limitPrice .sellBTC:hover {
   background: #cb1f48;
 }
@@ -459,9 +702,11 @@
   background: var(--navyPrime);
   padding: 16px;
 }
+
 .exchangeFilter .content .search {
   position: relative;
 }
+
 .exchangeFilter .content .search input {
   width: 100%;
   outline: 0;
@@ -471,12 +716,14 @@
   color: var(--grey0);
   border-radius: 8px;
 }
+
 .exchangeFilter .content .search img {
   position: absolute;
   top: 14px;
   left: 12px;
   cursor: pointer;
 }
+
 .exchangeFilter .content .coin-list .coin-item {
   background: var(--grey100);
   border-radius: 8px;
@@ -484,300 +731,436 @@
   padding: 8px 10px;
   cursor: pointer;
 }
+
 .exchangeFilter .content .coin-list .coin-item:first-child {
   margin-top: 10px;
 }
+
 .exchangeFilter .content .coin-list .ripple {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .exchangeFilter .content .coin-list .ripple .ripple-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .content .coin-list .ripple .ripple-detail img {
   margin-right: 16px;
 }
+
 .exchangeFilter .content .coin-list .ripple .ripple-detail .ripple-title .ripple-text {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .ripple .ripple-detail .ripple-title .xrp {
   font-size: 14px;
   color: var(--grey60);
 }
+
 .exchangeFilter .content .coin-list .ripple .data {
   text-align: end;
 }
+
 .exchangeFilter .content .coin-list .ripple .data .price {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .ripple .data .drop {
   font-size: 14px;
   color: var(--redPrimary);
 }
+
 .exchangeFilter .content .coin-list .bittorrent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .exchangeFilter .content .coin-list .bittorrent .bittorrent-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .content .coin-list .bittorrent .bittorrent-detail img {
   margin-right: 16px;
 }
+
 .exchangeFilter .content .coin-list .bittorrent .bittorrent-detail .bittorrent-title .bittorrent-text {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .bittorrent .bittorrent-detail .bittorrent-title .btt {
   font-size: 14px;
   color: var(--grey60);
 }
+
 .exchangeFilter .content .coin-list .bittorrent .data {
   text-align: end;
 }
+
 .exchangeFilter .content .coin-list .bittorrent .data .price {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .bittorrent .data .drop {
   font-size: 14px;
   color: var(--redPrimary);
 }
+
 .exchangeFilter .content .coin-list .bittorrent .data .rise {
   font-size: 16px;
   color: var(--greenPrimary);
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash .bitcoin-cash-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash .bitcoin-cash-detail img {
   margin-right: 16px;
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash .bitcoin-cash-detail .bitcoin-cash-title .bitcoin-cash-text {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash .bitcoin-cash-detail .bitcoin-cash-title .bch {
   font-size: 14px;
   color: var(--grey60);
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash .data {
   text-align: end;
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash .data .price {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash .data .drop {
   font-size: 14px;
   color: var(--redPrimary);
 }
+
 .exchangeFilter .content .coin-list .bitcoin-cash .data .rise {
   font-size: 16px;
   color: var(--greenPrimary);
 }
+
 .exchangeFilter .content .coin-list .ethereum {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .exchangeFilter .content .coin-list .ethereum .ethereum-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .content .coin-list .ethereum .ethereum-detail img {
   margin-right: 16px;
 }
+
 .exchangeFilter .content .coin-list .ethereum .ethereum-detail .ethereum-title .ethereum-text {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .ethereum .ethereum-detail .ethereum-title .eth {
   font-size: 14px;
   color: var(--grey60);
 }
+
 .exchangeFilter .content .coin-list .ethereum .data {
   text-align: end;
 }
+
 .exchangeFilter .content .coin-list .ethereum .data .price {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .ethereum .data .drop {
   font-size: 14px;
   color: var(--redPrimary);
 }
+
 .exchangeFilter .content .coin-list .ethereum .data .rise {
   font-size: 16px;
   color: var(--greenPrimary);
 }
+
 .exchangeFilter .content .coin-list .digibyte {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px 10px;
 }
+
 .exchangeFilter .content .coin-list .digibyte .digibyte-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .content .coin-list .digibyte .digibyte-detail img {
   margin-right: 16px;
 }
+
 .exchangeFilter .content .coin-list .digibyte .digibyte-detail .digibyte-title .digibyte-text {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .digibyte .digibyte-detail .digibyte-title .dgb {
   font-size: 14px;
   color: var(--grey60);
 }
+
 .exchangeFilter .content .coin-list .digibyte .data {
   text-align: end;
 }
+
 .exchangeFilter .content .coin-list .digibyte .data .price {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .digibyte .data .drop {
   font-size: 14px;
   color: var(--redPrimary);
 }
+
 .exchangeFilter .content .coin-list .digibyte .data .rise {
   font-size: 16px;
   color: var(--greenPrimary);
 }
+
 .exchangeFilter .content .coin-list .holo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .exchangeFilter .content .coin-list .holo .holo-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .content .coin-list .holo .holo-detail img {
   margin-right: 16px;
 }
+
 .exchangeFilter .content .coin-list .holo .holo-detail .holo-title .holo-text {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .holo .holo-detail .holo-title .hot {
   font-size: 14px;
   color: var(--grey60);
 }
+
 .exchangeFilter .content .coin-list .holo .data {
   text-align: end;
 }
+
 .exchangeFilter .content .coin-list .holo .data .price {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .holo .data .drop {
   font-size: 14px;
   color: var(--redPrimary);
 }
+
 .exchangeFilter .content .coin-list .holo .data .rise {
   font-size: 16px;
   color: var(--greenPrimary);
 }
+
 .exchangeFilter .content .coin-list .litecoin {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .exchangeFilter .content .coin-list .litecoin .litecoin-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .content .coin-list .litecoin .litecoin-detail img {
   margin-right: 16px;
 }
+
 .exchangeFilter .content .coin-list .litecoin .litecoin-detail .litecoin-title .litecoin-text {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .litecoin .litecoin-detail .litecoin-title .ltc {
   font-size: 14px;
   color: var(--grey60);
 }
+
 .exchangeFilter .content .coin-list .litecoin .data {
   text-align: end;
 }
+
 .exchangeFilter .content .coin-list .litecoin .data .price {
   display: block;
   font-size: 16px;
   color: var(--grey0);
 }
+
 .exchangeFilter .content .coin-list .litecoin .data .drop {
   font-size: 14px;
   color: var(--redPrimary);
 }
+
 .exchangeFilter .content .coin-list .litecoin .data .rise {
   font-size: 16px;
   color: var(--greenPrimary);
 }
+
 .exchangeFilter .statistics-data {
   background-color: var(--navyPrime);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 17px 32px;
 }
+
 .exchangeFilter .statistics-data span {
   color: var(--grey60);
 }
+
 .exchangeFilter .statistics-data .hood {
   font-size: 20px;
   color: var(--grey0);
   font-weight: bold;
   margin-bottom: 15px;
 }
+
 .exchangeFilter .statistics-data .tether-title {
   font-size: 14px;
   color: var(--grey0);
   margin-bottom: 9px;
 }
+
 .exchangeFilter .statistics-data .tether-data {
   font-size: 16px;
   margin-bottom: 16px;
 }
+
 .exchangeFilter .statistics-data .market-value {
   font-size: 14px;
   color: var(--grey0);
   margin-bottom: 9px;
 }
+
 .exchangeFilter .statistics-data .market-data {
   font-size: 16px;
   margin-bottom: 16px;
 }
+
 .exchangeFilter .statistics-data .min-max {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .statistics-data .min-max .minimal-maximum {
   font-size: 14px;
   color: var(--grey0);
   margin-bottom: 9px;
   margin-right: 50px;
 }
+
 .exchangeFilter .statistics-data .min-max .days {
   color: var(--grey0);
   font-size: 12px;
@@ -786,51 +1169,65 @@
   border-radius: 5px;
   max-height: 23px;
 }
+
 .exchangeFilter .statistics-data .min-max-value {
   font-size: 16px;
   margin-bottom: 16px;
 }
+
 .exchangeFilter .statistics-data .all-time-hight {
   font-size: 14px;
   color: var(--grey0);
   margin-bottom: 9px;
 }
+
 .exchangeFilter .statistics-data .all-time-low {
   font-size: 14px;
   color: var(--grey0);
   margin-bottom: 9px;
 }
+
 .exchangeFilter .statistics-data .value-percentile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .exchangeFilter .statistics-data .value-percentile .value {
   font-size: 16px;
   margin-bottom: 16px;
   margin-right: 10px;
 }
+
 .exchangeFilter .statistics-data .value-percentile .drop {
   font-size: 16px;
   color: var(--redPrimary);
 }
+
 .exchangeFilter .statistics-data .value-percentile .rise {
   font-size: 16px;
   color: var(--greenPrimary);
 }
+
 .exchangeFilter .statistics-data .total-supply {
   font-size: 14px;
   color: var(--grey0);
   margin-bottom: 9px;
 }
+
 .exchangeFilter .statistics-data .supply-value {
   font-size: 16px;
   margin-bottom: 16px;
 }
+
 .exchangeFilter .statistics-data .max-supply {
   font-size: 14px;
   color: var(--grey0);
   margin-bottom: 9px;
 }
+
 .exchangeFilter .statistics-data .supply-data {
   font-size: 16px;
   margin-bottom: 16px;
-}/*# sourceMappingURL=exchange.css.map */
+}
+/*# sourceMappingURL=exchange.css.map */

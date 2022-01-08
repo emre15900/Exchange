@@ -215,6 +215,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
     .lastCard {
       padding: 25px 20px;
       display: flex;
@@ -410,7 +411,8 @@
     font-size: 25px;
     line-height: 120%;
   }
-  .buySellCard{
+
+  .buySellCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -700,19 +702,19 @@
 
   .register {
     .earnings {
-      button{
-        .circle{
+      button {
+        .circle {
           display: none;
         }
       }
     }
   }
 
-  footer{
-    .row3{
-      .email-subs-form{
-        .emailForm{
-          .footer-btn{
+  footer {
+    .row3 {
+      .email-subs-form {
+        .emailForm {
+          .footer-btn {
             display: none;
           }
         }
@@ -721,307 +723,433 @@
   }
 }
 
-@media screen and (max-width:993px){
-  .homePlatform{
-    .mobileApps{
-      h2{
+@media screen and (max-width:993px) {
+  .homePlatform {
+    .mobileApps {
+      h2 {
         text-align: center;
       }
     }
-    .explanations{
-      .explanation{
-        h1{
+
+    .explanations {
+      .explanation {
+        h1 {
           font-size: 40px;
         }
       }
     }
   }
 
-  .addCard{
-    .cardList{
+  .addCard {
+    .cardList {
       width: 100%;
       margin-bottom: 0;
       margin-left: 0;
     }
   }
-  .establishment{
-    .newsarea{
-      .newsarea1{
+
+  .establishment {
+    .newsarea {
+      .newsarea1 {
         height: 80px;
         width: 80px;
         font-size: 15px;
         right: 128px;
       }
-      .newsarea2{
+
+      .newsarea2 {
         height: 150px;
         width: 150px;
         font-size: 15px;
       }
-      .newsarea3{
+
+      .newsarea3 {
         height: 110px;
         width: 110px;
         font-size: 15px;
       }
-      .newsarea4{
+
+      .newsarea4 {
         right: 78px;
       }
     }
   }
-  .mobileApplication{
-    .main-explanation{
-      .explanation{
-        .store-btn{
+
+  .mobileApplication {
+    .main-explanation {
+      .explanation {
+        .store-btn {
           padding: 0px 0px;
         }
-        .col-6{
+
+        .col-6 {
           padding-right: 0px;
         }
       }
     }
   }
-  .register{
-    .earnings{
-      .email-subs-form{
+
+  .register {
+    .earnings {
+      .email-subs-form {
         width: 100%;
-        .circle{
+
+        .circle {
           display: inline-block;
         }
       }
     }
   }
- 
+
 }
-@media screen and (max-width:768px){
-.homeSlider{
-  .rowSlider{
-    img{
-      margin-top: 60px;
-    }
-    .colSlider{
-      h1{
-        font-size: 34px;
-        text-align: center;
+
+@media screen and (max-width:768px) {
+  .homeSlider {
+    .rowSlider {
+      img {
+        margin-top: 60px;
       }
-      .description{
-        font-size: 16px;
-      }
-      .getStarted-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .getStarted{
-          font-size:16px ;
+
+      .colSlider {
+        h1 {
+          font-size: 34px;
+          text-align: center;
+        }
+
+        .description {
+          font-size: 16px;
+        }
+
+        .getStarted-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .getStarted {
+            font-size: 16px;
+          }
         }
       }
     }
   }
-}
 
-.homePlatform{
-  margin-top: 40px;
-  margin-bottom: 40px;
-  .platformBlock{
-    order: 2;
-    h2{
-      font-size: 18px;
+  .homePlatform {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .platformBlock {
+      order: 2;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .vaultProt {
+        .lastCard {
+          margin-top: 25px;
+
+          h2 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
     }
-    p{
+
+    .explanations {
+      order: 1;
+      margin-top: 50px;
+      margin-bottom: 35px;
+      padding: 0;
+
+      .explanation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          text-align: center;
+          font-size: 28px;
+        }
+
+        p {
+          margin-right: 20px;
+          margin-left: 20px;
+          font-size: 14px;
+        }
+
+        .commonButton {
+          width: 60%;
+          text-align: center;
+          margin: auto;
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+
+  .addCard {
+    margin-bottom: 60px;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
       font-size: 14px;
     }
-    .vaultProt{
-      .lastCard{
-        margin-top: 25px;
-        h2{
-          font-size: 18px;
+
+    .cardList {
+      justify-content: flex-start;
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .buySellCard {
+      margin-top: 60px;
+    }
+  }
+
+  .establishment {
+    margin-bottom: 60px;
+
+    .newsarea {
+      .newsarea1 {
+        height: 80px;
+        width: 80px;
+        font-size: 18px;
+        left: 190px;
+      }
+
+      .newsarea2 {
+        left: 50px;
+        height: 130px;
+        width: 130px;
+        font-size: 20px;
+
+      }
+
+      .newsarea3 {
+        height: 130px;
+        width: 130px;
+        left: 300px;
+      }
+
+      .newsarea4 {
+        left: 200px;
+      }
+    }
+
+    .explanation {
+      margin-top: 350px;
+
+      h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .mobileApplication {
+    margin-bottom: 70px;
+
+    .main-explanation {
+      .explanation {
+        order: 2;
+
+        h1 {
+          font-size: 28px;
+          text-align: center;
         }
-        p{
+
+        p {
+          font-size: 14px;
+          text-align: center;
+        }
+
+        h4 {
+          font-size: 14px;
+          text-align: center;
+        }
+
+        .store-btn {
+          margin-bottom: 10px;
+        }
+      }
+
+      .explanation-img {
+        order: 1;
+      }
+    }
+  }
+
+  .register {
+    margin-bottom: 50px;
+
+    .earnings {
+      p {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .emailForm {
+        input {
+          font-size: 14px;
+        }
+
+        .circle {
           font-size: 14px;
         }
       }
     }
   }
-  
-  .explanations{
-    order: 1;
-    margin-top:50px;
-    margin-bottom: 35px;
-    padding: 0;
-    .explanation{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h1{
-        text-align: center;
-        font-size: 28px;
-      }
-      p{
-        margin-right: 20px;
-        margin-left: 20px;
-        font-size: 14px;
-      }
-      .commonButton{
-        width: 60%;
-        text-align: center;
-        margin: auto;
-        font-size:14px ;
-      }
-    }
-    
-  }
 }
-
-.addCard{
-  margin-bottom: 60px;
-  h1{
-    font-size:28px;
-  }
-  p{
-    font-size: 14px;
-  }
-  .cardList{
-    justify-content: flex-start;
-    h2{
-      font-size: 18px;
-    }
-  }
-  .buySellCard{
-    margin-top:60px;
-  }
-}
-
-.establishment{
-  margin-bottom: 60px;
-  .newsarea{
-    .newsarea1{
-      height: 80px;
-      width: 80px;
-      font-size: 18px;
-      left: 150px;
-    }
-    .newsarea2{
-      left: 50px;
-      height: 130px;
-      width: 130px;
-      font-size: 20px;
-
-    }
-    .newsarea3{
-      height:130px;
-      width: 130px;
-      left: 250px;
-    }
-    .newsarea4{
-      left: 175px;
-    }
-  }
-  .explanation{
-    margin-top: 350px;
-    h1{
-      font-size: 28px;
-      text-align: center;
-    }
-    p{
-      font-size: 20px;
-    }
-    span{
-      font-size: 16px;
-    }
-  }
-}
-.mobileApplication{
-  margin-bottom: 70px;
-  .main-explanation{
-    .explanation{
-      order: 2;
-      h1{
-        font-size: 28px;
-        text-align: center;
-      }
-      p{
-        font-size: 14px;
-        text-align: center;
-      }
-      h4{
-        font-size: 14px;
-        text-align: center;
-      }
-      .store-btn{
-        margin-bottom: 10px;
-      }
-    }
-    .explanation-img{
-      order: 1;
-    }
-  }
-}
-.register{
-  margin-bottom: 50px;
-  .earnings{
-    p{
-      font-size: 14px;
-    }
-    h1{
-      font-size: 28px;
-    }
-    .emailForm{
-      input{
-        font-size: 14px;
-      }
-      .circle{
-        font-size: 14px;
+@media screen and (max-width:515px){
+  .establishment{
+    .newsarea{
+      .newsarea3{
+        left: 265px;
       }
     }
   }
 }
-}
-@media screen and (max-width:430px){
-  .homePlatform{
-    .portfolioManager{
-      margin-right: 40px;
-      margin-left: 40px;
-    }
-    .vaultProt{
-      margin-right: 40px;
-      margin-left: 40px;
-    }
-    .mobileApps{
-      margin-right: 40px;
-      margin-left: 40px;
-    }
-  }
+@media screen and (max-width:442px){
   .establishment{
     .newsarea{
       .newsarea1{
-        height: 80px;
-        width: 80px;
-        font-size: 18px;
-        left: 100px;
+        left: 127px;
       }
       .newsarea2{
-        left: 0px;
-        height: 130px;
-        width: 130px;
-        font-size: 20px;
-  
+        left: 17px;
+
       }
       .newsarea3{
-        height:130px;
-        width: 130px;
-        left: 160px;
+        left: 220px;
+        width: 110px;
+        height: 110px;
       }
       .newsarea4{
-        left: 125px;
+        left: 160px;
+      }
+    }
+
+  }
+
+}
+@media screen and (max-width:371px) {
+  .establishment {
+    .newsarea {
+      .newsarea1 {
+        height: 90px;
+        width: 90px;
+        font-size: 13px;
+        left: 111px;
+      }
+
+      .newsarea2 {
+        left: 15px;
+        top: 60px;
+        height: 120px;
+        width: 120px;
+        font-size: 13px;
+
+      }
+
+      .newsarea3 {
+        height: 110px;
+        width: 110px;
+        left: 184px;
+        font-size: 13px;
+      }
+
+      .newsarea4 {
+        left: 116px;
+        top: 140px;
+        font-size: 13px;
+        width: 90px;
+        height: 90px;
+
       }
     }
   }
-  .register{
-    .earnings{
-      .email-subs-form{
-        .circle{
+}
+
+@media screen and (max-width:336px) {
+  .homePlatform {
+    .portfolioManager {
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+
+    .vaultProt {
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+
+    .mobileApps {
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+
+  .establishment {
+    .newsarea {
+      .newsarea1 {
+        height: 60px;
+        width: 60px;
+        left: 100px;
+      }
+
+      .newsarea2 {
+        left: 15px;
+        top: 60px;
+        height: 90px;
+        width: 90px;
+      }
+
+      .newsarea3 {
+        height: 80px;
+        width: 80px;
+        left: 175px;
+      }
+
+      .newsarea4 {
+        left: 125px;
+        top: 140px;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  .register {
+    .earnings {
+      .email-subs-form {
+        .circle {
           display: none;
         }
       }
     }
   }
 }
-

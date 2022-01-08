@@ -194,12 +194,22 @@ footer {
         }
       }
       .section4{
+        p{
+          margin-top: 5px;
+          margin-bottom: 0px;
+        }
         .section4-leftBottom{
+          order: 2;
+          
           p{
+            margin-top: 0px;
             font-size:14px ;
+            text-align: center;
           }
         }
         .section4-rightTop{
+          order: 1;
+          justify-content: center;
           p{
             font-size: 14px;
           }
@@ -207,3 +217,18 @@ footer {
       }
   }
 }
+@media screen and (max-width:334px){
+  .section3{
+    .email-subs-form{
+      .emailForm{
+        span{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
