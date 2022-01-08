@@ -1116,6 +1116,9 @@
     width: 90px;
     height: 90px;
   }
+  .establishment .explanation {
+    margin-top: 276px;
+  }
 }
 
 @media screen and (max-width: 336px) {
