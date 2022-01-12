@@ -1,0 +1,166 @@
+/** Aside **/
+section {
+    margin-top: 24px;
+
+    .aside {
+        .heading {
+            margin-bottom: 24px;
+
+            p {
+                color: var(--grey40);
+                font-family: Graphik;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+
+            h2 {
+                color: var(--grey0);
+                font-family: Graphik;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 27px;
+
+                span {
+                    color: var(--lightGreen);
+                    font-family: Graphik;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 27px;
+                }
+            }
+        }
+
+        .exchange {
+            background: var(--baseDarkTransparent);
+            padding: 16px 16px 0px 16px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+
+            .title {
+                p {
+                    color: var(--grey60);
+                    font-family: Graphik;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+            }
+
+            .content {
+                .logo {}
+
+                .title {
+                    h2 {
+                        margin-bottom: 4px;
+                        color: var(--grey0);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 27px;
+
+                    }
+
+                    h3 {
+                        margin-bottom: 4px;
+                        color: var(--grey20);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    p {
+                        color: var(--grey60);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+
+                .graphic {
+                    .title {
+                        p {
+                            color: var(--lightGreen);
+                            font-family: Graphik;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    .chart {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .table {
+        background: var(--baseDarkTransparent);
+        border-radius: 12px;
+        padding: 24px;
+
+        .tableMenu {
+            display: flex;
+            justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+
+            .title {
+                h2 {
+                    font-family: Sofia Pro;
+                    color: var(--grey0);
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 120%;
+                }
+
+            }
+
+            .tableLinks {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            font-family: Sofia Pro;
+                            color: var(--grey60);
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 160%;
+                            padding: 8px 16px;
+                            transition: 0.7s;
+                            &:hover {
+                                background: var(--darkerGrey);
+                                border-radius: 50px;
+                                color: var(--grey0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+/** Aside **/
+section {
+  margin-top: 24px;
+}
+
+section .aside .heading {
+  margin-bottom: 24px;
+}
+
+section .aside .heading p {
+  color: var(--grey40);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+section .aside .heading h2 {
+  color: var(--grey0);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+}
+
+section .aside .heading h2 span {
+  color: var(--lightGreen);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+}
+
+section .aside .exchange {
+  background: var(--baseDarkTransparent);
+  padding: 16px 16px 0px 16px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+section .aside .exchange .title p {
+  color: var(--grey60);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .aside .exchange .content .title h2 {
+  margin-bottom: 4px;
+  color: var(--grey0);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+section .aside .exchange .content .title h3 {
+  margin-bottom: 4px;
+  color: var(--grey20);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .aside .exchange .content .title p {
+  color: var(--grey60);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .aside .exchange .content .graphic .title p {
+  color: var(--lightGreen);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .aside .exchange .content .graphic .chart img {
+  width: 100%;
+}
+
+section .table {
+  background: var(--baseDarkTransparent);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+section .table .tableMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section .table .tableMenu .title h2 {
+  font-family: Sofia Pro;
+  color: var(--grey0);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+section .table .tableMenu .tableLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .table .tableMenu .tableLinks ul li {
+  list-style: none;
+}
+
+section .table .tableMenu .tableLinks ul li a {
+  text-decoration: none;
+  font-family: Sofia Pro;
+  color: var(--grey60);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  padding: 8px 16px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+section .table .tableMenu .tableLinks ul li a:hover {
+  background: var(--darkerGrey);
+  border-radius: 50px;
+  color: var(--grey0);
+}
+/*# sourceMappingURL=market.css.map */
