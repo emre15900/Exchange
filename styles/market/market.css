@@ -93,13 +93,15 @@ section .aside .exchange .content .graphic .chart img {
   width: 100%;
 }
 
-section .table {
+section .tableLink {
   background: var(--baseDarkTransparent);
   border-radius: 12px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   padding: 24px;
 }
 
-section .table .tableMenu {
+section .tableLink .tableMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +117,7 @@ section .table .tableMenu {
       align-content: center;
 }
 
-section .table .tableMenu .title h2 {
+section .tableLink .tableMenu .title h2 {
   font-family: Sofia Pro;
   color: var(--grey0);
   font-style: normal;
@@ -124,7 +126,7 @@ section .table .tableMenu .title h2 {
   line-height: 120%;
 }
 
-section .table .tableMenu .tableLinks ul {
+section .tableLink .tableMenu .tableLinks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,11 +139,11 @@ section .table .tableMenu .tableLinks ul {
           align-items: center;
 }
 
-section .table .tableMenu .tableLinks ul li {
+section .tableLink .tableMenu .tableLinks ul li {
   list-style: none;
 }
 
-section .table .tableMenu .tableLinks ul li a {
+section .tableLink .tableMenu .tableLinks ul li a {
   text-decoration: none;
   font-family: Sofia Pro;
   color: var(--grey60);
@@ -154,9 +156,92 @@ section .table .tableMenu .tableLinks ul li a {
   transition: 0.7s;
 }
 
-section .table .tableMenu .tableLinks ul li a:hover {
+section .tableLink .tableMenu .tableLinks ul li a:hover {
   background: var(--darkerGrey);
   border-radius: 50px;
   color: var(--grey0);
+}
+
+section .coinTable {
+  background: var(--baseDarkTransparent);
+}
+
+section .coinTable .table thead tr {
+  border-bottom: 1px solid var(--grey80);
+}
+
+section .coinTable .table thead tr th {
+  color: var(--grey60);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .coinTable .table .marketTableBody tr {
+  padding: 31px 15px;
+}
+
+section .coinTable .table .marketTableBody tr .assets {
+  color: var(--grey0);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .coinTable .table .marketTableBody tr .title {
+  color: var(--grey40);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .coinTable .table .marketTableBody tr .lastPrice {
+  color: var(--grey0);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .coinTable .table .marketTableBody tr .marketCap {
+  color: var(--grey0);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .coinTable .table .marketTableBody tr .change {
+  color: var(--lightGreen);
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .coinTable .table .marketTableBody tr .chart img {
+  width: 70px;
+}
+
+section .coinTable .table .marketTableBody tr .trade button {
+  border: 1px solid #1e66f0;
+  border-radius: 12px;
+  padding: 1px 15px;
+  background: transparent;
+  color: var(--grey0);
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
 }
 /*# sourceMappingURL=market.css.map */

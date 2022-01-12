@@ -110,9 +110,11 @@ section {
         }
     }
 
-    .table {
+    .tableLink {
         background: var(--baseDarkTransparent);
         border-radius: 12px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
         padding: 24px;
 
         .tableMenu {
@@ -140,8 +142,10 @@ section {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+
                     li {
                         list-style: none;
+
                         a {
                             text-decoration: none;
                             font-family: Sofia Pro;
@@ -152,12 +156,108 @@ section {
                             line-height: 160%;
                             padding: 8px 16px;
                             transition: 0.7s;
+
                             &:hover {
                                 background: var(--darkerGrey);
                                 border-radius: 50px;
                                 color: var(--grey0);
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .coinTable {
+        background: var(--baseDarkTransparent);
+
+        .table {
+            
+            thead {
+                tr {
+                    border-bottom: 1px solid var(--grey80);
+                    th {
+                        color: var(--grey60);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .marketTableBody {
+                tr {
+                    
+                   padding: 31px 15px;
+                    .assets {
+                        
+                        color: var(--grey0);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .title {
+                        color: var(--grey40);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .lastPrice {
+                        color: var(--grey0);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .marketCap {
+                        color: var(--grey0);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .change {
+                        color: var(--lightGreen);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .chart {
+                        img {
+                            width: 70px;
+                        }
+                    }
+
+                    .trade {
+                        button {
+                            border: 1px solid rgba(30, 102, 240, 1);
+                            border-radius: 12px;
+                            padding: 1px 15px;
+                            background: transparent;
+                            color: var(--grey0);
+                            font-family: Sofia Pro;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+
                     }
                 }
             }
