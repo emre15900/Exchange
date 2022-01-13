@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+//------Header
+.header {
+    width: 100%;
+    background: var(--grey100);
+    position: relative;
+    z-index: 3;
+
+    .nav {
+        padding: 15px 0;
+
+        .navHead {
+            .logo {
+                display: flex;
+                align-items: center;
+
+                .text {
+                    padding-left: 44px;
+                    color: var(--grey0);
+                    font-family: "Sora", sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+
+            }
+
+            .nav-links {
+                flex: 1;
+                text-align: right;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        padding: 8px 12px;
+                        position: relative;
+
+                        a {
+                            font-family: "Roboto", sans-serif;
+                            color: var(--grey60);
+                            text-decoration: none;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            transition: 0.5s;
+
+                            &:hover {
+                                color: var(--grey0);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .search-box{
+                border-radius: 40px;
+                padding: 10px;
+                .search-txt{
+                    border: none;
+                    background: var(--baseDarkTransparent);
+                    padding: 0;
+                    
+                }
+                .search-btn{
+                    background: var(--baseDarkTransparent);
+                }
+            }
+
+            .notification {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 8px 24px;
+            }
+
+            .person {
+                display: flex;
+                align-items: center;
+
+                h1 {
+                    margin-top: auto;
+                    color: var(--grey0);
+                    font-family: Sofia Pro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 160%;
+                    margin-right: 15px;
+                }
+
+                img {
+                    margin-right: 11px;
+                }
+            }
+        }
+    }
+
+}

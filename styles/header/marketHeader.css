@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background: var(--grey100);
+  position: relative;
+  z-index: 3;
+}
+
+.header .nav {
+  padding: 15px 0;
+}
+
+.header .nav .navHead .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav .navHead .logo .text {
+  padding-left: 44px;
+  color: var(--grey0);
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.header .nav .navHead .nav-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.header .nav .navHead .nav-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav .navHead .nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.header .nav .navHead .nav-links ul li a {
+  font-family: "Roboto", sans-serif;
+  color: var(--grey60);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .nav .navHead .nav-links ul li a:hover {
+  color: var(--grey0);
+}
+
+.header .nav .navHead .search-box {
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.header .nav .navHead .search-box .search-txt {
+  border: none;
+  background: var(--baseDarkTransparent);
+  padding: 0;
+}
+
+.header .nav .navHead .search-box .search-btn {
+  background: var(--baseDarkTransparent);
+}
+
+.header .nav .navHead .notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 24px;
+}
+
+.header .nav .navHead .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav .navHead .person h1 {
+  margin-top: auto;
+  color: var(--grey0);
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  margin-right: 15px;
+}
+
+.header .nav .navHead .person img {
+  margin-right: 11px;
+}
+/*# sourceMappingURL=marketHeader.css.map */
