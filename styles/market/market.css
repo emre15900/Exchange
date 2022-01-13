@@ -164,6 +164,12 @@ section .tableLink .tableMenu .tableLinks ul li a:hover {
 
 section .coinTable {
   background: var(--baseDarkTransparent);
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+section .coinTable .table td {
+  padding: 28.5px 16px;
 }
 
 section .coinTable .table thead tr {

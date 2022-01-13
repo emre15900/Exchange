@@ -114,7 +114,6 @@ section {
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 0px;
         padding: 24px;
-
         .tableMenu {
             display: flex;
             justify-content: space-between;
@@ -169,9 +168,12 @@ section {
 
     .coinTable {
         background: var(--baseDarkTransparent);
-
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
         .table {
-            
+            td{
+                padding: 28.5px 16px;
+            }
             thead {
                 tr {
                     border-bottom: 1px solid var(--grey80);
