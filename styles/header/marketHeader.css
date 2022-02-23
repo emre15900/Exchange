@@ -25,13 +25,16 @@
 }
 
 .header .nav .navHead .logo .text {
-  padding-left: 44px;
   color: var(--grey0);
   font-family: "Sora", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+}
+
+.header .nav .navHead .logo .text:hover {
+  outline: none;
 }
 
 .header .nav .navHead .nav-links {

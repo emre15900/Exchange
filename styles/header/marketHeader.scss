@@ -20,13 +20,15 @@
                 align-items: center;
 
                 .text {
-                    padding-left: 44px;
                     color: var(--grey0);
                     font-family: "Sora", sans-serif;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 23px;
+                    &:hover{
+                        outline: none;
+                    }
                 }
 
             }
