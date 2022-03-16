@@ -18,7 +18,9 @@
             .logo {
                 display: flex;
                 align-items: center;
-
+                .menu{
+                    display: none;
+                }
                 .text {
                     color: var(--grey0);
                     font-family: "Sora", sans-serif;
@@ -26,7 +28,8 @@
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 23px;
-                    &:hover{
+
+                    &:hover {
                         outline: none;
                     }
                 }
@@ -36,6 +39,9 @@
             .nav-links {
                 flex: 1;
                 text-align: right;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
                 ul {
                     margin: 0;
@@ -64,54 +70,121 @@
                     }
                 }
             }
-
-            .search-box {
-                background: var(--baseDarkTransparent);
-                border-radius: 40px;
-                padding: 10px;
-
-                .search-txt {
-                    border: none;
-                    background: none;
-                    padding: 0;
-                    outline: none;
-                    color: var(--grey0);
-                    font-family: Graphik;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 24px;
-                    margin-right: 5px;
+            .rightMenu{
+                display: flex;
+                justify-content: flex-end;
+                .search-box {
+                    background: var(--baseDarkTransparent);
+                    border-radius: 40px;
+                    padding: 10px;
+                    max-width: 250px;
+                    .search-txt {
+                        border: none;
+                        background: none;
+                        padding: 0;
+                        outline: none;
+                        color: var(--grey0);
+                        font-family: Graphik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-right: 5px;
+                    }
+    
+                    a {
+                        float: right;
+                    }
+                }
+                .person {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .notification {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding: 8px 24px;
+                    }
+                    h1 {
+                        margin-top: auto;
+                        color: var(--grey0);
+                        font-family: Sofia Pro;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 160%;
+                        margin-right: 15px;
+                    }
+    
+                    img {
+                        margin-right: 11px;
+                    }
                 }
             }
+            
+        }
+    }
 
-            .notification {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                padding: 8px 24px;
-            }
+}
 
-            .person {
-                display: flex;
-                align-items: center;
+@media screen and (max-width:1343px) {
+    .header {
+        .nav {
+            .navHead {
+                .notification {
+                    align-items: center;
 
-                h1 {
-                    margin-top: auto;
-                    color: var(--grey0);
-                    font-family: Sofia Pro;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 160%;
-                    margin-right: 15px;
+                    img {
+                        width: 28px;
+                        height: 28px;
+                    }
                 }
 
-                img {
-                    margin-right: 11px;
+                .person {
+                    justify-content: center;
+
+                    h1 {
+                        display: none;
+                    }
                 }
             }
         }
     }
+}
+@media screen and (max-width:1200px){
+    .header{
+        .navHead{
+            .logo{
+                .logoPicture{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .header{
+        .nav{
+            .navHead{
+                .logo{
+                    .menu{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: var(--grey0);
 
+                    }
+                    .text{
+                        display: none;
+                    }
+                }
+                .nav-links{
+                    display: none;
+                }
+            }
+        }
+    }
 }

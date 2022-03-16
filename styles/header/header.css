@@ -1,3 +1,22 @@
+/*scrollbar theme*/
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey60);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grey80);
+  border-radius: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
