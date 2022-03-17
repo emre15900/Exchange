@@ -24,6 +24,10 @@
           align-items: center;
 }
 
+.header .nav .navHead .logo .menu {
+  display: none;
+}
+
 .header .nav .navHead .logo .text {
   color: var(--grey0);
   font-family: "Sora", sans-serif;
@@ -42,6 +46,15 @@
       -ms-flex: 1;
           flex: 1;
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header .nav .navHead .nav-links ul {
@@ -72,13 +85,23 @@
   color: var(--grey0);
 }
 
-.header .nav .navHead .search-box {
+.header .nav .navHead .rightMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .nav .navHead .rightMenu .search-box {
   background: var(--baseDarkTransparent);
   border-radius: 40px;
   padding: 10px;
+  max-width: 250px;
 }
 
-.header .nav .navHead .search-box .search-txt {
+.header .nav .navHead .rightMenu .search-box .search-txt {
   border: none;
   background: none;
   padding: 0;
@@ -92,7 +115,23 @@
   margin-right: 5px;
 }
 
-.header .nav .navHead .notification {
+.header .nav .navHead .rightMenu .search-box a {
+  float: right;
+}
+
+.header .nav .navHead .rightMenu .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .nav .navHead .rightMenu .person .notification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,16 +145,7 @@
   padding: 8px 24px;
 }
 
-.header .nav .navHead .person {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .nav .navHead .person h1 {
+.header .nav .navHead .rightMenu .person h1 {
   margin-top: auto;
   color: var(--grey0);
   font-family: Sofia Pro;
@@ -126,7 +156,54 @@
   margin-right: 15px;
 }
 
-.header .nav .navHead .person img {
+.header .nav .navHead .rightMenu .person img {
   margin-right: 11px;
+}
+
+@media screen and (max-width: 1343px) {
+  .header .nav .navHead .notification {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .nav .navHead .notification img {
+    width: 28px;
+    height: 28px;
+  }
+  .header .nav .navHead .person {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .nav .navHead .person h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header .navHead .logo .logoPicture img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header .nav .navHead .logo .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: var(--grey0);
+  }
+  .header .nav .navHead .logo .text {
+    display: none;
+  }
+  .header .nav .navHead .nav-links {
+    display: none;
+  }
 }
 /*# sourceMappingURL=marketHeader.css.map */

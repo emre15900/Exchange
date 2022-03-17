@@ -1,10 +1,29 @@
+/*scrollbar theme*/
+::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--grey60);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--grey80);
+    border-radius: 20px;
+}
+
 /** Aside **/
 section {
     margin-top: 24px;
 
     .aside {
         .heading {
-            margin-bottom: 24px;
+            margin-bottom: 53px;
 
             p {
                 color: var(--grey40);
@@ -40,6 +59,7 @@ section {
             padding: 16px 16px 0px 16px;
             border-radius: 12px;
             margin-bottom: 24px;
+            height: 85%;
 
             .title {
                 p {
@@ -61,7 +81,7 @@ section {
                         font-family: Graphik;
                         font-style: normal;
                         font-weight: 600;
-                        font-size: 20px;
+                        font-size: 17px;
                         line-height: 27px;
 
                     }
@@ -114,6 +134,7 @@ section {
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 0px;
         padding: 24px;
+
         .tableMenu {
             display: flex;
             justify-content: space-between;
@@ -159,6 +180,9 @@ section {
                                 border-radius: 50px;
                                 color: var(--grey0);
                             }
+                            img{
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -170,13 +194,19 @@ section {
         background: var(--baseDarkTransparent);
         border-bottom-right-radius: 12px;
         border-bottom-left-radius: 12px;
+
         .table {
-            td{
+            td {
                 padding: 28.5px 16px;
             }
+
             thead {
+                position: sticky;
+                top: 0;
+                left: 0;
+                background-color:#272833;
+                border-bottom: 1px solid var(--grey80);
                 tr {
-                    border-bottom: 1px solid var(--grey80);
                     th {
                         color: var(--grey60);
                         font-family: Graphik;
@@ -190,10 +220,10 @@ section {
 
             .marketTableBody {
                 tr {
-                   padding: 31px 15px;
-                   
+                    padding: 31px 15px;
+
                     .assets {
-                        
+
                         color: var(--grey0);
                         font-family: Graphik;
                         font-style: normal;
@@ -263,4 +293,129 @@ section {
             }
         }
     }
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        .coinTable {
+            overflow-x: scroll;
+            max-height: 400px;
+            .table {
+                td {
+                    padding: 10px 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        .aside {
+            .exchange {
+                .title {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .content {
+                    .title {
+                        p {
+                            font-size: 14px;
+                        }
+
+                        h2 {
+                            font-size: 16px;
+                        }
+
+                        h3 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .tableLink{
+            .tableMenu{
+                .title{
+                    h2{
+                        font-size: 16px;
+                    }
+
+                }
+                .tableLinks{
+                    ul{
+                        li{
+                            a{
+                                font-size: 14px;
+                            }
+                        }
+                        .allAssets{
+                            a{
+                                border: 1px solid var(--grey0);
+                                border-radius: 20px;
+                                color: var(--grey0);
+                                img{
+                                    display: inline;
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                        .gainers{
+                            display: none;
+                        }
+                        .losers{
+                            display: none;
+                        }
+                        .tradeble{
+                            display: none;
+                        }
+
+                    }
+                }
+            }
+            
+        }
+        .coinTable{
+            
+            .table{
+                thead{
+                    tr{
+                        th{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .marketTableBody{
+                    tr{
+                        .assets{
+                            font-size: 14px;
+                        }
+                        .title{
+                            font-size: 14px;
+                        }
+                        .lastPrice{
+                            font-size: 14px;
+                        }
+                        .marketCap{
+                            font-size: 14px;
+                        }
+                        .change{
+                            font-size: 14px;
+                        }
+                        .trade{
+                            button{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
 }

@@ -14,7 +14,10 @@
       crossorigin="anonymous"
     />
     <!-- FONTAWESOME CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- Styling CSS -->
 
     <link rel="stylesheet" href="./styles/style.css" />
@@ -34,7 +37,10 @@
                 <div class="col-6">
                   <div class="row">
                     <div class="col-3 logo">
-                      <span class="logo"><img src="./img/logo.svg" alt=""></span>
+                      <a class="menu" href="/"><i class="fas fa-bars"></i></a>
+                      <span class="logoPicture"
+                        ><img src="./img/logo.svg" alt=""
+                      /></span>
                       <a href="/"><span class="text">Cryptolly.</span></a>
                     </div>
                     <div class="col-9 nav-links">
@@ -49,23 +55,27 @@
                 </div>
                 <div class="col-6">
                   <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-10">
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="search-box">
-                            <input class="search-txt" type="text" name="" placeholder="Search...">
-                            <a href=""><img src="./img/SearchWhite.svg" alt=""></a>
-                          </div>  
+                    <div class="col-12">
+                      <div class="row rightMenu">
+                        <div class="col-5 col-lg-7 search-box">
+                          <input
+                            class="search-txt"
+                            type="text"
+                            name=""
+                            placeholder="Search..."
+                          />
+                          <a href=""
+                            ><img src="./img/SearchWhite.svg" alt=""
+                          /></a>
                         </div>
-                        <div class="col-2 notification"> 
-                            <img src="./img/Notification.svg" alt="">
-                        </div>
-                        <div class="col-4 person">
+                        <div class="col-7 col-lg-5 person">
+                          <div class="notification">
+                            <img src="./img/Notification.svg" alt="" />
+                          </div>
                           <h1>John Doe</h1>
-                          <img src="./img/maskGroup.svg" alt="">
-                          <a href=""><img src="./img/down.svg" alt=""></a>
-                        </div>         
+                          <img src="./img/maskGroup.svg" alt="" />
+                          <a href=""><img src="./img/down.svg" alt="" /></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -81,107 +91,117 @@
     <section>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-3 aside">
+          <div class="col-xl-3 col-lg-12 aside">
             <!-- Header Part -->
             <div class="heading">
               <p>In the past 24 hours</p>
               <h2>Market is up <span>6.73%</span></h2>
             </div>
             <!-- Exchange part -->
-            <div class="exchange">
-              <div class="title">
-                <p>Top gainer (24h)</p>
-              </div>
-              <div class="row content">
-                <div class="col-2 logo">
-                  <img src="./img/BNB.svg" alt="" />
-                </div>
-                <div class="col-6 title">
-                  <h2>USD 567.34</h2>
-                  <h3>Binance Coin</h3>
-                  <p>BNB</p>
-                </div>
-                <div class="col-4 graphic">
+            <div class="row">
+              <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6">
+                <div class="exchange">
                   <div class="title">
-                    <p>110.34%</p>
+                    <p>Top gainer (24h)</p>
                   </div>
-                  <div class="chart">
-                    <img src="./img/Graphic-Geçici Silinecek.svg" alt="" />
+                  <div class="row content">
+                    <div class="col-2 logo">
+                      <img src="./img/BNB.svg" alt="" />
+                    </div>
+                    <div class="col-6 title">
+                      <h2>USD 567.34</h2>
+                      <h3>Binance Coin</h3>
+                      <p>BNB</p>
+                    </div>
+                    <div class="col-4 graphic">
+                      <div class="title">
+                        <p>110.34%</p>
+                      </div>
+                      <div class="chart">
+                        <img src="./img/Graphic-Geçici Silinecek.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="exchange">
-              <div class="title">
-                <p>New listing</p>
-              </div>
-              <div class="row content">
-                <div class="col-2 logo">
-                  <img src="./img/ITC.svg" alt="" />
-                </div>
-                <div class="col-6 title">
-                  <h2>USD 34.02</h2>
-                  <h3>IoT Chain</h3>
-                  <p>ITC</p>
-                </div>
-                <div class="col-4 graphic">
+              <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6">
+                <div class="exchange">
                   <div class="title">
-                    <p>Added Apr, 13</p>
+                    <p>New listing</p>
                   </div>
-                  <div class="chart">
-                    <img src="./img/Graphic-Geçici Silinecek.svg" alt="" />
+                  <div class="row content">
+                    <div class="col-2 logo">
+                      <img src="./img/ITC.svg" alt="" />
+                    </div>
+                    <div class="col-6 title">
+                      <h2>USD 34.02</h2>
+                      <h3>IoT Chain</h3>
+                      <p>ITC</p>
+                    </div>
+                    <div class="col-4 graphic">
+                      <div class="title">
+                        <p>Added Apr, 13</p>
+                      </div>
+                      <div class="chart">
+                        <img src="./img/Graphic-Geçici Silinecek.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="exchange">
-              <div class="title">
-                <p>Highest volume (24h)</p>
-              </div>
-              <div class="row content">
-                <div class="col-2 logo">
-                  <img src="./img/Bitcoin.svg" alt="" />
-                </div>
-                <div class="col-6 title">
-                  <h2>USD 236,213.22</h2>
-                  <h3>Bitcoin</h3>
-                  <p>BTC</p>
-                </div>
-                <div class="col-4 graphic">
+              <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6">
+                <div class="exchange">
                   <div class="title">
-                    <p>0.53%</p>
+                    <p>Highest volume (24h)</p>
                   </div>
-                  <div class="chart">
-                    <img src="./img/Graphic-Geçici Silinecek.svg" alt="" />
+                  <div class="row content">
+                    <div class="col-2 logo">
+                      <img src="./img/Bitcoin.svg" alt="" />
+                    </div>
+                    <div class="col-6 title">
+                      <h2>USD 236,213</h2>
+                      <h3>Bitcoin</h3>
+                      <p>BTC</p>
+                    </div>
+                    <div class="col-4 graphic">
+                      <div class="title">
+                        <p>0.53%</p>
+                      </div>
+                      <div class="chart">
+                        <img src="./img/Graphic-Geçici Silinecek.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="exchange">
-              <div class="title">
-                <p>Most Visited</p>
-              </div>
-              <div class="row content">
-                <div class="col-2 logo">
-                  <img src="./img/OGN.svg" alt="" />
-                </div>
-                <div class="col-6 title">
-                  <h2>USD 123.34</h2>
-                  <h3>Orogin Protocol</h3>
-                  <p>OGN</p>
-                </div>
-                <div class="col-4 graphic">
+              <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6">
+                <div class="exchange">
                   <div class="title">
-                    <p>2.23%</p>
+                    <p>Most Visited</p>
                   </div>
-                  <div class="chart">
-                    <img src="./img/Graphic-Geçici Silinecek.svg" alt="" />
+                  <div class="row content">
+                    <div class="col-2 logo">
+                      <img src="./img/OGN.svg" alt="" />
+                    </div>
+                    <div class="col-6 title">
+                      <h2>USD 123.34</h2>
+                      <h3>Orogin Protocol</h3>
+                      <p>OGN</p>
+                    </div>
+                    <div class="col-4 graphic">
+                      <div class="title">
+                        <p>2.23%</p>
+                      </div>
+                      <div class="chart">
+                        <img src="./img/Graphic-Geçici Silinecek.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-9">
+          <div class="col-xl-9 col-lg-12">
             <div class="tableLink">
               <div class="tableMenu">
                 <div class="title">
@@ -189,10 +209,10 @@
                 </div>
                 <div class="tableLinks">
                   <ul>
-                    <li><a href="">All Assets</a></li>
-                    <li><a href="">Gainers</a></li>
-                    <li><a href="">Losers</a></li>
-                    <li><a href="">Tradeble</a></li>
+                    <li class="allAssets"><a href="">All Assets <img src="./img/down.svg" alt=""></a></li>
+                    <li class="gainers"><a href="">Gainers</a></li>
+                    <li class="losers"><a href="">Losers</a></li>
+                    <li class="tradeble"><a href="">Tradeble</a></li>
                   </ul>
                 </div>
               </div>
