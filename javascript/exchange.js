@@ -19,7 +19,7 @@ let ws = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade/@ticker")
 let stockPriceElement = document.getElementById("stock-price");
 let stockPriceElementTwo = document.getElementById("stock-price-2");
 let dollarSymbol = document.getElementById("bigDollar");
-
+let highValue = document.getElementById("high-value")
 let lastPrice = null;
 
 ws.onmessage = (event) => {
@@ -27,13 +27,16 @@ ws.onmessage = (event) => {
   let price = parseFloat(stockObject.p).toFixed(2);
   
   let priceTwo = parseFloat(stockObject.p).toFixed(2);
-  let dollares = stockObject.s;
-
+  let dollares = "$";
   let whole = dollares + " " + priceTwo
+
+  let valuePrice = parseFloat(stockObject.p);
 
   stockPriceElementTwo.innerText = whole;
 
   stockPriceElement.innerText = price;
+
+  highValue.innerText = valuePrice;
 
   dollarSymbol.style.color =
     !lastPrice || lastPrice === price
@@ -60,7 +63,7 @@ ws.onmessage = (event) => {
 };
 
 //BTC TRY
-let wstry = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade/@ticker");
+let wstry = new WebSocket("wss://stream.binance.com:9443/ws/btctry@trade/@ticker");
 let stockPriceElementtry = document.getElementById("stock-price-try");
 let bigTurkish = document.getElementById("bigTRY");
 let lastPricetry = null;
@@ -90,7 +93,7 @@ wstry.onmessage = (event) => {
 
 //BTC Percentile
 let wsperc = new WebSocket(
-  "wss://stream.binance.com:9443/ws/btcusdt@ticker/btctry@trade"
+  "wss://stream.binance.com:9443/ws/btcusdt@ticker/@trade"
 );
 let stockPriceElementperc = document.getElementById("stock-price-perc");
 let percentileIcon = document.getElementById("bigPercentile");
