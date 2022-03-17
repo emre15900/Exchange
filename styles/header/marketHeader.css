@@ -24,10 +24,6 @@
           align-items: center;
 }
 
-.header .nav .navHead .logo .menu {
-  display: none;
-}
-
 .header .nav .navHead .logo .text {
   color: var(--grey0);
   font-family: "Sora", sans-serif;
@@ -55,6 +51,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header .nav .navHead .nav-links label #btn, .header .nav .navHead .nav-links label #cancel {
+  color: var(--grey0);
+  font-size: 30px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+.header .nav .navHead .nav-links #check {
+  display: none;
 }
 
 .header .nav .navHead .nav-links ul {
@@ -187,23 +195,36 @@
 }
 
 @media screen and (max-width: 992px) {
-  .header .nav .navHead .logo .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: var(--grey0);
-  }
   .header .nav .navHead .logo .text {
     display: none;
   }
-  .header .nav .navHead .nav-links {
+  .header .nav .navHead .nav-links #check:checked ~ ul {
+    left: 0;
+  }
+  .header .nav .navHead .nav-links #check:checked ~ label #btn {
     display: none;
+  }
+  .header .nav .navHead .nav-links #check:checked ~ label #cancel {
+    display: block;
+  }
+  .header .nav .navHead .nav-links label #btn {
+    display: block;
+  }
+  .header .nav .navHead .nav-links ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #272833;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .header .nav .navHead .nav-links ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
 }
 /*# sourceMappingURL=marketHeader.css.map */

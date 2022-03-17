@@ -18,9 +18,7 @@
             .logo {
                 display: flex;
                 align-items: center;
-                .menu{
-                    display: none;
-                }
+                
                 .text {
                     color: var(--grey0);
                     font-family: "Sora", sans-serif;
@@ -42,6 +40,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                label #btn,label #cancel{
+                    color:var(--grey0);
+                    font-size: 30px;
+                    line-height: 80px;
+                    cursor: pointer;
+                    display: none;
+                }
+                #check{
+                    display: none;
+                }
 
                 ul {
                     margin: 0;
@@ -170,19 +178,41 @@
         .nav{
             .navHead{
                 .logo{
-                    .menu{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: var(--grey0);
-
-                    }
+                    
                     .text{
                         display: none;
                     }
                 }
                 .nav-links{
-                    display: none;
+                    #check:checked ~ ul{
+                        left: 0;
+                    }
+                    #check:checked ~ label #btn{
+                        display: none;
+                    }
+                    #check:checked ~ label #cancel{
+                        display: block;
+                    }
+                    
+                    label #btn{
+                        display: block;
+                    }
+                    ul {
+                        position: fixed;
+                        width: 100%;
+                        height: 100vh;
+                        background-color: #272833;
+                        top: 80px;
+                        left: -100%;
+                        text-align: center;
+                        transition: all 0.7s;
+                        li{
+                            display: block;
+                            margin: 50px 0;
+                            line-height: 30px;
+                           
+                        }
+                    }
                 }
             }
         }
