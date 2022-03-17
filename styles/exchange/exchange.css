@@ -70,9 +70,18 @@
   color: var(--grey0);
 }
 
-.chartSection .left-buy-sell .buy-sell-hood .lastPrice .title .bigDollar {
+.chartSection .left-buy-sell .buy-sell-hood .lastPrice .bigDollar {
   font-size: 18px;
-  color: var(--greenPrimary);
+  color: var(--grey0);
+}
+
+.chartSection .left-buy-sell .buy-sell-hood .lastPrice .bigTRY {
+  font-size: 15px;
+  color: var(--grey0);
+}
+
+.chartSection .left-buy-sell .buy-sell-hood .lastPrice .stock-price-try {
+  font-size: 15px;
 }
 
 .chartSection .left-buy-sell .buy-sell-hood .lastPrice .value {
@@ -88,6 +97,11 @@
 .chartSection .left-buy-sell .buy-sell-hood .percentile .rise {
   font-size: 18px;
   color: var(--greenPrimary);
+}
+
+.chartSection .left-buy-sell .buy-sell-hood .percentile .bigPerc {
+  font-size: 18px;
+  color: var(--grey0);
 }
 
 .chartSection .left-buy-sell .buySellPath {

@@ -40,11 +40,19 @@
         .title {
           font-size: 14px;
           color: var(--grey0);
-          .bigDollar {
-            font-size: 18px;
-            color: var(--greenPrimary);
-          }
         }
+        .bigDollar {
+          font-size: 18px;
+          color: var(--grey0);
+        }
+        .bigTRY {
+          font-size: 15px;
+          color: var(--grey0);
+        }
+        .stock-price-try{
+          font-size: 15px;
+        }
+
         .value {
           font-size: 18px;
           color: var(--greenPrimary);
@@ -58,6 +66,10 @@
         .rise {
           font-size: 18px;
           color: var(--greenPrimary);
+        }
+        .bigPerc {
+          font-size: 18px;
+          color: var(--grey0);
         }
       }
     }
