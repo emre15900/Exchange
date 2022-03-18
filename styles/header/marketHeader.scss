@@ -84,7 +84,7 @@
                 .search-box {
                     background: var(--baseDarkTransparent);
                     border-radius: 40px;
-                    padding: 10px;
+                    padding: 6px;
                     max-width: 250px;
                     .search-txt {
                         border: none;
@@ -115,7 +115,6 @@
                         padding: 8px 24px;
                     }
                     h1 {
-                        margin-top: auto;
                         color: var(--grey0);
                         font-family: Sofia Pro;
                         font-style: normal;
@@ -177,13 +176,17 @@
     .header{
         .nav{
             .navHead{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 .logo{
-                    
+                    display: none;
                     .text{
                         display: none;
                     }
                 }
                 .nav-links{
+                    justify-content: flex-start;
                     #check:checked ~ ul{
                         left: 0;
                     }
@@ -192,6 +195,11 @@
                     }
                     #check:checked ~ label #cancel{
                         display: block;
+                    }
+                    label #btn,label #cancel{
+                        font-size: 20px;
+                        line-height: 50px;
+                        
                     }
                     
                     label #btn{
@@ -202,7 +210,7 @@
                         width: 100%;
                         height: 100vh;
                         background-color: #272833;
-                        top: 80px;
+                        top: 100px;
                         left: -100%;
                         text-align: center;
                         transition: all 0.7s;
@@ -211,6 +219,34 @@
                             margin: 50px 0;
                             line-height: 30px;
                            
+                        }
+                    }
+                }
+                .rightMenu{
+                    align-items: center;
+                    .person{
+                        justify-content: flex-end;
+                    }
+                    .search-box{
+                        max-width: 0;
+                        background: transparent;
+                        .search-txt{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .header{
+        .nav{
+            .navHead{
+                .rightMenu{
+                    .person{
+                        .notification{
+                            padding: 0;
                         }
                     }
                 }
