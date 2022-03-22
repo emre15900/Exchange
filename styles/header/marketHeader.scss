@@ -81,33 +81,40 @@
             .rightMenu{
                 display: flex;
                 justify-content: flex-end;
-                .search-box {
-                    background: var(--baseDarkTransparent);
-                    border-radius: 40px;
-                    padding: 6px;
-                    max-width: 250px;
-                    .search-txt {
-                        border: none;
-                        background: none;
-                        padding: 0;
-                        outline: none;
-                        color: var(--grey0);
-                        font-family: Graphik;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 24px;
-                        margin-right: 5px;
-                    }
-    
-                    a {
-                        float: right;
-                    }
-                }
+                
                 .person {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    .search-box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background: var(--baseDarkTransparent);
+                        border-radius: 40px;
+                        padding: 6px;
+                        max-width: 250px;
+                        .search-txt {
+                            border: none;
+                            background: none;
+                            padding-left: 10px;
+                            outline: none;
+                            color: var(--grey0);
+                            font-family: Graphik;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            margin-right: 5px;
+                        }
+                        .search-btn{
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
                     .notification {
                         display: flex;
                         flex-direction: row;
@@ -209,7 +216,7 @@
                         position: fixed;
                         width: 100%;
                         height: 100vh;
-                        background-color: #272833;
+                        background-color: #1E1F25;
                         top: 100px;
                         left: -100%;
                         text-align: center;
@@ -226,14 +233,17 @@
                     align-items: center;
                     .person{
                         justify-content: flex-end;
-                    }
-                    .search-box{
-                        max-width: 0;
-                        background: transparent;
-                        .search-txt{
-                            display: none;
+                        
+                        .notification{
+                            img{
+                                width:23px;
+                            }
+                        }
+                        .profil-img{
+                            width: 30px;
                         }
                     }
+
                 }
             }
         }
@@ -245,6 +255,9 @@
             .navHead{
                 .rightMenu{
                     .person{
+                        .search-box{
+                            margin-right: 10px;
+                        }
                         .notification{
                             padding: 0;
                         }
