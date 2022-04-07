@@ -288,4 +288,15 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .header .nav .navHead .rightMenu .person .search-box {
+    position: relative;
+    max-width: 130px;
+  }
+  .header .nav .navHead .rightMenu .person .search-box .search-btn {
+    position: absolute;
+    right: 0;
+  }
+}
 /*# sourceMappingURL=marketHeader.css.map */

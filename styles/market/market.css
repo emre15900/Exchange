@@ -186,6 +186,10 @@ section .tableLink .tableMenu .tableLinks ul li a img {
   display: none;
 }
 
+section .tableLink .tableMenu .responsiveTableLinks {
+  display: none;
+}
+
 section .coinTable {
   background: var(--baseDarkTransparent);
   border-bottom-right-radius: 12px;
@@ -306,26 +310,18 @@ section .coinTable .table .marketTableBody tr .trade button {
   section .tableLink .tableMenu .title h2 {
     font-size: 16px;
   }
-  section .tableLink .tableMenu .tableLinks ul li a {
-    font-size: 14px;
+  section .tableLink .tableMenu .tableLinks {
+    display: none;
   }
-  section .tableLink .tableMenu .tableLinks ul .allAssets a {
-    border: 1px solid var(--grey0);
-    border-radius: 20px;
+  section .tableLink .tableMenu .responsiveTableLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4px 10px;
+    border-color: var(--grey0);
+    border-radius: 50px;
+    background: var(--baseDarkTransparent);
     color: var(--grey0);
-  }
-  section .tableLink .tableMenu .tableLinks ul .allAssets a img {
-    display: inline;
-    padding-left: 10px;
-  }
-  section .tableLink .tableMenu .tableLinks ul .gainers {
-    display: none;
-  }
-  section .tableLink .tableMenu .tableLinks ul .losers {
-    display: none;
-  }
-  section .tableLink .tableMenu .tableLinks ul .tradeble {
-    display: none;
   }
   section .coinTable .table thead tr th {
     font-size: 14px;
