@@ -267,3 +267,23 @@
         }
     }
 }
+@media screen and (max-width:460px){
+    .header{
+        .nav{
+            .navHead{
+                .rightMenu{
+                    .person{
+                        .search-box{
+                            position: relative;
+                            max-width: 130px;
+                            .search-btn{
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
