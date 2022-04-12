@@ -1,0 +1,69 @@
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey60);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grey80);
+  border-radius: 20px;
+}
+
+/** Section **/
+.swiper .swiper-wrapper .swiper-slide .test {
+  width: 200px;
+  height: 200px;
+}
+
+.swiper .swiper-wrapper .swiper-slide .test h1 {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+  color: var(--grey0);
+}
+
+.swiper .swiper-wrapper .swiper-slide .test h2 {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--grey0);
+}
+
+.swiper .swiper-wrapper .swiper-slide .test h3 {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey40);
+}
+
+.swiper .swiper-wrapper .swiper-slide .test .coin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.swiper .swiper-wrapper .swiper-slide .test .coin .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=wallet.css.map */
