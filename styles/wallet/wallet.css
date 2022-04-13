@@ -18,8 +18,8 @@
 
 /** Section **/
 .swiper .swiper-wrapper .swiper-slide .test {
-  width: 200px;
-  height: 200px;
+  background: var(--grey80);
+  border-radius: 10px;
 }
 
 .swiper .swiper-wrapper .swiper-slide .test h1 {

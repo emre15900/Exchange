@@ -21,8 +21,8 @@
     .swiper-wrapper {
         .swiper-slide {
             .test{
-                width: 200px;
-                height: 200px;
+                background: var(--grey80);
+                border-radius: 10px;
                 h1 {
                     font-family: 'Graphik';
                     font-style: normal;
@@ -53,7 +53,6 @@
                 .coin {
                     display: flex;
                     justify-content: space-between;
-    
                     .logo {
                         display: flex;
                         justify-content: space-between;
