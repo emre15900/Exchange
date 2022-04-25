@@ -1,69 +1,39 @@
-::-webkit-scrollbar {
-  height: 6px;
-  width: 6px;
+.mySwiper {
+  background-color: red;
+  height: 250px !important;
 }
 
-::-webkit-scrollbar-track {
-  background: none;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--grey60);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--grey80);
-  border-radius: 20px;
-}
-
-/** Section **/
-.swiper .swiper-wrapper .swiper-slide .test {
-  background: var(--grey80);
-  border-radius: 10px;
-}
-
-.swiper .swiper-wrapper .swiper-slide .test h1 {
-  font-family: 'Graphik';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 27px;
-  color: var(--grey0);
-}
-
-.swiper .swiper-wrapper .swiper-slide .test h2 {
-  font-family: 'Graphik';
-  font-style: normal;
-  font-weight: 400;
+.swiper-slide {
+  text-align: center;
   font-size: 18px;
-  line-height: 27px;
-  color: var(--grey0);
-}
-
-.swiper .swiper-wrapper .swiper-slide .test h3 {
-  font-family: 'Graphik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--grey40);
-}
-
-.swiper .swiper-wrapper .swiper-slide .test .coin {
+  background: #fff;
+  height: 40%;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.swiper .swiper-wrapper .swiper-slide .test .coin .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mySwiper-prev {
+  top: 20%;
 }
 /*# sourceMappingURL=wallet.css.map */
