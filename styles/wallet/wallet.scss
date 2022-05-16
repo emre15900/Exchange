@@ -1,27 +1,115 @@
-.swiper__container{
+
+.swiper__container {
     margin-top: 30px;
+
     .mySwiper {
         background: var(transparent);
         height: 221px !important;
         width: 100%;
         height: 100%;
-    
+
         .swiper-slide {
             background: var(--baseDarkTransparent);
             border-radius: 20px;
             height: 100%;
-            .swiper__coin{
-                .coin__ratio{
+
+            .swiper__coin {
+                .coin__ratio {
                     display: flex;
                     justify-content: space-around;
+                    margin-top: 24px;
+
+                    .coin__img {
+                        display: flex;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        h1 {
+                            margin-left: 10px;
+                            font-family: 'Graphik';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: var(--grey0);
+                        }
+                    }
+
+                    .coin__proportion {
+                        p {
+                            font-family: 'Graphik';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: var(--redPrimary);
+                        }
+                    }
+                }
+
+                .coin__price {
+                    h2 {
+                        color: var(--grey0);
+                        font-family: 'Graphik';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 27px;
+                        margin-left: 16%;
+                        margin-bottom: 8px;
+                    }
+
+                    h1 {
+                        color: var(--grey40);
+                        font-family: 'Graphik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-left: 16%;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
+
+            
         }
+        .add__swiper__coin {
+            background: transparent !important;
+            border: 2px dashed var(--grey80);
+            position: relative;
+            .add__coin__container{
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            display: block;
+            justify-content: center;
+                img{
+                    margin-left: 10px;
+                }
+               
+                p {
+                    color: var(--grey40);
+                    font-family: 'Sofia Pro';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 160%;
+                   
+                }
+            }
+
+            
+        }
+
         .mySwiper-prev {
             top: 45%;
         }
     }
 }
-
-
-

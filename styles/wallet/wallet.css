@@ -21,6 +21,91 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 24px;
+}
+
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__ratio .coin__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__ratio .coin__img img {
+  width: 24px;
+  height: 24px;
+}
+
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__ratio .coin__img h1 {
+  margin-left: 10px;
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--grey0);
+}
+
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__ratio .coin__proportion p {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--redPrimary);
+}
+
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__price h2 {
+  color: var(--grey0);
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+  margin-left: 16%;
+  margin-bottom: 8px;
+}
+
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__price h1 {
+  color: var(--grey40);
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 16%;
+}
+
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__price img {
+  width: 100%;
+}
+
+.swiper__container .mySwiper .add__swiper__coin {
+  background: transparent !important;
+  border: 2px dashed var(--grey80);
+  position: relative;
+}
+
+.swiper__container .mySwiper .add__swiper__coin .add__coin__container {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper__container .mySwiper .add__swiper__coin .add__coin__container img {
+  margin-left: 10px;
+}
+
+.swiper__container .mySwiper .add__swiper__coin .add__coin__container p {
+  color: var(--grey40);
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
 }
 
 .swiper__container .mySwiper .mySwiper-prev {
