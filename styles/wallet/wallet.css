@@ -1,3 +1,29 @@
+h1 {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--grey0);
+}
+
+h2 {
+  color: var(--grey40);
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h3 {
+  color: var(--grey0);
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+}
+
 .swiper__container {
   margin-top: 30px;
 }
@@ -13,6 +39,15 @@
   background: var(--baseDarkTransparent);
   border-radius: 20px;
   height: 100%;
+  border: 2px solid transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.swiper__container .mySwiper .swiper-slide:hover {
+  background: transparent;
+  border: 2px solid blue;
+  cursor: pointer;
 }
 
 .swiper__container .mySwiper .swiper-slide .swiper__coin .coin__ratio {
@@ -37,12 +72,6 @@
 
 .swiper__container .mySwiper .swiper-slide .swiper__coin .coin__ratio .coin__img h1 {
   margin-left: 10px;
-  font-family: 'Graphik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: var(--grey0);
 }
 
 .swiper__container .mySwiper .swiper-slide .swiper__coin .coin__ratio .coin__proportion p {
@@ -54,29 +83,19 @@
   color: var(--redPrimary);
 }
 
-.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__price h2 {
-  color: var(--grey0);
-  font-family: 'Graphik';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 27px;
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__price h3 {
   margin-left: 16%;
   margin-bottom: 8px;
 }
 
-.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__price h1 {
-  color: var(--grey40);
-  font-family: 'Graphik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+.swiper__container .mySwiper .swiper-slide .swiper__coin .coin__price h2 {
   line-height: 24px;
   margin-left: 16%;
 }
 
 .swiper__container .mySwiper .swiper-slide .swiper__coin .coin__price img {
   width: 100%;
+  padding: 10px;
 }
 
 .swiper__container .mySwiper .add__swiper__coin {
