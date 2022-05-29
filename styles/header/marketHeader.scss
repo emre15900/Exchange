@@ -7,13 +7,12 @@
 //------Header
 .header {
     width: 100%;
-    background: var(--grey100);
     position: relative;
     z-index: 3;
-
+    
     .nav {
         padding: 15px 0;
-
+        background: var(--darkerGrey);
         .navHead {
             .logo {
                 display: flex;

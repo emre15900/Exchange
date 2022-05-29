@@ -17,6 +17,10 @@
   border-radius: 20px;
 }
 
+body {
+  background: var(--darkerGrey);
+}
+
 /** Aside **/
 section {
   margin-top: 24px;

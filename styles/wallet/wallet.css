@@ -1,3 +1,7 @@
+body {
+  background: var(--darkerGrey);
+}
+
 h1 {
   font-family: 'Graphik';
   font-style: normal;
@@ -13,6 +17,7 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 27px;
 }
 
 h3 {
@@ -26,6 +31,7 @@ h3 {
 
 .swiper__container {
   margin-top: 30px;
+  margin-bottom: 24px;
 }
 
 .swiper__container .mySwiper {
@@ -36,7 +42,7 @@ h3 {
 }
 
 .swiper__container .mySwiper .swiper-slide {
-  background: var(--baseDarkTransparent);
+  background: var(--grey100);
   border-radius: 20px;
   height: 100%;
   border: 2px solid transparent;
@@ -129,5 +135,82 @@ h3 {
 
 .swiper__container .mySwiper .mySwiper-prev {
   top: 45%;
+}
+
+.buying__coins .selected__coin {
+  background: var(--grey100);
+  border-radius: 12px;
+}
+
+.buying__coins .selected__coin .selected__coin__container {
+  padding: 24px;
+}
+
+.buying__coins .selected__coin .selected__coin__container .coin__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: center;
+  margin-bottom: 16px;
+}
+
+.buying__coins .selected__coin .selected__coin__container .coin__img img {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+.buying__coins .selected__coin .selected__coin__container .coin__img h1 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.buying__coins .selected__coin .selected__coin__container .coin__price {
+  margin-bottom: 32px;
+}
+
+.buying__coins .selected__coin .selected__coin__container .coin__price h2 {
+  font-size: 18px;
+}
+
+.buying__coins .selected__coin .selected__coin__container .exchange__balance {
+  margin-bottom: 24px;
+}
+
+.buying__coins .selected__coin .selected__coin__container .exchange__balance .exchange__balance__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--baseDarkTransparent);
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.buying__coins .selected__coin .selected__coin__container .exchange__balance .exchange__balance__container .current__asset {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.buying__coins .selected__coin .selected__coin__container .exchange__balance .exchange__balance__container .current__rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=wallet.css.map */

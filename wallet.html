@@ -54,10 +54,10 @@
                       </label>
 
                       <ul>
-                        <li><a href="/">Dashboard</a></li>
-                        <li><a href="/">Exchange</a></li>
-                        <li><a href="/">Wallet</a></li>
-                        <li><a href="/">Market</a></li>
+                        <li><a href="/dashboard">Dashboard</a></li>
+                        <li><a href="/exchange.html">Exchange</a></li>
+                        <li><a href="./wallet.html">Wallet</a></li>
+                        <li><a href="./market.html">Market</a></li>
                       </ul>
                     </div>
                   </div>
@@ -184,28 +184,44 @@
       <div class="container-fluid buying__coins">
         <div class="row">
           <div class="col-12">
-            <div class="col-3">
-              <div class="coin__img">
-                <img src="./img/Bitcoin.svg" alt="" />
-                <h1>ETH</h1>
-              </div>
-              <h2>Total Balance</h2>
-              <div class="coin__price">
-                <h3>0.2133214214</h3>
-                <h2>3,230.98 USD</h2>
-              </div>
-              <div class="exchange__balance">
-                <div class="current__asset">
-                  <h2>Exhange Balance</h2>
-                  <h3>0.213435345</h3>,2,
-                  <h2>3,897.98 USD</h2>
+            <div class="col-3 selected__coin">
+              <div class="selected__coin__container">
+                <div class="coin__img">
+                  <img src="./img/Bitcoin.svg" alt="" />
+                  <h1>ETH</h1>
                 </div>
-                <div class="current__rate">
-                  <img src="./img/wallet__current__rate.svg" alt="">
+                <h2>Total Balance</h2>
+                <div class="coin__price">
+                  <h3>0.2133214214</h3>
+                  <h2>3,230.98 USD</h2>
                 </div>
-
+                <div class="row exchange__balance">
+                  <div class="col-12 exchange__balance__container">
+                    <div class="col-8 current__asset">
+                      <h2>Exhange Balance</h2>
+                      <h3>0.213435345</h3>
+                      <h2 style="color: var(--lightGreen);">3,897.98 USD</h2>
+                    </div>
+                    <div class="col-4 current__rate">
+                      <img src="./img/wallet__current__rate.svg" alt="" />
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="row exchange__balance">
+                  <div class="col-12 exchange__balance__container">
+                    <div class="col-8 current__asset">
+                      <h2>Exhange Balance</h2>
+                      <h3>0.213435345</h3>
+                      <h2 style="color: var(--lightGreen);">3,897.98 USD</h2>
+                    </div>
+                    <div class="col-4 current__rate">
+                      <img src="./img/wallet__current__rate2.svg" alt="" />
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
-              <div class="exchange__balance"></div>
             </div>
             <div class="col-9"></div>
           </div>
