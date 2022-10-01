@@ -171,25 +171,28 @@ h3 {
 
             .coin__price {
                 margin-bottom: 32px;
-                h2{
+
+                h2 {
                     font-size: 18px;
                 }
             }
 
             .exchange__balance {
                 margin-bottom: 24px;
+
                 .exchange__balance__container {
                     display: flex;
                     flex-direction: row;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
                     background: var(--baseDarkTransparent);
                     border-radius: 12px;
                     padding: 8px;
+
                     .current__asset {
                         display: block;
                         align-items: center;
-                        margin-left: 20px;
+
                         padding: 0;
 
                     }
@@ -200,6 +203,56 @@ h3 {
                     }
                 }
 
+            }
+
+            .shopping {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                gap: 10px;
+
+                .withdrow {
+                    background: var(--royalBlue);
+                    border-radius: 100px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 27px;
+                    gap: 10px;
+
+                    a {
+                        color: #FFF;
+                        font-family: 'Sofia Pro';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 22px;
+                        text-decoration: none;
+                       
+                    }
+                }
+
+                .deposit {
+                    border: 1px solid #FFF;
+                    border-radius: 100px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 27px;
+                    gap: 10px;
+                    a{
+                        color: #FFF;
+                        font-family: 'Sofia Pro';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 22px;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }
