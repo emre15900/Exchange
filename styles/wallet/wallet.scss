@@ -144,10 +144,12 @@ h3 {
 }
 
 .buying__coins {
+    margin-bottom: 30px;
     .selected__coin {
         background: var(--grey100);
         border-radius: 12px;
-
+        height: 100%;
+        margin-bottom: 20px;
         .selected__coin__container {
             padding: 24px;
 
@@ -230,7 +232,7 @@ h3 {
                         font-size: 14px;
                         line-height: 22px;
                         text-decoration: none;
-                       
+
                     }
                 }
 
@@ -243,7 +245,8 @@ h3 {
                     align-items: center;
                     padding: 12px 27px;
                     gap: 10px;
-                    a{
+
+                    a {
                         color: #FFF;
                         font-family: 'Sofia Pro';
                         font-style: normal;
@@ -256,4 +259,176 @@ h3 {
             }
         }
     }
+
+    .coinTable {
+        background: var(--grey100);
+        border-radius: 12px;
+        overflow-x:auto;
+        overflow-y: auto;
+        .table {
+            thead {
+                tr {
+                    border-bottom: 1px solid var(--grey80);
+                    text-align: center;
+                    th {
+                        color: var(--grey60);
+                        font-family: 'Graphik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td{
+                        text-align: center;
+                        color: var(--grey0);
+                        font-family: 'Graphik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .assets {
+                        img {
+                            padding-right: 20px;
+                        }
+                    }
+
+                    .title {
+                        color: var(--grey40);
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+@media screen and (max-width:1200px){
+    .swiper__container{
+        .mySwiper{
+            .swiper-slide{
+                width: 224px;
+                height: 173px;
+                .swiper__coin{
+                    .coin__ratio{
+                        margin-top: 10px;
+                    }
+                    .coin__price{
+                        h3{
+                            margin-bottom: 0;
+                        }
+                        h2{
+                            margin-bottom: 0;
+                        }
+                        img{
+                            padding: 0;
+                            width: 100%;
+                            height: 56px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .buying__coins{
+        .selected__coin{
+            .selected__coin__container{
+                .exchange__balance{
+                    .exchange__balance__container{
+                        .current__rate{
+                            img{
+                                width: 55px;
+                                height: 55px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:767px) and (max-width:1024px){
+    h1{
+        font-size: 14px;
+        margin: 0;
+    }
+    h2{
+        font-size: 12px;
+        margin: 0;
+    }
+    h3{
+        font-size: 14px;
+        margin: 0;
+    }
+    .buying__coins{
+        .selected__coin{
+            .selected__coin__container{
+                padding: 10px;
+                .exchange__balance{
+                    .exchange__balance__container{
+                        .current__rate{
+                            padding: 0;
+                        }
+                    }
+                }
+                .shopping{
+                    .withdrow{
+                        padding:7px 7px;
+                    } 
+                    .deposit{
+                        padding: 7px 7px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:767px){
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .selected__coin{
+        .selected__coin__container{
+            text-align: center;
+            .coin__img{
+                justify-content: center;
+            }
+        }
+    }
+
+
+    .buying__coins{
+        .coinTable{
+            .table{
+                thead{
+                    tr{
+                        th{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}  
