@@ -29,6 +29,20 @@ h3 {
   line-height: 27px;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grey80);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
 .swiper__container {
   margin-top: 30px;
   margin-bottom: 24px;
@@ -299,6 +313,7 @@ h3 {
   border-radius: 12px;
   overflow-x: auto;
   overflow-y: auto;
+  max-height: 565px;
 }
 
 .buying__coins .coinTable .table thead tr {
