@@ -156,14 +156,14 @@ h3 {
 }
 
 .buying__coins .selected__coin {
-  background: var(--grey100);
-  border-radius: 12px;
   height: 100%;
   margin-bottom: 20px;
 }
 
 .buying__coins .selected__coin .selected__coin__container {
   padding: 24px;
+  background: var(--grey100);
+  border-radius: 12px;
 }
 
 .buying__coins .selected__coin .selected__coin__container .coin__img {
@@ -385,9 +385,6 @@ h3 {
   h3 {
     font-size: 14px;
     margin: 0;
-  }
-  .buying__coins .selected__coin .selected__coin__container {
-    padding: 10px;
   }
   .buying__coins .selected__coin .selected__coin__container .exchange__balance .exchange__balance__container .current__rate {
     padding: 0;

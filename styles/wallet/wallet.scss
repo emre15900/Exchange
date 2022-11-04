@@ -160,13 +160,13 @@ h3 {
 .buying__coins {
     margin-bottom: 30px;
     .selected__coin {
-        background: var(--grey100);
-        border-radius: 12px;
+
         height: 100%;
         margin-bottom: 20px;
         .selected__coin__container {
             padding: 24px;
-
+            background: var(--grey100);
+            border-radius: 12px;
             .coin__img {
                 display: flex;
                 vertical-align: center;
@@ -385,7 +385,7 @@ h3 {
     .buying__coins{
         .selected__coin{
             .selected__coin__container{
-                padding: 10px;
+                
                 .exchange__balance{
                     .exchange__balance__container{
                         .current__rate{
