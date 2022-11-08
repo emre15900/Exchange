@@ -1,3 +1,150 @@
-body{
+body {
     background: var(--darkerGrey);
+}
+
+h2 {
+    color: var(--grey0);
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+p {
+    color: var(--grey40);
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+}
+
+h4 {
+    color: var(--grey0);
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+span {
+    color: var(--grey40);
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h3 {
+    color: var(--grey0);
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 0;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--grey80);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: none;
+}
+
+
+.coinTransactions{
+    .balanceContainer {
+        margin: 0;
+        background: var(--grey100);
+        border-radius: 20px;
+        padding: 10px;
+        border-right: 1px solid var(--grey100);
+        .balance{
+            h4{
+                margin-bottom: 54px;
+            }
+        }
+        .wallet{
+            .currenciesImg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url(../../img/dashboardCurrencies.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+    
+    
+                h3{
+                    color: var(--lightGreen);
+                }
+            }
+    
+            .currencies{
+                height: 160px;
+                overflow-y: scroll;
+                
+                .currency{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom:5px ;
+                    .coin{
+                        display: flex;
+                        align-items: flex-start;
+                        img{
+                            padding-top: 4px;
+                            padding-right: 6px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .transaction{
+        margin: 0;
+        background: var(--grey100);
+        border-radius: 20px;
+        padding: 20px;
+        padding-bottom: 0;
+        .transactionTitle{
+            display: flex;
+            justify-content: space-between;
+            p{
+                color: var(--grey0);
+                padding: 3px 10px;
+                border-radius: 20px;
+                border: 1px solid var(--grey0);
+                cursor: pointer;
+            }
+        }
+        .transactionContent{
+            ul{
+                overflow-y: scroll;
+                height:155px;
+                .purchases{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 14px;
+                    
+                }
+                .purchases:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            
+        }
+    }
 }

@@ -26,7 +26,8 @@
 
 </head>
 <body>
-    <header class="header">
+    <!-- Header -->
+    <header class="header mb-3">
         <nav class="nav">
           <div class="container-fluid">
             <div class="row">
@@ -96,6 +97,190 @@
             </div>
           </div>
         </nav>
-      </header>
+    </header>
+
+    <section class="coinTransactions">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row  balanceContainer">
+                        <div class="col-5" style="border-right: 1px solid var(--grey80);">
+                            <div class="balance">
+                                <div class="d-flex justify-content-between">
+                                    <h2>Balance</h2>
+                                    <p style="color: var(--lightGreen);"><i class="fa-solid fa-up-long"></i> 2.36%</p>
+                                </div>
+                                <h4>USD 12.243,55</h4>
+                                <div class="row">
+                                    <div class="col-6" style="border-right: 1px solid var(--grey80);">
+                                        <span>
+                                          <i class="fa-solid fa-circle-up" style="color: var(--lightGreen);"></i>
+                                            Income
+                                        </span>
+                                        <h3>USD 12.243,55</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <span>
+                                          <i class="fa-solid fa-circle-down" style="color: var(--redPrimary);"></i>
+                                            Expenses
+                                        </span>
+                                        <h3>USD 3.132,23</h3>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="wallet">
+                                <div class="d-flex justify-content-between">
+                                  <h2>Wallet</h2>
+                                  <p>5 Currencies</p>
+                                </div>
+                                <div class="row">
+                                  <div class="col-6 currenciesImg">
+                                  </div>
+                                  <div class="col-6 currencies">
+                                    <div class="currency">
+                                      <div class="coin">
+                                        <img src="img/Bitcoin.svg" alt="">
+                                        <div class="coinTitle">
+                                          <h3>BTC</h3>
+                                          <span>Bitcoin</span>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <p style="color: var(--lightGreen);">
+                                          <i class="fa-solid fa-circle-up"></i>
+                                           2.36%</p>
+                                      </div>
+                                    </div>
+                                    <div class="currency">
+                                      <div class="coin">
+                                        <img src="img/ETH.svg" alt="">
+                                        <div class="coinTitle">
+                                          <h3>ETH</h3>
+                                          <span>Ethereum</span>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <p style="color: var(--redPrimary);"><i class="fa-solid fa-circle-down";"></i> 4.23%</p>
+                                      </div>
+                                    </div>
+                                    <div class="currency">
+                                      <div class="coin">
+                                        <img src="img/USDT.svg" alt="">
+                                        <div class="coinTitle">
+                                          <h3>USDT</h3>
+                                          <span>Tether</span>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <p><i class="fa-solid fa-equals" ></i> 1.36%</p>
+                                      </div>
+                                    </div>
+                                    <div class="currency">
+                                      <div class="coin">
+                                        <img src="img/ETH.svg" alt="">
+                                        <div class="coinTitle">
+                                          <h3>ETH</h3>
+                                          <span>Ethereum</span>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <p style="color: var(--redPrimary);">4.23%</p>
+                                      </div>
+                                    </div>
+                                    <div class="currency">
+                                      <div class="coin">
+                                        <img src="img/USDT.svg" alt="">
+                                        <div class="coinTitle">
+                                          <h3>USDT</h3>
+                                          <span>Tether</span>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <p style="color: var(--lightGreen);">1.36%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                  <div class="transaction">
+                    <div class="transactionTitle">
+                      <h2>Transaction</h2>
+                      <p>All <i class="fa-solid fa-chevron-down"></i></p>
+                    </div>
+                    <div class="transactionContent">
+                      <ul>
+                        <li class="purchases">
+                          <div class="d-flex">
+                            <img class="pr-2" src="img/Bitcoin.svg" alt="">
+                            <h3>BTC</h3>
+                          </div>
+                          <div>
+                            <span>Receive <i class="fa-solid fa-up-long" style="color: var(--lightGreen);"></i></span>
+                          </div>
+                          <div style="color: var(--grey0);" >$0.143,21</div>
+                        </li>
+                        <li class="purchases">
+                          <div class="d-flex">
+                            <img class="pr-2" src="img/ETH.svg" alt="">
+                            <h3>ETH</h3>
+                          </div>
+                          <div>
+                            <span>Send <i class="fa-solid fa-down-long" style="color: var(--redPrimary);"></i></span>
+                          </div>
+                          <div style="color: var(--grey0);" >$0.143,21</div>
+                        </li>
+                        <li class="purchases">
+                          <div class="d-flex">
+                            <img class="pr-2" src="img/BNB.svg" alt="">
+                            <h3>BNB</h3>
+                          </div>
+                          <div>
+                            <span>Receive <i class="fa-solid fa-up-long" style="color: var(--lightGreen);"></i></span>
+                          </div>
+                          <div style="color: var(--grey0);" >$0.143,21</div>
+                        </li>
+                        <li class="purchases">
+                          <div class="d-flex">
+                            <img class="pr-2" src="img/ITC.svg" alt="">
+                            <h3>ITC</h3>
+                          </div>
+                          <div>
+                            <span>Receive <i class="fa-solid fa-up-long" style="color: var(--lightGreen);"></i></span>
+                          </div>
+                          <div style="color: var(--grey0);" >$0.143,21</div>
+                        </li>
+                        <li class="purchases">
+                          <div class="d-flex">
+                            <img class="pr-2" src="img/Bitcoin.svg" alt="">
+                            <h3>BTC</h3>
+                          </div>
+                          <div>
+                            <span>Receive <i class="fa-solid fa-down-long" style="color: var(--redPrimary);"></i></span>
+                          </div>
+                          <div style="color: var(--grey0);" >$0.143,21</div>
+                        </li>
+                        <li class="purchases">
+                          <div class="d-flex">
+                            <img class="pr-2" src="img/Bitcoin.svg" alt="">
+                            <h3>BTC</h3>
+                          </div>
+                          <div>
+                            <span>Receive <i class="fa-solid fa-down-long" style="color: var(--redPrimary);"></i></span>
+                          </div>
+                          <div style="color: var(--grey0);" >$0.143,21</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
