@@ -49,6 +49,10 @@ h3 {
   margin-bottom: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -166,5 +170,133 @@ h3 {
 
 .coinTransactions .transaction .transactionContent ul .purchases:last-child {
   margin-bottom: 0;
+}
+
+.overallGrowth .exchange {
+  background: var(--grey100);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.overallGrowth .exchange .get {
+  background: var(--grey80);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 12px;
+  gap: 16px;
+  border-radius: 100px;
+}
+
+.overallGrowth .exchange .get input {
+  background: transparent;
+  border: none;
+  color: var(--grey0);
+  border-right: 1px solid var(--grey40);
+}
+
+.overallGrowth .exchange .exchangeButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overallGrowth .exchange .exchangeButton button {
+  background: var(--royalBlue);
+  color: var(--grey0);
+  border-radius: 100px;
+  border: none;
+  padding: 10px 52px;
+  gap: 10px;
+}
+
+.overallGrowth .graphic {
+  background: var(--grey100);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.overallGrowth .graphic .graphicTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.overallGrowth .graphic .graphicTitle ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overallGrowth .graphic .graphicTitle ul li {
+  padding-right: 30px;
+}
+
+.overallGrowth .graphic .graphicTitle ul li a {
+  text-decoration: none;
+  color: var(--grey60);
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.overallGrowth .graphic .graphicTitle ul li .active {
+  color: var(--grey0);
+  background: var(--darkerGrey);
+  border-radius: 50px;
+  padding: 8px 16px;
+}
+
+.overallGrowth .graphic .graphicContent {
+  width: 100%;
+  height: 260px;
+  background-image: url(../../img/exchangeGraphic.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.swiperContainer .swiper-slide {
+  background: var(--grey100);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.swiperContainer .swiper-slide .swiperGraphic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiperContainer .swiper-slide .swiperGraphic img {
+  width: 60%;
 }
 /*# sourceMappingURL=dashboard.css.map */
