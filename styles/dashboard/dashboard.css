@@ -75,8 +75,21 @@ ul {
   border-right: 1px solid var(--grey100);
 }
 
-.coinTransactions .balanceContainer .balance h4 {
+.coinTransactions .balanceContainer .balanceContent {
+  border-right: 1px solid var(--grey80);
+}
+
+.coinTransactions .balanceContainer .balanceContent .balance h4 {
   margin-bottom: 54px;
+}
+
+.coinTransactions .balanceContainer .balanceContent .balance .balanceTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .coinTransactions .balanceContainer .wallet .currenciesImg {
@@ -130,6 +143,7 @@ ul {
 
 .coinTransactions .transaction {
   margin: 0;
+  margin-bottom: 20px;
   background: var(--grey100);
   border-radius: 20px;
   padding: 20px;
@@ -153,9 +167,13 @@ ul {
   cursor: pointer;
 }
 
+.coinTransactions .transaction .transactionContent {
+  padding-bottom: 7px;
+}
+
 .coinTransactions .transaction .transactionContent ul {
   overflow-y: scroll;
-  height: 155px;
+  height: 137px;
 }
 
 .coinTransactions .transaction .transactionContent ul .purchases {
@@ -298,5 +316,39 @@ ul {
 
 .swiperContainer .swiper-slide .swiperGraphic img {
   width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+  span {
+    font-size: 14px;
+  }
+  .coinTransactions .balanceContainer .balanceContent {
+    border: none;
+    border-bottom: 1px solid var(--grey80);
+    margin-bottom: 20px;
+  }
+  .coinTransactions .balanceContainer .balanceContent .balance .balanceTitle {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .coinTransactions .balanceContainer .balanceContent .balance h4 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .coinTransactions .balanceContainer .balanceContent .balance .incomeExpenses {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=dashboard.css.map */

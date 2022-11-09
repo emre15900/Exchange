@@ -106,16 +106,16 @@
     <section class="coinTransactions">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8">
+                <div class="col-lg-8 col-md-12 mb-3">
                     <div class="row  balanceContainer">
-                        <div class="col-5" style="border-right: 1px solid var(--grey80);">
+                        <div class="balanceContent col-md-5 col-sm-12">
                             <div class="balance">
-                                <div class="d-flex justify-content-between">
+                                <div class="balanceTitle">
                                     <h2>Balance</h2>
                                     <p style="color: var(--lightGreen);"><i class="fa-solid fa-up-long"></i> 2.36%</p>
                                 </div>
                                 <h4>USD 12.243,55</h4>
-                                <div class="row">
+                                <div class="row pb-2 incomeExpenses">
                                     <div class="col-6" style="border-right: 1px solid var(--grey80);">
                                         <span>
                                           <i class="fa-solid fa-circle-up" style="color: var(--lightGreen);"></i>
@@ -133,16 +133,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-7">
+                        <div class="col-md-7 col-sm-12">
                             <div class="wallet">
                                 <div class="d-flex justify-content-between">
                                   <h2>Wallet</h2>
                                   <p>5 Currencies</p>
                                 </div>
                                 <div class="row">
-                                  <div class="col-6 currenciesImg">
+                                  <div class="col-5 currenciesImg">
                                   </div>
-                                  <div class="col-6 currencies">
+                                  <div class="col-7 currencies">
                                     <div class="currency">
                                       <div class="coin">
                                         <img src="img/Bitcoin.svg" alt="">
@@ -211,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 justify-content-center">
                   <div class="transaction">
                     <div class="transactionTitle">
                       <h2>Transaction</h2>
@@ -465,7 +465,8 @@
               </div>
             </div>    
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next mySwiper-prev"></div>
+          <div class="swiper-button-prev mySwiper-prev"></div>
         </div>
       </div>
     </section>
@@ -478,15 +479,39 @@
 
  <!-- Initialize Swiper -->
  <script>
-   var swiper = new Swiper(".mySwiper", {
-     slidesPerView: 4,
-     spaceBetween: 30,
-     freeMode: true,
-     pagination: {
-       el: ".swiper-pagination",
-       clickable: true,
-     },
-   });
- </script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      460: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+    },
+  });
+</script>
 </body>
 </html>

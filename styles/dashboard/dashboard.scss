@@ -74,12 +74,20 @@ ul{
         border-radius: 20px;
         padding: 10px;
         border-right: 1px solid var(--grey100);
-
-        .balance {
-            h4 {
-                margin-bottom: 54px;
+        .balanceContent{
+            border-right: 1px solid var(--grey80);
+            .balance {
+                h4 {
+                    margin-bottom: 54px;
+                }
+                .balanceTitle{
+                    display: flex;
+                    justify-content: space-between;
+                }
             }
         }
+
+        
 
         .wallet {
             .currenciesImg {
@@ -123,6 +131,7 @@ ul{
 
     .transaction {
         margin: 0;
+        margin-bottom: 20px;
         background: var(--grey100);
         border-radius: 20px;
         padding: 20px;
@@ -142,9 +151,10 @@ ul{
         }
 
         .transactionContent {
+            padding-bottom: 7px;
             ul {
                 overflow-y: scroll;
-                height: 155px;
+                height: 137px;
 
                 .purchases {
                     display: flex;
@@ -257,3 +267,59 @@ ul{
         }
     }
 }
+
+
+@media screen and (max-width: 768px){
+    h2{
+       font-size: 16px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    span{
+        font-size: 14px;
+    }
+    .coinTransactions{
+        .balanceContainer{
+            .balanceContent{
+                border: none;
+                border-bottom: 1px solid var(--grey80);
+                margin-bottom: 20px;
+                .balance{
+                    .balanceTitle{
+                        justify-content: space-around;
+                    }
+                    h4{
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+                    .incomeExpenses{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
