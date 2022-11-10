@@ -177,12 +177,13 @@ ul{
         background: var(--grey100);
         border-radius: 20px;
         padding: 20px;
-
+        margin-bottom: 20px;
         .get {
             background: var(--grey80);
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-around;
             padding: 10px 12px;
             gap: 16px;
             border-radius: 100px;
@@ -191,6 +192,10 @@ ul{
                 border: none;
                 color: var(--grey0);
                 border-right: 1px solid var(--grey40);
+                width: 70%;
+            }
+            img{
+                max-width: 25%;
             }
         }
         .exchangeButton{
@@ -269,6 +274,23 @@ ul{
 }
 
 
+@media screen and (max-width: 1060px){
+    .overallGrowth{
+        .graphic{
+            .graphicTitle{
+                ul{
+                    li{
+                        display: none;
+                       padding: 0;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 768px){
     h2{
        font-size: 16px;
@@ -306,7 +328,13 @@ ul{
             }
         }
     }
-
+    .overallGrowth{
+        .graphic{
+            .graphicContent{
+                height: 100px;
+            }
+        }
+    }
 
 
 

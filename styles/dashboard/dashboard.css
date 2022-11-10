@@ -194,6 +194,7 @@ ul {
   background: var(--grey100);
   border-radius: 20px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .overallGrowth .exchange .get {
@@ -208,6 +209,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 10px 12px;
   gap: 16px;
   border-radius: 100px;
@@ -218,6 +221,11 @@ ul {
   border: none;
   color: var(--grey0);
   border-right: 1px solid var(--grey40);
+  width: 70%;
+}
+
+.overallGrowth .exchange .get img {
+  max-width: 25%;
 }
 
 .overallGrowth .exchange .exchangeButton {
@@ -318,6 +326,13 @@ ul {
   width: 60%;
 }
 
+@media screen and (max-width: 1060px) {
+  .overallGrowth .graphic .graphicTitle ul li {
+    display: none;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 16px;
@@ -349,6 +364,9 @@ ul {
   }
   .coinTransactions .balanceContainer .balanceContent .balance .incomeExpenses {
     text-align: center;
+  }
+  .overallGrowth .graphic .graphicContent {
+    height: 100px;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */
